@@ -350,19 +350,9 @@ html,body {
 }
 
 .skill .thumbnail{
-  padding: 10px 40px;
-  border-radius: 10px;
+  border-radius: 15px;
   -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
-}
-
-.skill .thumbnail .progress-bar{
-  border-radius: 10px;
-}
-
-.skill .thumbnail .progress{
- height: 8px;
- background-color: #E1E1E1;
 }
 
 .skill__single-part__title{
