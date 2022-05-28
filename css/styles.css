@@ -947,3 +947,15 @@ html,body {
   padding-right: 20px;
   margin-top: 50px;
 }
+
+.projects-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+@media(max-width: 991px) {
+    .projects-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
