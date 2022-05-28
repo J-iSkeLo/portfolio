@@ -74,7 +74,7 @@ html,body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .header--bg{
@@ -530,7 +530,7 @@ html,body {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;  
+  left: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -690,7 +690,7 @@ html,body {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;  
+  left: 0;
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -822,8 +822,6 @@ html,body {
 }
 
 .brand-logo--bg{
-  background: url("../assets/images/brand-logo-background.png") no-repeat;
-  background-size: cover;
   position: relative;
   z-index: 1;
 }
@@ -835,7 +833,7 @@ html,body {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(120, 88, 221, .9);
+  background-color: #ffffff;
   z-index: -1;
 }
 
@@ -843,23 +841,19 @@ html,body {
   max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .brand-logo__wrapper li{
   list-style-type: none;
   display: inline-block;
-  padding-right: 160px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.brand-logo__wrapper li:last-child{
-  padding-right: 0;
-}
-
 @media (max-width: 600px) {
   .brand-logo__wrapper{
-    padding-left: 40%;
     margin-right: auto;
     margin-left: auto;
   }
