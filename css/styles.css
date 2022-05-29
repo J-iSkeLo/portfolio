@@ -1,3 +1,8 @@
+:root {
+    --bg: radial-gradient(circle, rgba(0,144,208,1) 0%, rgba(122,110,209,1) 100%);
+    --color: #0090d0;
+}
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -91,7 +96,7 @@ html,body {
   right: 0;
   top: 0;
   bottom: 0;
-  background: linear-gradient(90deg, #0090d0 0%, #7a6ed1 100%);
+  background: var(--bg);
   opacity: .7;
   z-index: -1;
 }
@@ -299,7 +304,7 @@ html,body {
 }
 
 .button--colorful{
- background-color: #0090d0;
+ background-color: var(--color);
  font-family: Roboto-Light;
  color: #fff;
 }
@@ -340,7 +345,8 @@ html,body {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(120, 88, 221, .9);
+  background: var(--bg);
+  opacity: .8;
   z-index: -1;
 }
 
@@ -425,7 +431,8 @@ html,body {
  right: 0;
  top: 0;
  bottom: 0;
- background-color: rgba(120, 88, 221, .9);
+ background: var(--bg);
+ opacity: .8;
  z-index: -1;
 }
 
@@ -526,7 +533,8 @@ html,body {
   opacity: 0;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  background-color: rgba(133, 91, 249, .9);
+  background: var(--bg);
+  opacity: .8;
   border-radius: 10px;
 }
 
@@ -567,7 +575,8 @@ html,body {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(120, 88, 221, .9);
+  background: var(--bg);
+  opacity: .8;
   z-index: -1;
 }
 
