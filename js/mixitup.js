@@ -10646,4 +10646,22 @@
 
     mixitup.NAME = 'mixitup'
     mixitup.CORE_VERSION = '3.2.1'
-})(window)
+})(window);
+
+(function UpdateAge() {
+    const el = document.getElementById('age-target')
+
+    if (!el)
+        return
+
+    var today = new Date()
+    var birthDate = new Date('1991-06-25 00:00:00')
+    var age = today.getFullYear() - birthDate.getFullYear()
+    var m = today.getMonth() - birthDate.getMonth()
+
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--
+    }
+
+    el.innerText = age
+})()
