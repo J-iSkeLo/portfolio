@@ -533,8 +533,6 @@ html,body {
   opacity: 0;
   -webkit-transition: .3s ease;
   transition: .3s ease;
-  background: var(--bg);
-  opacity: .8;
   border-radius: 10px;
 }
 
