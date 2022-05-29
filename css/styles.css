@@ -206,7 +206,7 @@ html, body {
 
 .social-icon ul {
     display: flex;
-    column-gap: 14px;
+    column-gap: 24px;
 }
 
 .social-icon ul li a {
@@ -218,7 +218,7 @@ html, body {
 }
 
 .social-icon ul li a img {
-    width: 25px;
+    width: 22px;
 }
 
 .page-section {
