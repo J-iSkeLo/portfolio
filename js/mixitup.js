@@ -3429,7 +3429,7 @@
          * @default     'all'
          */
 
-        this.filter = '.project-safereturn'
+        this.filter = '.project-zoozoozoo'
 
         /**
          * A string defining any sorting to be statically applied to the mixer on load.
