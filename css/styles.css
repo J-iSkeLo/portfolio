@@ -78,7 +78,7 @@ html,body {
 }
 
 .header--bg{
-  background: url("../assets/images/header-background.png") no-repeat;
+  background: url("../assets/images/header-background.jpg") no-repeat;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -91,7 +91,8 @@ html,body {
   right: 0;
   top: 0;
   bottom: 0;
-  background: -webkit-linear-gradient( 90deg, rgba(108,76,206, .9) 0%, rgba(127,86,253, .9) 100%);
+  background: linear-gradient(90deg, #0090d0 0%, #7a6ed1 100%);
+  opacity: .7;
   z-index: -1;
 }
 
@@ -130,7 +131,7 @@ html,body {
   border-radius: 30px;
   display: inline-block;
   font-size: 15px;
-  color: #7f56fd;
+  color: #008fd0;
   font-family: Roboto-Light;
   font-weight: bold;
   margin-top: 30px;
@@ -298,7 +299,7 @@ html,body {
 }
 
 .button--colorful{
- background-color: #7F56FD;
+ background-color: #0090d0;
  font-family: Roboto-Light;
  color: #fff;
 }
@@ -310,9 +311,9 @@ html,body {
 }
 
 .button--default:hover{
-  background-color: #7F56FD;
+  background-color: #008fd0;
   color: #fff;
-  border: 1px solid #7F56FD;
+  border: 1px solid #008fd0;
 }
 
 .button--margin{
@@ -321,7 +322,7 @@ html,body {
 }
 
 .portfolio__button-group .mixitup-control-active{
-  background-color: #7F56FD;
+  background-color: #008fd0;
   color: #fff;
 }
 
@@ -381,9 +382,8 @@ html,body {
 }
 
 @media screen and (max-width: 991px){
-
   .service .thumbnail{
-   margin-bottom: 50px
+    margin-bottom: 50px
  }
 }
 
@@ -746,7 +746,7 @@ html,body {
 
 .progress-bar--dot-main{
   background: #fff none repeat scroll 0 0;
-  border: 2px solid #7f56fd;
+  border: 2px solid #008fd0;
   border-radius: 50%;
   height: 20px;
   position: absolute;
@@ -756,7 +756,7 @@ html,body {
 }
 
 .progress-bar--dot{
-  background: #7f56fd none repeat scroll 0 0;
+  background: #008fd0 none repeat scroll 0 0;
   border-radius: 50%;
   display: block;
   height: 10px;
@@ -894,7 +894,7 @@ html,body {
 }
 
 .blog__single__paragraph--read-more{
- color: #7f56fd;
+ color: #008fd0;
 }
 
 @media (max-width: 991px) {
