@@ -499,6 +499,7 @@ html,body {
 .portfolio__single-section__image{
  display: block;
  height: auto;
+ max-width: 240px;
 }
 
 .portfolio__single-section h4{
