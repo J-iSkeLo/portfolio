@@ -176,11 +176,13 @@ html, body {
 
 .navbar-brand {
     font-size: 25px;
-    font-family: Roboto-Light;
-    font-weight: bold;
-    background: url("../assets/images/logo.png") no-repeat;
-    padding-left: 45px;
-    background-position: left center;
+    font-family: monospace;
+    font-weight: normal;
+    background: url("../assets/images/logo-profile.png") no-repeat;
+    background-size: contain;
+    background-position: left;
+    padding-left: 60px;
+    height: 60px;
 }
 
 @media (min-width: 768px) {
