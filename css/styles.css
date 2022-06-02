@@ -253,11 +253,28 @@ html, body {
 }
 
 .about__description {
-    font-size: 16px;
+    font-size: 1.4em;
     color: #636262;
     padding-bottom: 25px;
     border-bottom: 1px #C1C1C1 dashed;
     display: block;
+}
+
+.about__section {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.about__image {
+    position: sticky;
+    top: 20px;
+}
+
+.about__image img {
+    box-shadow: 3px 3px 7px rgba(54, 47, 39, .4);
+    border-radius: 20px;
 }
 
 .about_buttons {
@@ -864,6 +881,23 @@ html, body {
     .brand-logo__wrapper {
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .about__section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__description {
+        font-size: 1.2em;
+    }
+
+    .about__content {
+        padding: 0;
+    }
+
+    .about__image {
+        position: static;
     }
 }
 
