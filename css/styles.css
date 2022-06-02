@@ -231,11 +231,6 @@ html, body {
     margin-bottom: 30px;
 }
 
-.page-section__paragraph--white {
-    color: #fff;
-    line-height: 1.8;
-}
-
 .about__container--narrow {
     max-width: 1245px;
     margin-right: auto;
@@ -255,6 +250,8 @@ html, body {
     gap: 50px;
     align-items: flex-start;
     position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .about__image {
@@ -279,10 +276,6 @@ html, body {
 }
 
 @media screen and (max-width: 991px) {
-    .about__content {
-        padding-top: 50px;
-    }
-
     .about_buttons {
         flex-direction: column;
     }
@@ -873,9 +866,15 @@ html, body {
         margin-left: auto;
     }
 
+    .page-section {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
     .about__section {
         flex-direction: column;
         align-items: center;
+        padding: 0;
     }
 
     .about__description {
