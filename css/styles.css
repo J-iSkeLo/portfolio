@@ -113,17 +113,49 @@ html, body {
 }
 
 .header__content__title {
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: bold;
     color: #fff;
-    margin-top: 0;
+    margin: 0;
     text-shadow: 7px 7px 6px rgb(26, 69, 104);
 }
 
-.header__content__sub-title li {
+.header__content__sub-title {
     display: inline-block;
-    font-size: 18px;
-    color: #e6e6e6;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 5px 5px 4px rgb(26, 69, 104);
+    margin: 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.header__content__sub-title span {
+    font-size: 1.2em;
+    margin: 0 3px;
+}
+
+.header__content__sub-title::after,
+.header__content__sub-title::before {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .8);
+}
+
+.header__content__sub-title::before {
+    left: calc(100% + 15px);
+    border-radius: 0 50% 50%;
+}
+
+.header__content__sub-title::after {
+    right: calc(100% + 15px);
+    border-radius: 50% 0 0 50%;
 }
 
 .header__content__sub-title .padding {
@@ -1005,20 +1037,24 @@ html, body {
 }
 
 .main-btn {
-    width: auto;
     display: inline-block;
-    font-size: 18px;
+    font-size: 1.2em;
     color: white;
-    padding: 8px 30px;
+    padding: 9px 30px;
     border-radius: 50px;
     background: linear-gradient(-45deg, #ffa63d, #ff3d77, #7033ff, #3cf0c5);
     background-size: 600%;
     animation: anime 16s linear infinite;
-    margin-top: 20px;
     margin-right: auto;
     margin-left: auto;
     cursor: pointer;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, .2);
+    transition: box-shadow 200ms;
+}
+
+.main-btn:hover {
+    box-shadow: 12px 12px 16px rgba(0, 0, 0, .3);
+    color: white;
 }
 
 @-moz-keyframes anime {
