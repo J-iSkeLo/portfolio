@@ -252,10 +252,6 @@ html, body {
     margin-left: auto;
 }
 
-.about__content {
-    padding-top: 70px;
-}
-
 .about__description {
     font-size: 16px;
     color: #636262;
@@ -276,6 +272,10 @@ html, body {
 }
 
 @media screen and (max-width: 991px) {
+    .about__content {
+        padding-top: 50px;
+    }
+
     .about_buttons {
         flex-direction: column;
     }
