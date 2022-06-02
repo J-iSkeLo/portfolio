@@ -166,10 +166,6 @@ html, body {
     margin: 0px -20px;
 }
 
-.navbar-toggle {
-    background-color: #ddd;
-}
-
 .navbar-toggle .icon-bar {
     background-color: #fff;
 }
@@ -268,7 +264,22 @@ html, body {
     display: block;
 }
 
+.about_buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.about_button {
+    min-width: 250px;
+    text-align: center;
+}
+
 @media screen and (max-width: 991px) {
+    .about_buttons {
+        flex-direction: column;
+    }
+
     .about__image {
         text-align: center;
     }
