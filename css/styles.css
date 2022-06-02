@@ -117,7 +117,7 @@ html, body {
     font-weight: bold;
     color: #fff;
     margin: 0;
-    text-shadow: 7px 7px 6px rgb(26, 69, 104);
+    text-shadow: 7px 7px 6px rgba(26, 69, 104, 0.48);
 }
 
 .header__content__sub-title {
@@ -1041,7 +1041,7 @@ html, body {
     font-size: 1.2em;
     color: white;
     padding: 9px 30px;
-    border-radius: 50px;
+    border-radius: 100px;
     background: linear-gradient(-45deg, #ffa63d, #ff3d77, #7033ff, #3cf0c5);
     background-size: 600%;
     animation: anime 16s linear infinite;
