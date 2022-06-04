@@ -189,6 +189,7 @@ html, body {
 
 .nav li a {
     font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .navbar {
@@ -239,6 +240,8 @@ html, body {
 
 .social-icon ul li a img {
     width: 22px;
+    -webkit-filter: drop-shadow(3px 3px 4px rgba(34, 34, 34, 0.6));
+    filter: drop-shadow(3px 3px 4px rgba(34, 34, 34, 0.6));
 }
 
 .page-section {
