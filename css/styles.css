@@ -866,6 +866,11 @@ html, body {
     z-index: -1;
 }
 
+.brand-logo img {
+    -webkit-filter: drop-shadow(-6px -5px 6px rgba(0,0,0, 0.3));
+    filter: drop-shadow(-6px -5px 6px rgba(0,0,0, 0.3));
+}
+
 .brand-logo__wrapper {
     max-width: 1140px;
     margin-right: auto;
