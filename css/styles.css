@@ -300,22 +300,7 @@ html, body {
     border-radius: 20px;
 }
 
-.about_buttons {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-}
-
-.about_button {
-    min-width: 250px;
-    text-align: center;
-}
-
 @media screen and (max-width: 991px) {
-    .about_buttons {
-        flex-direction: column;
-    }
-
     .about__image {
         text-align: center;
     }
