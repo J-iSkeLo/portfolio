@@ -10664,4 +10664,28 @@
     }
 
     el.innerText = age
+})();
+
+(function HandleSmoothScrollAnchor() {
+    const selector = '._navbar-link'
+    const links = document.querySelectorAll(selector)
+
+    if (!links) {
+        console.error(`Cannot find elements with selector ${selector}`)
+        return
+    }
+
+    for (const link of links) {
+        const targetSelector = link.dataset.target
+        const targetElem = document.querySelector(targetSelector)
+
+        if (!targetElem) {
+            console.error(`Cannot find target selector ${targetSelector} for scrolling`)
+            return
+        }
+
+        link.addEventListener('click', () => {
+            targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        })
+    }
 })()
