@@ -1041,6 +1041,10 @@ html, body {
     margin-right: 15px;
 }
 
+.brand-logo__wrapper img {
+    pointer-events: none;
+}
+
 .brand-logo__wrapper li:last-child {
     margin-right: 0;
 }
