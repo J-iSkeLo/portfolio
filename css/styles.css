@@ -227,15 +227,17 @@ html, body {
 
 .social-icon ul {
     display: flex;
-    column-gap: 24px;
+    column-gap: 30px;
 }
 
 .social-icon ul li a {
-    transition: opacity 200ms;
+    transition: filter 200ms, color 200ms;
+    color: #acacac;
 }
 
 .social-icon ul li a:hover {
-    opacity: .7;
+    color: white;
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
 }
 
 .social-icon ul li a img {
@@ -1024,32 +1026,37 @@ html, body {
 
 .footer__contact-information li {
     display: inline-block;
+    margin-right: 50px;
+}
+
+.footer__contact-information li:last-child {
+    margin-right: 0;
 }
 
 .footer__contact-information li a {
-    font-size: 15px;
-    color: #9ca1a3;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 10px;
+    font-size: 1.7rem;
+    color: #d0d0d0;
+    display: flex;
+    align-items: center;
+    transition: color 300ms, text-shadow 400ms;
+}
+
+.footer__contact-information li a:hover {
+    color: white;
+    text-shadow: 0 0 30px rgba(255, 255, 255, .6);
 }
 
 .footer__contact-information .material-icons {
-    font-size: 15px;
-    padding-right: 10px;
+    font-size: 3rem;
+    margin-right: 10px;
     position: relative;
     top: 3px;
 }
 
-.footer .social-icon {
-    margin-bottom: 20px;
-}
-
 .footer .social-icon ul {
-    padding-right: 20px;
     margin-top: 50px;
+    margin-bottom: 0;
     justify-content: center;
-    column-gap: 20px;
 }
 
 .projects-section {
