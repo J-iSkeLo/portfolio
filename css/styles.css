@@ -366,8 +366,24 @@ html, body {
 }
 
 .portfolio__button-group .mixitup-control-active {
-    background-color: #008fd0;
+    background: var(--bg);
     color: #fff;
+}
+
+.portfolio__button-group .button {
+    border: none;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, .1);
+    transition: box-shadow 600ms, color 300ms;
+}
+
+.portfolio__button-group .button:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);
+    background-color: white;
+    color: black;
+}
+
+.portfolio__button-group .mixitup-control-active:hover {
+    color: white;
 }
 
 .skill--bg {
