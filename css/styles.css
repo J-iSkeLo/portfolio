@@ -210,6 +210,33 @@ html, body {
     }
 }
 
+.to-top {
+    width: 50px;
+    aspect-ratio: 1/1;
+    display: flex;
+    opacity: 0;
+    transition: opacity 500ms, transform 200ms;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 20;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background: var(--bg);
+    color: white;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .3);
+    padding: 8px;
+}
+
+.to-top:hover {
+    transform: scale(1.2);
+}
+
 .Rectangle_ {
     background-image: -ms-linear-gradient(90deg, rgb(108, 76, 206) 0%, rgb(127, 86, 253) 100%);
     opacity: 0.929;
@@ -378,6 +405,11 @@ html, body {
 @media screen and (max-width: 991px) {
     .about__image {
         text-align: center;
+    }
+
+    .to-top {
+        right: 10px;
+        bottom: 10px;
     }
 }
 

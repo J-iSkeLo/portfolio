@@ -10688,4 +10688,27 @@
             targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' })
         })
     }
+})();
+
+(function HandleGoToTopButtonBehaviour() {
+    const selector = '#to-top'
+    const btn = document.querySelector(selector)
+
+    if (!btn) {
+        console.error(`Cannot find selector ${selector} for Go to top button`)
+        return
+    }
+
+    btn.style.opacity = document.body.scrollTop > 600 ? 0.8 : 0
+
+    document.body.addEventListener('scroll', e => {
+        btn.style.opacity = document.body.scrollTop > 600 ? 0.7 : 0
+    })
+
+    btn.addEventListener('click', () => {
+        document.getElementById('content-wrapper').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+        })
+    })
 })()
