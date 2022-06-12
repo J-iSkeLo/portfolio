@@ -1041,10 +1041,21 @@ html, body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-@media(max-width: 991px) {
+.projects-section div {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media(max-width: 1300px) {
     .projects-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 520px) {
+    .projects-section {
+        grid-template-columns: 1fr;
     }
 }
 
