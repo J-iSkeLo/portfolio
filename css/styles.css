@@ -609,6 +609,10 @@ html, body {
 
 }
 
+.slider {
+    min-height: 570px;
+}
+
 .slider--bg {
     background: url("../assets/images/slider-background.png") no-repeat;
     background-size: cover;
@@ -883,12 +887,28 @@ html, body {
     display: inline-block;
     margin-bottom: 20px;
     text-align: center;
+    margin-right: 15px;
+}
+
+.brand-logo__wrapper li:last-child {
+    margin-right: 0;
 }
 
 @media (max-width: 600px) {
     .brand-logo__wrapper {
         margin-right: auto;
         margin-left: auto;
+        flex-direction: column;
+    }
+
+    .brand-logo__wrapper li {
+        margin-right: auto !important;
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+
+    .brand-logo__wrapper li:last-child {
+        margin-bottom: 0;
     }
 
     .page-section {
