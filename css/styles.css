@@ -624,11 +624,10 @@ html, body {
         margin-right: auto;
         margin-left: auto;
     }
-
 }
 
 .slider {
-    min-height: 570px;
+    min-height: 640px;
 }
 
 .slider--bg {
@@ -646,19 +645,19 @@ html, body {
     top: 0;
     bottom: 0;
     background: var(--bg);
-    opacity: .8;
+    opacity: .9;
     z-index: -1;
 }
 
 .slider .carousel-content h4 {
-    font-size: 25px;
+    font-size: 2.5em;
     font-family: Roboto-Light;
     color: #fff;
     font-weight: bold;
 }
 
 .slider .carousel-content h6 {
-    font-size: 15px;
+    font-size: 1.4em;
     font-family: Roboto-Light;
     margin: 0;
     color: #ebeaea;
@@ -669,7 +668,7 @@ html, body {
     display: inline-block;
     margin-top: 40px;
     margin-bottom: 40px;
-    font-size: 15px;
+    font-size: 1.4em;
     color: #ebeaea;
     line-height: 1.8;
     font-family: Roboto-Light;
@@ -691,10 +690,6 @@ html, body {
 .slider .material-icons {
     font-size: 20px;
     color: #fff;
-}
-
-.slider .carousel-indicators {
-    margin-bottom: 40px;
 }
 
 .slider .carousel-indicators .active {
