@@ -1046,14 +1046,20 @@ html, body {
     margin-left: auto;
 }
 
-@media(max-width: 1300px) {
+@media(max-width: 1399px) {
     .projects-section {
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 991px) {
+    .projects-section {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(max-width: 520px) {
+@media(max-width: 600px) {
     .projects-section {
         grid-template-columns: 1fr;
     }
