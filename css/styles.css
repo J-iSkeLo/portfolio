@@ -1246,26 +1246,15 @@ html, body {
 
 .projects-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.projects-section div {
+.projects-section > div {
     margin-right: auto;
     margin-left: auto;
 }
 
-@media(max-width: 1399px) {
-    .projects-section {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
 @media(max-width: 991px) {
-    .projects-section {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .footer__contact-information {
         flex-direction: column;
     }
@@ -1278,12 +1267,6 @@ html, body {
 
     .footer__contact-information li:last-child {
         margin-bottom: 0;
-    }
-}
-
-@media(max-width: 600px) {
-    .projects-section {
-        grid-template-columns: 1fr;
     }
 }
 
