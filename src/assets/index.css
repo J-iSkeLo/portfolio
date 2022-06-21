@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --color-main: '#0090d0';
-    --secondary: 'rgb(122,110,209)';
+@layer base {
+    :root {
+        --color-main: #0090d0;
+        --color-secondary: #7a6ed1;
+    }
 }

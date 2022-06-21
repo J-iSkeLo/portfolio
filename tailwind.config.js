@@ -5,8 +5,9 @@ module.exports = {
     ],
     theme: {
         extend: {
-            gradient: {
-                main: 'radial-gradient(circle, rgba(0, 144, 208, 1) 0%, rgba(122, 110, 209, 1) 100%)',
+            container: {
+                center: true,
+                padding: '1.2rem',
             },
             colors: {
                 main: 'var(--color-main)',
@@ -17,7 +18,10 @@ module.exports = {
                 reviews: "url('/src/assets/img/backgrounds/reviews.png')",
                 skill: "url('/src/assets/img/backgrounds/skill.jpeg')",
                 tech: "url('/src/assets/img/backgrounds/tech.jpeg')",
-            }
+            },
+            boxShadow: {
+                hero: '0 1px 1px rgb(0 0 0 / 15%), 0 2px 2px rgb(0 0 0 / 15%), 0 4px 4px rgb(0 0 0 / 15%), 0 8px 8px rgb(0 0 0 / 15%)',
+            },
         },
     },
     plugins: [],
