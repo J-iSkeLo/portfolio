@@ -13,7 +13,10 @@ module.exports = {
                 secondary: 'var(--color-secondary)',
             },
             backgroundImage: {
-                'hero': "url('/assets/img/hero-pattern.svg')",
+                hero: "url('/src/assets/img/backgrounds/hero.jpg')",
+                reviews: "url('/src/assets/img/backgrounds/reviews.png')",
+                skill: "url('/src/assets/img/backgrounds/skill.jpeg')",
+                tech: "url('/src/assets/img/backgrounds/tech.jpeg')",
             }
         },
     },

@@ -5,7 +5,7 @@ interface Props {
 
 const Hero: React.FC<Props> = (props) => {
     return (
-        <header className="bg-hero">
+        <header className="bg-hero min-h-[400px]">
         </header>
     )
 }
