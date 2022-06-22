@@ -6,7 +6,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 const App = () => {
     return (
         <ParallaxProvider>
-            <div className="pb-[4000px] text-gray-700">
+            <div className="text-gray-700">
                 <Hero />
                 <About />
                 <Skills />
