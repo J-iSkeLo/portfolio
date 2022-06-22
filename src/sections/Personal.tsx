@@ -29,13 +29,13 @@ const Skills: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {sections.map(section => {
                         return (
-                            <div className="px-5 py-3 text-center">
+                            <div className="px-5 pb-3 text-center" key={section.title}>
                                 <img src={section.img}
                                     alt={section.title}
                                     className="mx-auto drop-shadow-lg"
                                 />
 
-                                <h3 className="my-4 text-xl font-bold text-center uppercase drop-shadow-md">
+                                <h3 className="my-6 text-xl font-bold text-center uppercase drop-shadow-md">
                                     {section.title}
                                 </h3>
 
