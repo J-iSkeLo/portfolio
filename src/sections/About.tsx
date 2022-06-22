@@ -1,8 +1,20 @@
 import React from 'react'
 import Section from '../components/Section/Section'
 import photo from '../assets/img/me.png'
+import calculateAge from '../modules/calculateAge'
 
 const About: React.FC = () => {
+    const sectionItems = [
+        [
+            { label: 'Name', value: 'Olexiy Y. Chornenkiy' },
+            { label: 'Age', value: calculateAge() },
+        ],
+        [
+            { label: 'Job title', value: 'Android developer' },
+            { label: 'Location', value: 'Ukraine, Kharkiv' },
+        ],
+    ]
+
     return (
         <div className="container">
             <Section title="About me">
@@ -27,6 +39,20 @@ const About: React.FC = () => {
                         Committed to viable and easily functional app solutions for clients.
                         I am constantly developing as a developer and knowledgeable in
                         practical usage of new technologies.
+
+                        <div className="flex w-full pl-[20px] pr-[20px] rounded-md border border-dashed border-gray-300 mt-8">
+                            {sectionItems.map((sect, index) => {
+                                return <section key={index} className="mr-[30px] pr-[30px] border-r border-r-dashed border-gray-300 last:border-none py-[20px] flex-1">
+                                    {sect.map((item, i) => {
+                                        return <p key={i} className="text-sm flex justify-between relative mb-1">
+                                            <h4>{item.label}</h4>
+                                            <b></b>
+                                            <h4>{item.value}</h4>
+                                        </p>
+                                    })}
+                                </section>
+                            })}
+                        </div>
                     </div>
                 </div>
             </Section>
