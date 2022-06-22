@@ -28,6 +28,16 @@ const Hero: React.FC<Props> = (props) => {
                         <span className="text-[1.2em]">Android</span>
                         <span>Developer</span>
                     </h2>
+
+                    <div>
+                        <a href="https://syject.com/#Contacts"
+                            rel="noreferrer"
+                            target="_blank"
+                            className="inline-block text-lg text-white mt-10 bg-main-btn animate-shine bg-600 drop-shadow-hero uppercase py-3 px-8 rounded-full"
+                        >
+                            Have a project? Let's talk
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
