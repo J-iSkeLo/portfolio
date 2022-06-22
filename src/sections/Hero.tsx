@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
+import Social from '../components/Social'
 
 const Hero: React.FC = () => {
     return (
@@ -9,7 +10,7 @@ const Hero: React.FC = () => {
             <div className="container">
                 <Navbar />
 
-                <div className="py-52 md:py-[230px] relative z-20 text-center">
+                <div className="py-52 md:py-[220px] relative z-20 text-center">
                     <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold drop-shadow-hero">
                         OLEXIY CHORNENKYI
                     </h1>
@@ -31,11 +32,15 @@ const Hero: React.FC = () => {
                         <a href="https://syject.com/#Contacts"
                             rel="noreferrer"
                             target="_blank"
-                            className="inline-block text-sm lg:text-md text-white mt-5 lg:mt-10 bg-main-btn animate-shine bg-600 shadow-hero hover:shadow-hero-hover uppercase py-2 lg:py-3 px-5 lg:px-7 rounded-full transition-shadow duration-500"
+                            className="inline-block text-sm lg:text-lg text-white mt-5 lg:mt-10 bg-main-btn animate-shine bg-600 shadow-hero hover:shadow-hero-hover uppercase py-2 lg:py-3 px-5 lg:px-7 rounded-full transition-shadow duration-500"
                         >
                             Have a project? Let's talk
                         </a>
                     </div>
+                </div>
+
+                <div className="flex justify-end mb-14">
+                    <Social />
                 </div>
             </div>
         </header>

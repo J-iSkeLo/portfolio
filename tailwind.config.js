@@ -7,7 +7,7 @@ module.exports = {
         extend: {
             container: {
                 center: true,
-                padding: '1.2rem',
+                padding: '1.5rem',
             },
             colors: {
                 main: 'var(--color-main)',
@@ -44,7 +44,7 @@ module.exports = {
             dropShadow: {
                 'hero': '5px 5px 4px rgb(26 69 104)',
                 'font': '2px 2px 4px rgb(0 0 0 / 50%)',
-                'font-hover': '0 0 30px rgb(255 255 255 / 60%)',
+                'font-hover': '0 0 20px rgba(255, 255, 255, 1)',
             },
         },
     },
