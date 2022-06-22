@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="pt-12 text-white relative z-20">
-            <div className="hidden lg:block">
+            <div className="hidden md:block">
                 <ul className="flex justify-end space-x-6 uppercase text-sm">
                     {links.map(l => {
                         return <li>
