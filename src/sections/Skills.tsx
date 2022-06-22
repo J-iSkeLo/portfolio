@@ -10,11 +10,11 @@ const Skills: React.FC = () => {
     return (
         <div>
             <Section title="Skills" bg={bgImage}>
-                <div className="grid grid-cols-4 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-7">
                     {images.map((img: string) => {
                         return (
                             <div key={img}>
-                                <img src={img} alt="technology" />
+                                <img data-src={img} alt="technology" />
                             </div>
                         )
                     })}

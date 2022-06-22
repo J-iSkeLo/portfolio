@@ -22,7 +22,7 @@ const About: React.FC = () => {
                 <div className="grid gap-12 grid-cols-1 md:grid-cols-[auto_1fr] relative">
                     <div className="relative">
                         <Parallax disabled={window.innerWidth < 767} speed={-10} translateY={[-5, 20]}>
-                            <img src={photo}
+                            <img data-src={photo}
                                 alt="Olexiy Chornenkyi"
                                 className="shadow-hero rounded-3xl max-w-full mx-auto"
                             />

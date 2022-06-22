@@ -11,7 +11,7 @@ interface Props {
 const Section: React.FC<Props> = ({ children, title, bg }) => {
     return (
         <ParallaxBanner
-            layers={[{ image: bg, speed: -15 }]}
+            layers={[{ image: bg, speed: -10 }]}
             disabled={!bg}
             className="relative"
         >
