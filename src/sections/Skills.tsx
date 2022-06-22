@@ -9,7 +9,7 @@ const images = importAll(require.context('../assets/img/skills', false, /\.png$/
 const Skills: React.FC = () => {
     return (
         <div>
-            <Section title="My skills" bg={bgImage}>
+            <Section title="Skills" bg={bgImage}>
                 <div className="grid grid-cols-4 gap-8">
                     {images.map((img: string) => {
                         return (

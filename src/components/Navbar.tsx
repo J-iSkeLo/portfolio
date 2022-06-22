@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
 
     const links = [
         { title: 'About', link: '#about' },
-        { title: 'Professional skill', link: '#skill' },
+        { title: 'Skills', link: '#skill' },
         { title: 'Personal skills', link: '#personal' },
         { title: 'Portfolio', link: '#portfolio' },
         { title: 'Contact', link: '#contact' },

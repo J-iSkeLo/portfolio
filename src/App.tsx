@@ -1,6 +1,7 @@
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Skills from './sections/Skills'
+import Personal from './sections/Personal'
 import { ParallaxProvider } from 'react-scroll-parallax';
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
                 <Hero />
                 <About />
                 <Skills />
+                <Personal />
             </div>
         </ParallaxProvider>
     )
