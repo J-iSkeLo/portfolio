@@ -2,6 +2,7 @@ import React from 'react'
 import Section from '../components/Section/Section'
 import photo from '../assets/img/me.png'
 import calculateAge from '../modules/calculateAge'
+import { Parallax } from 'react-scroll-parallax'
 
 const About: React.FC = () => {
     const sectionItems = [
@@ -19,11 +20,13 @@ const About: React.FC = () => {
         <div className="container">
             <Section title="About me">
                 <div className="grid gap-12 grid-cols-1 md:grid-cols-[auto_1fr] relative">
-                    <div className="md:sticky top-4">
-                        <img src={photo}
-                            alt="Olexiy Chornenkyi"
-                            className="shadow-hero rounded-3xl max-w-full mx-auto"
-                        />
+                    <div className="relative">
+                        <Parallax disabled={window.innerWidth < 767} speed={-10} translateY={[-5, 20]}>
+                            <img src={photo}
+                                alt="Olexiy Chornenkyi"
+                                className="shadow-hero rounded-3xl max-w-full mx-auto"
+                            />
+                        </Parallax>
                     </div>
                     <div className="text-lg md:text-xl lg:!leading-9 text-gray-600">
                         Analytical and detail oriented Android app
@@ -44,11 +47,11 @@ const About: React.FC = () => {
                             {sectionItems.map((sect, index) => {
                                 return <section key={index} className="md:mr-[30px] md:pr-[30px] md:border-r border-r-dashed border-gray-300 last:border-none py-[20px] flex-1">
                                     {sect.map((item, i) => {
-                                        return <p key={i} className="text-sm flex justify-between relative mb-2 last:mb-0">
+                                        return <div key={i} className="text-sm flex justify-between relative mb-2 last:mb-0">
                                             <h4 className="uppercase pr-4 bg-white">{item.label}</h4>
                                             <b className="block absolute left-1 right-1 top-1/2 border-b border-dashed border-b-gray-300 -z-10"></b>
                                             <h4 className="bg-white pl-4 font-bold text-gray-500">{item.value}</h4>
-                                        </p>
+                                        </div>
                                     })}
                                 </section>
                             })}
