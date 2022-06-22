@@ -7796,10 +7796,10 @@ slash@^4.0.0:
   resolved "https://registry.npmjs.org/slash/-/slash-4.0.0.tgz"
   integrity sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==
 
-smooth-loader@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/smooth-loader/-/smooth-loader-1.0.6.tgz#4d6d0ebee91aa078f6027deffe4e3c0c368afe84"
-  integrity sha512-Uzql+4t7UmlFWHmLGacWZZS4FwhR2+pKeF+j6c4GRiJib8XGci4kF6xXPgQG3zZr2SoPosbCkjWQHnQNitFvBw==
+smooth-loader@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/smooth-loader/-/smooth-loader-1.0.7.tgz#994f32eaacc3c6dd6873f3206e622a3b38078faf"
+  integrity sha512-BjMdx6Nch3qwV7H9MiCajpWy4J3ZV3zmBq9eL2hBqKAnmSvIWjbLdlPfZRxwg+xeqvveWnqWyz4YUXhDEwbruQ==
 
 sockjs@^0.3.24:
   version "0.3.24"
