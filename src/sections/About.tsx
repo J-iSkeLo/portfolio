@@ -45,9 +45,9 @@ const About: React.FC = () => {
                                 return <section key={index} className="mr-[30px] pr-[30px] border-r border-r-dashed border-gray-300 last:border-none py-[20px] flex-1">
                                     {sect.map((item, i) => {
                                         return <p key={i} className="text-sm flex justify-between relative mb-1">
-                                            <h4>{item.label}</h4>
-                                            <b></b>
-                                            <h4>{item.value}</h4>
+                                            <h4 className="uppercase pr-4 bg-white">{item.label}</h4>
+                                            <b className="block absolute left-1 right-1 top-1/2 border-b border-dashed border-b-gray-300 -z-10"></b>
+                                            <h4 className="bg-white pl-4 font-bold text-gray-500">{item.value}</h4>
                                         </p>
                                     })}
                                 </section>
