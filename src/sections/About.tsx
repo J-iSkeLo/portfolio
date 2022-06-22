@@ -40,11 +40,11 @@ const About: React.FC = () => {
                         I am constantly developing as a developer and knowledgeable in
                         practical usage of new technologies.
 
-                        <div className="flex w-full pl-[20px] pr-[20px] rounded-md border border-dashed border-gray-300 mt-8">
+                        <div className="flex flex-col md:flex-row w-full pl-[20px] pr-[20px] rounded-md border border-dashed border-gray-300 mt-8">
                             {sectionItems.map((sect, index) => {
-                                return <section key={index} className="mr-[30px] pr-[30px] border-r border-r-dashed border-gray-300 last:border-none py-[20px] flex-1">
+                                return <section key={index} className="md:mr-[30px] md:pr-[30px] md:border-r border-r-dashed border-gray-300 last:border-none py-[20px] flex-1">
                                     {sect.map((item, i) => {
-                                        return <p key={i} className="text-sm flex justify-between relative mb-1">
+                                        return <p key={i} className="text-sm flex justify-between relative mb-2 last:mb-0">
                                             <h4 className="uppercase pr-4 bg-white">{item.label}</h4>
                                             <b className="block absolute left-1 right-1 top-1/2 border-b border-dashed border-b-gray-300 -z-10"></b>
                                             <h4 className="bg-white pl-4 font-bold text-gray-500">{item.value}</h4>
