@@ -21,7 +21,11 @@ module.exports = {
             },
             boxShadow: {
                 hero: '0 1px 1px rgb(0 0 0 / 15%), 0 2px 2px rgb(0 0 0 / 15%), 0 4px 4px rgb(0 0 0 / 15%), 0 8px 8px rgb(0 0 0 / 15%)',
+                lines: '2px 2px 10px rgb(0 0 0 / 80%)',
             },
+            dropShadow: {
+                'hero': '5px 5px 4px rgb(26 69 104)',
+            }
         },
     },
     plugins: [],

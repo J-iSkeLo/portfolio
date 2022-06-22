@@ -13,13 +13,21 @@ const Hero: React.FC<Props> = (props) => {
                 <Navbar />
 
                 <div className="pt-[200px] pb-[100px] relative z-20 text-center">
-                    <h1 className="text-5xl font-bold">
+                    <h1 className="text-5xl font-bold drop-shadow-hero">
                         OLEXIY CHORNENKYI
                     </h1>
 
-                    <h3>
-                        Native <span>Android</span> Developer
-                    </h3>
+                    <h2 className="space-x-2 uppercase text-xl drop-shadow-hero relative inline-block">
+                        {/* Line before title */}
+                        <div className="h-[2px] absolute w-24 bg-white shadow-lines top-1/2 rounded-full -transform-y-1/2 right-[calc(100%+13px)]"></div>
+
+                        {/* Line after title */}
+                        <div className="h-[2px] absolute w-24 bg-white shadow-lines top-1/2 -transform-y-1/2 rounded-full left-[calc(100%+13px)]"></div>
+
+                        <span>Native</span>
+                        <span className="text-[1.2em]">Android</span>
+                        <span>Developer</span>
+                    </h2>
                 </div>
             </div>
         </header>
