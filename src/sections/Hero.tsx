@@ -33,7 +33,7 @@ const Hero: React.FC<Props> = (props) => {
                         <a href="https://syject.com/#Contacts"
                             rel="noreferrer"
                             target="_blank"
-                            className="inline-block text-lg text-white mt-10 bg-main-btn animate-shine bg-600 drop-shadow-hero uppercase py-3 px-8 rounded-full"
+                            className="inline-block text-md text-white mt-10 bg-main-btn animate-shine bg-600 shadow-hero hover:shadow-hero-hover uppercase py-3 px-7 rounded-full transition-shadow duration-500"
                         >
                             Have a project? Let's talk
                         </a>

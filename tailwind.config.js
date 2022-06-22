@@ -21,7 +21,8 @@ module.exports = {
                 'main-btn': 'linear-gradient(-45deg, #ffa63d, #ff3d77, #7033ff, #3cf0c5)',
             },
             boxShadow: {
-                hero: '0 1px 1px rgb(0 0 0 / 15%), 0 2px 2px rgb(0 0 0 / 15%), 0 4px 4px rgb(0 0 0 / 15%), 0 8px 8px rgb(0 0 0 / 15%)',
+                hero: '0 1px 1px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 10%), 0 4px 4px rgb(0 0 0 / 10%), 0 8px 8px rgb(0 0 0 / 10%)',
+                'hero-hover': '12px 12px 16px rgb(0 0 0 / 20%)',
                 lines: '2px 2px 10px rgb(0 0 0 / 80%)',
             },
             animation: {
