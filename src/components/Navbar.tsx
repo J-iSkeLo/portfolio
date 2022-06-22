@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
                 </button>
             </div>
 
-            <div className={`${isOpened ? 'h-60 border-t' : 'h-0'} md:static md:h-full overflow-hidden pt-6 md:pt-0 mt-6 md:mt-0 border-white/20 transition-height duration-500`}>
+            <div className={`${isOpened ? 'mt-6 h-60 border-t pt-6' : 'h-0'} md:static md:h-full overflow-hidden border-white/20 transition-all duration-500`}>
                 <ul className="flex flex-col md:flex-row justify-end space-y-3 md:space-y-0 md:space-x-6 uppercase text-md lg:text-sm">
                     {links.map(l => {
                         return <li key={l.title}>

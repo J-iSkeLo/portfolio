@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
             <div className="container">
                 <Navbar />
 
-                <div className="pt-[200px] pb-[140px] relative z-20 text-center">
+                <div className="py-52 md:py-[230px] relative z-20 text-center">
                     <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold drop-shadow-hero">
                         OLEXIY CHORNENKYI
                     </h1>

@@ -46,9 +46,6 @@ module.exports = {
                 'font': '2px 2px 4px rgb(0 0 0 / 50%)',
                 'font-hover': '0 0 30px rgb(255 255 255 / 60%)',
             },
-            transitionProperty: {
-                'height': 'height',
-            }
         },
     },
     plugins: [],
