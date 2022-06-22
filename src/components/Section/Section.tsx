@@ -8,7 +8,7 @@ interface Props {
 
 const Section: React.FC<Props> = ({ children, title }) => {
     return (
-        <div className="py-24">
+        <div className="py-16 md:py-24">
             {title ? <Title title={title} /> : ''}
 
             <div>
