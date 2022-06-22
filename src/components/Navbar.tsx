@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 const Navbar: React.FC = () => {
     const [isOpened, setIsOpened] = useState<boolean>(false)
+    const commonHamburgerStyles = ' bg-white h-[3px] w-6 rounded-full transition-transform duration-500'
 
     const links = [
         { title: 'About', link: '#about' },
@@ -23,8 +24,8 @@ const Navbar: React.FC = () => {
                     className="flex flex-col gap-y-[6px] py-2 px-4 drop-shadow-font"
                     onClick={showNavbarHandler}
                 >
-                    <div className="bg-white h-[3px] w-6 rounded-full"></div>
-                    <div className="bg-white h-[3px] w-6 rounded-full"></div>
+                    <div className={(isOpened ? '-rotate-45 translate-y-[4px]' : '') + commonHamburgerStyles}></div>
+                    <div className={(isOpened ? 'rotate-45 translate-y-[-5px]' : '') + commonHamburgerStyles}></div>
                 </button>
             </div>
 
