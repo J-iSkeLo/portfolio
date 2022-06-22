@@ -13,7 +13,10 @@ const Section: React.FC<Props> = ({ children, title, bg }) => {
         <ParallaxBanner
             layers={[{ image: bg, speed: -15 }]}
             disabled={!bg}
+            className="relative"
         >
+            {bg ? <div className="bg-gradient bg-gradient-to-r from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-70"></div> : ''}
+
             <div className="py-16 md:py-24">
                 {title ? <Title title={title} isLight={!!bg} /> : ''}
 
