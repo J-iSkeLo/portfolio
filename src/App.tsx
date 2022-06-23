@@ -15,7 +15,7 @@ const App = () => {
 
     return (
         <ParallaxProvider>
-            <div className="text-gray-700">
+            <div className="text-gray-700 pb-[1000px]">
                 <Hero />
                 <About />
                 <Skills />

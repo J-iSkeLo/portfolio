@@ -12,10 +12,13 @@ const Portfolio: React.FC = () => {
                 <div className="container">
 
                     {/* Buttons */}
-                    <div className="flex justify-evenly flex-wrap gap-5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
                         {products.map(product => {
                             return (
-                                <button key={product.id} className={(product.id === selectedProduct.id ? 'border-main from-secondary to-main text-white' : 'from-gray-100 via-gray-50 to-white') +  ` bg-gradient bg-gradient-to-br py-3 px-10 rounded-full border border-gray-100 shadow-lg transition-shadow hover:shadow-xl duration-500`}>
+                                <button key={product.id}
+                                    className={(product.id === selectedProduct.id ? 'border-main from-secondary to-main text-white' : 'from-gray-100 via-gray-50 to-white') +  ` w-full bg-gradient bg-gradient-to-br py-3 px-5 rounded-full border border-gray-100 shadow-lg transition-shadow hover:shadow-xl duration-500`}
+                                    onClick={() => setSelectedProduct(product)}
+                                >
                                     <span className="drop-shadow-md">{product.title}</span>
                                 </button>
                             )
@@ -32,7 +35,10 @@ const Portfolio: React.FC = () => {
                         {selectedProduct.items.map(item => {
                             return (
                                 <div key={item}>
-                                    <img src={item} alt={selectedProduct.title} className="max-w-auto md:max-w-[220px] mx-auto" />
+                                    <img src={item}
+                                        alt={selectedProduct.title}
+                                        className="max-w-auto md:max-w-[220px] mx-auto"
+                                    />
                                 </div>
                             )
                         })}
