@@ -26,7 +26,7 @@ const Portfolio: React.FC = () => {
                     </div>
 
                     {/* Intro */}
-                    <p className="py-14 text-xl max-w-5xl mx-auto text-center leading-8 text-gray-600">
+                    <p className="py-14 text-lg lg:text-xl max-w-5xl mx-auto text-center leading-8 text-gray-600">
                         {selectedProduct.intro}
                     </p>
 

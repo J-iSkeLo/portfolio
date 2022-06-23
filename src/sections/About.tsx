@@ -4,6 +4,7 @@ import photo from '../assets/img/me.png'
 import calculateAge from '../modules/calculateAge'
 import { Parallax } from 'react-scroll-parallax'
 import screenIsMobile from '../modules/screenIsMobile'
+import calculateExperience from '../modules/calculateExperience'
 
 const About: React.FC = () => {
     const sectionItems = [
@@ -35,7 +36,7 @@ const About: React.FC = () => {
                         bringing all team members together to reach a common goal on time and under
                         budget.
                         <br /><br />
-                        Android developer with vast experience in
+                        Android developer with <b>{calculateExperience()}</b> years experience in
                         Android Environment (two and a half years of experience). I have an
                         experience of building android application utilizing different
                         Architecture approaches. Conceptualizing app solutions with the
