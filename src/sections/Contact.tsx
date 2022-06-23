@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from '../components/Section/Section'
+import Social from '../components/Social'
 import contacts from '../modules/contactMe'
 
 const Contact: React.FC = () => {
@@ -14,13 +15,19 @@ const Contact: React.FC = () => {
                                     key={contact.title}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="flex items-center gap-x-3 mx-auto md:mx-0"
+                                    className="flex items-center gap-x-3 mx-auto md:mx-0 hover:opacity-75 transition-opacity"
                                 >
                                     {contact.icon}
                                     <span className="text-md">{contact.title}</span>
                                 </a>
                             )
                         })}
+                    </div>
+
+                    <div className="text-center">
+                        <div className="bg-gray-600 py-5 px-10 inline-block mx-auto rounded-full shadow-lg mt-14">
+                            <Social />
+                        </div>
                     </div>
                 </div>
             </Section>
