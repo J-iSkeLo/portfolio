@@ -23,9 +23,17 @@ const Work: React.FC = () => {
                             </Parallax>
                         </div>
                         <div className="text-white text-md md:text-lg leading-7 md:!leading-8 drop-shadow-lg bg-black/10 p-6 rounded-2xl">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero ullam corrupti hic error doloremque quia! Quas dicta cum qui saepe inventore quod, recusandae et accusantium aliquam molestias accusamus quia suscipit sit obcaecati officiis ea ad nemo magni. Quidem voluptates aperiam quod sint est aspernatur similique, nostrum quo quia expedita fugit?
+                            Before Syject came into my life, I worked on a freelance exchange. Even though I had already written
+                            full-fledged projects, I didn't like a lot of this type of work. I've decided to go to work in the
+                            office.
                             <br /><br />
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex libero quas dignissimos, sapiente fugit dolorem tenetur corrupti reprehenderit illum illo harum nam ea! Laudantium sed enim veniam impedit nisi voluptatum corporis molestias doloremque dolore dolores nobis quam expedita reprehenderit pariatur veritatis voluptatibus rem aliquid aliquam numquam officiis, adipisci ex eveniet? Consequuntur culpa repudiandae repellat consequatur eum ea optio velit possimus, veritatis corrupti ratione impedit voluptates quasi odio odit unde.
+                            Syject has become my second home, I always come to work in a good mood and excitement to spend time with
+                            my team. A warm welcome, conversations under a hookah, competitions in video-games are always pleased
+                            and leave only good emotions.
+                            <br /><br />
+                            I have been working in Syject for about 1 year, and it's a great experience with a variety of projects for both
+                            smartphones and watches. We also have our own list of apps, which we're replenishing every month.
+                            I like the way I develop and grow with the team.
                         </div>
                     </div>
                 </div>
