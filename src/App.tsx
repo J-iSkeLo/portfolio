@@ -10,15 +10,28 @@ import Portfolio from './sections/Portfolio'
 import Reviews from './sections/Reviews'
 import Contact from './sections/Contact'
 import Author from './sections/Author'
+import ToTop from './components/ToTop'
 
 const App = () => {
     useEffect(() => {
         smoothLoader('img[data-src]')
     }, [])
 
+    function listenForScrollEvent(): void {
+        const btn = document.getElementById('to-top')
+
+        if (!btn) {
+            console.error(`Cannot find selector #to-top for Go to top button`)
+            return
+        }
+
+        console.log('here');
+        btn.classList.add(document.body.scrollTop > 600 ? 'opacity-70' : 'opacity-0')
+    }
+
     return (
         <ParallaxProvider>
-            <div className="text-gray-700">
+            <div className="text-gray-700" onScroll={listenForScrollEvent}>
                 <Hero />
                 <About />
                 <Skills />
@@ -28,6 +41,7 @@ const App = () => {
                 <Reviews />
                 <Contact />
                 <Author />
+                <ToTop />
             </div>
         </ParallaxProvider>
     )
