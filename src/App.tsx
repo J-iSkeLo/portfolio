@@ -8,6 +8,7 @@ import Personal from './sections/Personal'
 import Work from './sections/Work'
 import Portfolio from './sections/Portfolio'
 import Reviews from './sections/Reviews'
+import Contact from './sections/Contact'
 
 const App = () => {
     useEffect(() => {
@@ -16,7 +17,7 @@ const App = () => {
 
     return (
         <ParallaxProvider>
-            <div className="text-gray-700 pb-[1000px]">
+            <div className="text-gray-700">
                 <Hero />
                 <About />
                 <Skills />
@@ -24,6 +25,7 @@ const App = () => {
                 <Work />
                 <Portfolio />
                 <Reviews />
+                <Contact />
             </div>
         </ParallaxProvider>
     )
