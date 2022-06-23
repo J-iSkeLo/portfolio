@@ -16,7 +16,7 @@ const Portfolio: React.FC = () => {
                     <div className="flex justify-evenly flex-wrap gap-5">
                         {products.map(product => {
                             return (
-                                <button className="py-3 px-10 rounded-full border border-gray-100 shadow-lg bg-gradient bg-gradient-to-br from-gray-100 via-gray-50 to-white transition-shadow hover:shadow-xl duration-500">
+                                <button className={(product.id === selectedProduct.id ? 'border-main from-secondary to-main text-white' : 'from-gray-100 via-gray-50 to-white') +  ` bg-gradient bg-gradient-to-br py-3 px-10 rounded-full border border-gray-100 shadow-lg transition-shadow hover:shadow-xl duration-500`}>
                                     <span className="drop-shadow-md">{product.title}</span>
                                 </button>
                             )
@@ -24,7 +24,7 @@ const Portfolio: React.FC = () => {
                     </div>
 
                     {/* Intro */}
-                    <p className="py-14 text-lg max-w-3xl mx-auto text-center leading-8">
+                    <p className="py-14 text-xl max-w-5xl mx-auto text-center leading-8 text-gray-600">
                         {selectedProduct.intro}
                     </p>
 
