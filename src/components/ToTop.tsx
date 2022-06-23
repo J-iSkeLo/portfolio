@@ -2,28 +2,26 @@ import React, { useEffect } from 'react'
 
 const ToTop: React.FC = () => {
     useEffect(() => {
-        listenForScrollEvent()
-    }, [])
-
-    function listenForScrollEvent(): void {
-        const btn = document.getElementById('to-top')
+        const btn = document.getElementById('to-top') as HTMLButtonElement
 
         if (!btn) {
             console.error(`Cannot find selector #to-top for Go to top button`)
             return
         }
 
-        btn.classList.add(document.body.scrollTop > 600 ? 'opacity-70' : 'opacity-0')
+        showHideButton(btn)
 
-        window.addEventListener('scroll', e => {
-            if (window.scrollY > 600) {
-                btn.classList.remove('opacity-0')
-                btn.classList.add('opacity-60')
-            } else {
-                btn.classList.add('opacity-0')
-                btn.classList.remove('opacity-60')
-            }
-        })
+        window.addEventListener('scroll', e => showHideButton(btn))
+    }, [])
+
+    function showHideButton(btn: HTMLButtonElement): void {
+        if (window.scrollY > 600) {
+            btn.classList.remove('opacity-0')
+            btn.classList.add('opacity-60')
+        } else {
+            btn.classList.add('opacity-0')
+            btn.classList.remove('opacity-60')
+        }
     }
 
     function goToTopHandler(): void {
