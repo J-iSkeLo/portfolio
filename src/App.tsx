@@ -9,6 +9,7 @@ import Work from './sections/Work'
 import Portfolio from './sections/Portfolio'
 import Reviews from './sections/Reviews'
 import Contact from './sections/Contact'
+import Author from './sections/Author'
 
 const App = () => {
     useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
                 <Portfolio />
                 <Reviews />
                 <Contact />
+                <Author />
             </div>
         </ParallaxProvider>
     )
