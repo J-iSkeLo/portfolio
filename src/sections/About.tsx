@@ -3,6 +3,7 @@ import Section from '../components/Section/Section'
 import photo from '../assets/img/me.png'
 import calculateAge from '../modules/calculateAge'
 import { Parallax } from 'react-scroll-parallax'
+import screenIsMobile from '../modules/screenIsMobile'
 
 const About: React.FC = () => {
     const sectionItems = [
@@ -20,8 +21,8 @@ const About: React.FC = () => {
         <div className="container">
             <Section title="About me">
                 <div className="grid gap-12 grid-cols-1 md:grid-cols-[auto_1fr] relative">
-                    <div className="relative">
-                        <Parallax disabled={window.innerWidth < 767} speed={-10} translateY={[-5, 20]}>
+                    <div>
+                        <Parallax disabled={screenIsMobile()} speed={-10} translateY={[-5, 20]}>
                             <img data-src={photo}
                                 alt="Olexiy Chornenkyi"
                                 className="shadow-hero rounded-3xl max-w-full mx-auto"
