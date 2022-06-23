@@ -6,7 +6,7 @@ import About from './sections/About'
 import Skills from './sections/Skills'
 import Personal from './sections/Personal'
 import Work from './sections/Work'
-import Portfolio from './sections/Portfolio'
+import Portfolio from './sections/Portfolio/Portfolio'
 
 const App = () => {
     useEffect(() => {
