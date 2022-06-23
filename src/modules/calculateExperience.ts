@@ -20,27 +20,28 @@ function getDateDiff(): DateDiff {
 }
 
 const calculateExperience = (): string => {
-    let result = '-'
     let { years, months } = getDateDiff()
+    let result = years
 
-    if (months === 0 || months === 1) {
+    if ([0, 1, 2, 3].includes(months)) {
         return `${years}+`
     }
 
-    if ([4, 5, 6, 7, 8].includes(months)) {
+    if ([4, 5, 6, 7].includes(months)) {
         return `${years} and a half`
     }
 
-    if ([9, 10].includes(months)) {
+    if ([8, 9, 10].includes(months)) {
         ++years
         return `almost ${years}`
     }
 
     if ([11, 12].includes(months)) {
         ++years
+        return years.toString()
     }
 
-    return result
+    return result.toString()
 }
 
 export default calculateExperience

@@ -36,7 +36,7 @@ const About: React.FC = () => {
                         bringing all team members together to reach a common goal on time and under
                         budget.
                         <br /><br />
-                        Android developer with <b>{calculateExperience()}</b> years experience in
+                        Android developer with <b>{calculateExperience()} years</b> experience in
                         Android Environment (two and a half years of experience). I have an
                         experience of building android application utilizing different
                         Architecture approaches. Conceptualizing app solutions with the
