@@ -5,15 +5,28 @@ const Navbar: React.FC = () => {
     const commonHamburgerStyles = ' bg-white h-[3px] w-6 rounded-full transition-transform duration-500'
 
     const links = [
-        { title: 'About', link: '#about' },
-        { title: 'Skills', link: '#skill' },
-        { title: 'Personal skills', link: '#personal' },
-        { title: 'Portfolio', link: '#portfolio' },
-        { title: 'Contact', link: '#contact' },
+        { title: 'About me', target: '#about' },
+        { title: 'Skills', target: '#skills' },
+        { title: 'Personal skills', target: '#personal' },
+        { title: 'My work', target: '#work' },
+        { title: 'Portfolio', target: '#portfolio' },
+        { title: 'Reviews', target: '#reviews' },
+        { title: 'Contact', target: '#contact' },
     ]
 
     function showNavbarHandler(): void {
         setIsOpened(!isOpened)
+    }
+
+    function anchorHandler(e: React.MouseEvent<HTMLButtonElement>, targetSelector: string): void {
+        const targetElem = document.querySelector(targetSelector)
+
+        if (!targetElem) {
+            console.error(`Cannot find target selector ${targetSelector} for scrolling`)
+            return
+        }
+
+        targetElem.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
 
     return (
@@ -29,14 +42,14 @@ const Navbar: React.FC = () => {
                 </button>
             </div>
 
-            <div className={`${isOpened ? 'mt-6 h-60 border-t pt-6' : 'h-0'} md:static md:h-full overflow-hidden border-white/20 transition-all duration-500`}>
+            <div className={`${isOpened ? 'mt-6 h-[270px] border-t pt-6' : 'h-0'} md:static md:h-full overflow-hidden lg:overflow-visible border-white/20 transition-all duration-500`}>
                 <ul className="flex flex-col md:flex-row justify-end space-y-3 md:space-y-0 md:space-x-6 uppercase text-md lg:text-sm">
                     {links.map(l => {
                         return <li key={l.title}>
                             <button
                                 type="button"
-                                data-target={l.link}
                                 className="drop-shadow-font hover:drop-shadow-font-hover transition uppercase"
+                                onClick={e => anchorHandler(e, l.target)}
                             >
                                 {l.title}
                             </button>

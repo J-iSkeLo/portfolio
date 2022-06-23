@@ -6,7 +6,7 @@ import personalSkills from '../modules/personalSkills'
 
 const Personal: React.FC = () => {
     return (
-        <div className="px-7">
+        <div className="px-7" id="personal">
             <Section title="Personal skills">
                 <div className="container">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

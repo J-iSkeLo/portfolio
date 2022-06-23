@@ -6,7 +6,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 const Contact: React.FC = () => {
     return (
-        <div className="px-7">
+        <div className="px-7" id="contact">
             <Section title="Contact me">
                 <div className="container">
                     <div className="flex flex-col md:flex-row align-center justify-center gap-y-8 gap-x-14">

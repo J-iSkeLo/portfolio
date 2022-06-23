@@ -8,7 +8,7 @@ import screenIsMobile from '../modules/screenIsMobile'
 
 const Work: React.FC = () => {
     return (
-        <div>
+        <div id="work">
             <Section title="My work"
                 layers={[
                     { image: skyImage, speed: -20 },

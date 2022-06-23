@@ -19,7 +19,7 @@ const About: React.FC = () => {
     ]
 
     return (
-        <div className="container">
+        <div className="container" id="about">
             <Section title="About me">
                 <div className="grid gap-12 grid-cols-1 md:grid-cols-[auto_1fr] relative">
                     <div>

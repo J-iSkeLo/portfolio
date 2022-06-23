@@ -7,7 +7,7 @@ const Portfolio: React.FC = () => {
     const [selectedProduct, setSelectedProduct] = useState<ProductType>(products[0])
 
     return (
-        <div className="px-7">
+        <div className="px-7" id="portfolio">
             <Section title="Portfolio">
                 <div className="container">
 
