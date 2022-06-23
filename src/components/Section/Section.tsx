@@ -16,7 +16,7 @@ const Section: React.FC<Props> = ({ children, title, layers }) => {
             disabled={!layers}
             className="relative"
         >
-            {layers ? <div className="bg-gradient bg-gradient-to-br from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-75"></div> : ''}
+            {layers ? <div className="bg-gradient bg-gradient-to-br from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-80"></div> : ''}
 
             <div className="py-16 md:py-24">
                 {title ? <Title title={title} isLight={!!layers} /> : ''}
