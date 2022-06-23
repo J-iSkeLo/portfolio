@@ -32,18 +32,20 @@ const About: React.FC = () => {
                     </div>
                     <div className="text-lg md:text-xl lg:!leading-9 text-gray-600">
                         Analytical and detail oriented Android app
-                        developer professional with stellar communication skills. Adapted at
+                        developer, professional with stellar communication skills. Adapted at
                         bringing all team members together to reach a common goal on time and under
                         budget.
                         <br /><br />
-                        Android developer with <b>{calculateExperience()} years</b> experience in
-                        Android Environment (two and a half years of experience). I have an
+                        Android developer with <b>{calculateExperience()} years</b> of experience in
+                        Android Environment. I have an
                         experience of building android application utilizing different
                         Architecture approaches. Conceptualizing app solutions with the
                         latest technology, design theory, and a large dose of creativity.
-                        Committed to viable and easily functional app solutions for clients.
-                        I am constantly developing as a developer and knowledgeable in
-                        practical usage of new technologies.
+                        <br /><br />
+                        I'm fully committed to work on fast, optimized and easily functional
+                        apps to make each client satisfied with the end product.
+                        I am constantly working on myself as a developer and a team member to stay
+                        knowledgeable and professional.
 
                         <div className="flex flex-col md:flex-row w-full pl-[20px] pr-[20px] rounded-md border border-dashed border-gray-300 mt-8">
                             {sectionItems.map((sect, index) => {
