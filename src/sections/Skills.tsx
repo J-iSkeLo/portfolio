@@ -10,14 +10,16 @@ const Skills: React.FC = () => {
     return (
         <div>
             <Section title="Skills" layers={[{ image: bgImage, speed: -20 }]}>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-7">
-                    {images.map((img: string) => {
-                        return (
-                            <div key={img}>
-                                <img data-src={img} alt="technology" className="shadow-lg rounded-2xl" />
-                            </div>
-                        )
-                    })}
+                <div className="container">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                        {images.map((img: string) => {
+                            return (
+                                <div key={img}>
+                                    <img data-src={img} alt="technology" className="shadow-lg rounded-2xl" />
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
             </Section>
         </div>
