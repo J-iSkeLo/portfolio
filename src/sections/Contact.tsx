@@ -2,6 +2,7 @@ import React from 'react'
 import Section from '../components/Section/Section'
 import Social from '../components/Social'
 import contacts from '../modules/contactMe'
+import { Parallax } from 'react-scroll-parallax'
 
 const Contact: React.FC = () => {
     return (
@@ -24,11 +25,13 @@ const Contact: React.FC = () => {
                         })}
                     </div>
 
-                    <div className="text-center">
-                        <div className="bg-gray-600 py-5 px-10 inline-block mx-auto rounded-full shadow-lg mt-14">
-                            <Social />
+                    <Parallax speed={-10} translateY={[-30, 100]}>
+                        <div className="text-center">
+                            <div className="bg-gray-600 py-5 px-10 inline-block mx-auto rounded-full shadow-lg mt-10 lg:mt-14">
+                                <Social />
+                            </div>
                         </div>
-                    </div>
+                    </Parallax>
                 </div>
             </Section>
         </div>
