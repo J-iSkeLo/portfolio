@@ -14,7 +14,7 @@ const About: React.FC = () => {
         ],
         [
             { label: 'Job title', value: 'Android developer' },
-            { label: 'Location', value: 'Ukraine, Kharkiv' },
+            { label: 'Location', value: '🇺🇦 Ukraine, Kharkiv' },
         ],
     ]
 
@@ -51,7 +51,7 @@ const About: React.FC = () => {
                             {sectionItems.map((sect, index) => {
                                 return <section key={index} className="md:mr-[30px] md:pr-[30px] md:border-r border-r-dashed border-gray-300 last:border-none py-[20px] flex-1">
                                     {sect.map((item, i) => {
-                                        return <div key={i} className="text-sm flex justify-between relative mb-2 last:mb-0">
+                                        return <div key={i} className="text-[.8em] flex justify-between relative mb-2 last:mb-0">
                                             <h4 className="uppercase pr-4 bg-white">{item.label}</h4>
                                             <b className="block absolute left-1 right-1 top-1/2 border-b border-dashed border-b-gray-300 -z-10"></b>
                                             <h4 className="bg-white pl-4 font-bold text-gray-500">{item.value}</h4>

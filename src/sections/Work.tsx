@@ -10,10 +10,7 @@ const Work: React.FC = () => {
     return (
         <div id="work">
             <Section title="My work"
-                layers={[
-                    { image: skyImage, speed: -20 },
-                    { image: bgImage, speed: -5 },
-                ]}
+                layers={[{ image: skyImage, speed: -20 }, { image: bgImage, speed: -5 }]}
             >
                 <div className="container">
                     <div className="flex flex-col md:flex-row items-center gap-7">
