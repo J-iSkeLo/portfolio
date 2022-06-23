@@ -4,3 +4,10 @@ export interface Product {
     intro: string
     items: string[]
 }
+
+export interface Review {
+    img: string
+    name: string
+    companyName: string
+    review: string
+}
