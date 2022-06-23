@@ -6,7 +6,7 @@ import thinking from '../assets/img/personal/thinking.png'
 import { Parallax } from 'react-scroll-parallax'
 import screenIsMobile from '../modules/screenIsMobile'
 
-const Skills: React.FC = () => {
+const Personal: React.FC = () => {
     const sections = [
         {
             img: communication,
@@ -57,4 +57,4 @@ const Skills: React.FC = () => {
     )
 }
 
-export default Skills
+export default Personal

@@ -6,7 +6,7 @@ import photo from '../assets/img/me-2.jpg'
 import { Parallax } from 'react-scroll-parallax'
 import screenIsMobile from '../modules/screenIsMobile'
 
-const Skills: React.FC = () => {
+const Work: React.FC = () => {
     return (
         <div>
             <Section title="My work"
@@ -37,4 +37,4 @@ const Skills: React.FC = () => {
     )
 }
 
-export default Skills
+export default Work
