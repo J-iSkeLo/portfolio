@@ -1,10 +1,13 @@
 import React from 'react'
 import Section from '../components/Section/Section'
-import { Parallax } from 'react-scroll-parallax'
-import screenIsMobile from '../modules/screenIsMobile'
+import { useParallax } from 'react-scroll-parallax'
 import personalSkills from '../modules/personalSkills'
 
 const Personal: React.FC = () => {
+    personalSkills[0].parallax = useParallax<HTMLDivElement>({ rotateY: [0, 480] })
+    personalSkills[1].parallax = useParallax<HTMLDivElement>({ rotateY: [0, 480] })
+    personalSkills[2].parallax = useParallax<HTMLDivElement>({ rotateY: [0, 480] })
+
     return (
         <div className="px-7" id="personal">
             <Section title="Personal skills">
@@ -13,20 +16,19 @@ const Personal: React.FC = () => {
                         {personalSkills.map(skill => {
                             return (
                                 <div className="px-5 pb-3 text-center" key={skill.title}>
-                                    <Parallax disabled={screenIsMobile()} speed={5}>
-                                        <img src={skill.img}
-                                            alt={skill.title}
-                                            className="mx-auto drop-shadow-lg"
-                                        />
+                                    <img src={skill.img}
+                                        alt={skill.title}
+                                        className="mx-auto drop-shadow-lg"
+                                        ref={skill.parallax.ref}
+                                    />
 
-                                        <h3 className="my-6 text-xl font-bold text-center uppercase drop-shadow-md">
-                                            {skill.title}
-                                        </h3>
+                                    <h3 className="my-6 text-xl font-bold text-center uppercase drop-shadow-md">
+                                        {skill.title}
+                                    </h3>
 
-                                        <p className="text-gray-500 leading-7 drop-shadow-md">
-                                            {skill.intro}
-                                        </p>
-                                    </Parallax>
+                                    <p className="text-gray-500 leading-7 drop-shadow-md">
+                                        {skill.intro}
+                                    </p>
                                 </div>
                             )
                         })}
