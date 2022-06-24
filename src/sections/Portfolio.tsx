@@ -32,15 +32,17 @@ const Portfolio: React.FC = () => {
 
                     {/* Items */}
                     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 lg:gap-6">
-                        {selectedProduct.items.map(item => {
-                            return (
-                                <div key={item}>
-                                    <img src={item}
-                                        alt={selectedProduct.title}
-                                        className="max-w-auto md:max-w-[220px] mx-auto"
-                                    />
-                                </div>
-                            )
+                        {products.map(product => {
+                            return product.items.map(item => {
+                                return (
+                                    <div key={item}>
+                                        <img data-src={item}
+                                            alt={product.title}
+                                            className={`${selectedProduct.id === product.id ? '' : 'hidden'} max-w-auto md:max-w-[220px] mx-auto`}
+                                        />
+                                    </div>
+                                )
+                            })
                         })}
                     </div>
                 </div>
