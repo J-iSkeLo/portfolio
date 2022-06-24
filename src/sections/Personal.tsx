@@ -16,7 +16,7 @@ const Personal: React.FC = () => {
                         {personalSkills.map(skill => {
                             return (
                                 <div className="px-5 pb-3 text-center" key={skill.title}>
-                                    <img data-src={skill.img}
+                                    <img src={skill.img}
                                         alt={skill.title}
                                         className="mx-auto drop-shadow-lg"
                                         ref={skill.parallax.ref}

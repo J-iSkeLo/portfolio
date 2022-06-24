@@ -1,6 +1,4 @@
-import { useEffect } from 'react'
 import { ParallaxProvider } from 'react-scroll-parallax';
-import smoothLoader from 'smooth-loader'
 import Hero from './sections/Hero'
 import About from './sections/About'
 import Skills from './sections/Skills'
@@ -13,10 +11,6 @@ import Author from './sections/Author'
 import ToTop from './components/ToTop'
 
 const App = () => {
-    useEffect(() => {
-        smoothLoader('img[data-src]')
-    }, [])
-
     function listenForScrollEvent(): void {
         const btn = document.getElementById('to-top')
 

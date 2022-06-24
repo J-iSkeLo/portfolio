@@ -15,7 +15,7 @@ const Skills: React.FC = () => {
                         {images.map((img: string) => {
                             return (
                                 <div key={img}>
-                                    <img data-src={img} alt="technology" className="shadow-lg rounded-2xl" />
+                                    <img src={img} alt="technology" className="shadow-lg rounded-2xl" />
                                 </div>
                             )
                         })}
