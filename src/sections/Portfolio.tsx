@@ -2,9 +2,26 @@ import React, { useState } from 'react'
 import Section from '../components/Section/Section'
 import products from '../modules/products'
 import { Product as ProductType } from '../types/types'
+import screenIsMobile from '../modules/screenIsMobile'
 
 const Portfolio: React.FC = () => {
     const [selectedProduct, setSelectedProduct] = useState<ProductType>(products[0])
+
+    function zoomImageInHandler(e: React.MouseEvent<HTMLImageElement>): void {
+        if (!screenIsMobile()) {
+            return
+        }
+
+        const elem = e.target as HTMLImageElement
+        const zoomClasses = ['fixed', 'left-[5%]', 'right-[5%]', 'w-auto', 'top-[30px]', 'h-[calc(100vh-60px)]']
+
+        if (elem.classList.contains('fixed')) {
+            zoomClasses.forEach(cl => elem.classList.remove(cl))
+            return
+        }
+
+        zoomClasses.forEach(cl => elem.classList.add(cl))
+    }
 
     return (
         <div className="lg:px-7" id="portfolio">
@@ -35,10 +52,11 @@ const Portfolio: React.FC = () => {
                         {products.map(product => {
                             return product.items.map(item => {
                                 return (
-                                    <div key={item}>
+                                    <div key={item} className={selectedProduct.id === product.id ? '' : 'hidden'}>
                                         <img data-src={item}
                                             alt={product.title}
-                                            className={`${selectedProduct.id === product.id ? '' : 'hidden'} max-w-auto md:max-w-[220px] mx-auto`}
+                                            className="max-w-auto md:max-w-[220px] mx-auto"
+                                            onClick={zoomImageInHandler}
                                         />
                                     </div>
                                 )
