@@ -16,7 +16,7 @@ const Portfolio: React.FC = () => {
                         {products.map(product => {
                             return (
                                 <button key={product.id}
-                                    className={(product.id === selectedProduct.id ? 'border-main from-secondary to-main text-white' : 'from-gray-100 via-gray-50 to-white') +  ` w-full bg-gradient bg-gradient-to-br py-3 px-5 rounded-full border border-gray-100 shadow-lg transition-shadow hover:shadow-xl duration-500`}
+                                    className={(product.id === selectedProduct.id ? '!border-main from-secondary to-main text-white' : 'from-gray-100 via-gray-50 to-white') +  ` w-full bg-gradient bg-gradient-to-br py-3 px-5 rounded-full border border-gray-100 shadow-lg transition-shadow hover:shadow-xl duration-500`}
                                     onClick={() => setSelectedProduct(product)}
                                 >
                                     <span className="drop-shadow-md">{product.title}</span>
