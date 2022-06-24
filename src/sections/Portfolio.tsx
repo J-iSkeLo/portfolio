@@ -7,7 +7,7 @@ const Portfolio: React.FC = () => {
     const [selectedProduct, setSelectedProduct] = useState<ProductType>(products[0])
 
     return (
-        <div className="px-7" id="portfolio">
+        <div className="lg:px-7" id="portfolio">
             <Section title="Portfolio">
                 <div className="container">
 
@@ -31,7 +31,7 @@ const Portfolio: React.FC = () => {
                     </p>
 
                     {/* Items */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 lg:gap-6">
                         {selectedProduct.items.map(item => {
                             return (
                                 <div key={item}>
