@@ -5,6 +5,7 @@ import skyImage from '../assets/img/backgrounds/sky.png'
 import photo from '../assets/img/me-2.jpg'
 import { Parallax } from 'react-scroll-parallax'
 import screenIsMobile from '../modules/screenIsMobile'
+import calculateExperience from '../modules/calculateExperience'
 
 const Work: React.FC = () => {
     return (
@@ -31,7 +32,7 @@ const Work: React.FC = () => {
                             my team. A warm welcome, conversations under a hookah, competitions in video-games are always pleased
                             and leave only good emotions.
                             <br /><br />
-                            I have been working in Syject for about 1 year, and it's a great experience with a variety of projects for both
+                            I have been working in Syject for <b>{calculateExperience('2021-06-29')} years</b> year, and it's a great experience with a variety of projects for both
                             smartphones and watches. We also have our own list of apps, which we're replenishing every month.
                             I like the way I develop and grow with the team.
                         </div>

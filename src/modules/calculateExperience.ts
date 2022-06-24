@@ -3,9 +3,9 @@ type DateDiff = {
     months: number
 }
 
-function getDateDiff(): DateDiff {
+function getDateDiff(beginningDate: string): DateDiff {
     const today = new Date()
-    const careerStarted = new Date('2020-09-01')
+    const careerStarted = new Date(beginningDate)
 
     let months = (today.getFullYear() - careerStarted.getFullYear()) * 12
     months -= careerStarted.getMonth()
@@ -19,8 +19,8 @@ function getDateDiff(): DateDiff {
     }
 }
 
-const calculateExperience = (): string => {
-    let { years, months } = getDateDiff()
+const calculateExperience = (beginningDate: string): string => {
+    let { years, months } = getDateDiff(beginningDate)
     let result = years
 
     if ([0, 1, 2, 3].includes(months)) {
