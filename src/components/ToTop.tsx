@@ -15,11 +15,13 @@ const ToTop: React.FC = () => {
     }, [])
 
     function showHideButton(btn: HTMLButtonElement): void {
-        if (window.scrollY > 600) {
+        if (window.scrollY > 1000) {
             btn.classList.remove('opacity-0')
+            btn.classList.remove('pointer-events-none')
             btn.classList.add('opacity-60')
         } else {
             btn.classList.add('opacity-0')
+            btn.classList.add('pointer-events-none')
             btn.classList.remove('opacity-60')
         }
     }
@@ -34,7 +36,7 @@ const ToTop: React.FC = () => {
     return (
         <div>
             <button type="button"
-                className="fixed bottom-6 right-6 z-20 bg-main p-2 rounded-full shadow-hero opacity-0 transition-opacity duration-1000"
+                className="fixed bottom-6 right-6 z-20 bg-main p-2 rounded-full shadow-hero opacity-0 transition-opacity duration-500"
                 onClick={goToTopHandler}
                 id="to-top"
             >
