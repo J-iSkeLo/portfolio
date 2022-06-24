@@ -13,7 +13,7 @@ const Portfolio: React.FC = () => {
         }
 
         const elem = e.target as HTMLImageElement
-        const zoomClasses = ['fixed', 'left-[5%]', 'right-[5%]', 'w-auto', 'top-[30px]', 'h-[calc(100vh-60px)]']
+        const zoomClasses = ['fixed', 'left-[5%]', 'right-[5%]', 'w-auto', 'top-[50px]', 'h-[calc(100vh-100px)]', 'z-40']
 
         if (elem.classList.contains('fixed')) {
             zoomClasses.forEach(cl => elem.classList.remove(cl))
