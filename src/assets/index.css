@@ -7,4 +7,12 @@
         --color-main: #0090d0;
         --color-secondary: #7a6ed1;
     }
+
+    button:focus {
+        outline: none !important;
+    }
+
+    button:active {
+        outline: none !important;
+    }
 }
