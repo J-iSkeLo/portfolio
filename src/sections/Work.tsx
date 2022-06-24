@@ -22,8 +22,8 @@ const Work: React.FC = () => {
                                 />
                             </Parallax>
                         </div>
-                        <div className="text-white text-md md:text-lg leading-7 md:!leading-8 drop-shadow-lg bg-black/10 p-6 rounded-2xl">
-                            Before Syject came into my life, I worked on a freelance exchange. Even though I had already written
+                        <div className="text-white text-md md:text-lg leading-7 md:!leading-8 drop-shadow-lg bg-black/20 p-6 rounded-2xl">
+                            Before Syject came into my life, I worked on a freelance platform. Even though I had already written
                             full-fledged projects, I didn't like a lot of this type of work. I've decided to go to work in the
                             office.
                             <br /><br />
