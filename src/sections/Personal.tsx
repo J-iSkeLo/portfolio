@@ -15,8 +15,8 @@ const Personal: React.FC = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {personalSkills.map(skill => {
                             return (
-                                <div className="px-5 pb-3 text-center" key={skill.title}>
-                                    <img src={skill.img}
+                                <div className="min-h-[90px] px-5 pb-3 text-center" key={skill.title}>
+                                    <img data-src={skill.img}
                                         alt={skill.title}
                                         className="mx-auto drop-shadow-lg"
                                         ref={skill.parallax.ref}

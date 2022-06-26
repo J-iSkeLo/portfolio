@@ -48,12 +48,12 @@ const Portfolio: React.FC = () => {
                     </p>
 
                     {/* Items */}
-                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 lg:gap-6">
+                    <div className="min-h-[450px] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 lg:gap-6">
                         {products.map(product => {
                             return product.items.map(item => {
                                 return (
                                     <div key={item} className={selectedProduct.id === product.id ? '' : 'hidden'}>
-                                        <img src={item}
+                                        <img data-src={item}
                                             alt={product.title}
                                             className="max-w-auto md:max-w-[220px] mx-auto"
                                             onClick={zoomImageInHandler}

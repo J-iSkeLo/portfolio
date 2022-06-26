@@ -17,9 +17,9 @@ const Work: React.FC = () => {
                     <div className="flex flex-col md:flex-row items-center gap-7">
                         <div>
                             <Parallax disabled={screenIsMobile()} speed={3}>
-                                <img src={photo}
+                                <img data-src={photo}
                                     alt="Olexiy Chornenkyi"
-                                    className="max-w-xs rounded-2xl shadow-hero"
+                                    className="max-w-xs rounded-2xl shadow-hero min-h-[370px]"
                                 />
                             </Parallax>
                         </div>
