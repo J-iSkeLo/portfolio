@@ -17,7 +17,7 @@ const Social: React.FC = (props) => {
             {links.map(l => {
                 return <li key={l.title}>
                     <a href={l.link} title={l.title} className="drop-shadow-font hover:drop-shadow-font-hover transition-all">
-                        <img src={l.icon} alt={l.title} className="w-[22px]" />
+                        <img src={l.icon} alt={l.title} width="22" height="22" />
                     </a>
                 </li>
             })}

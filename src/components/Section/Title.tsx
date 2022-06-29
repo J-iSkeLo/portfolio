@@ -15,6 +15,8 @@ const Title: React.FC<Props> = ({ title, isLight }) => {
 
         <img src={isLight ? decorWhite : decor}
             alt="Decoration"
+            width="70"
+            height="9"
             className="text-center mx-auto mt-6 mb-10 md:mb-14 relative"
         />
     </>

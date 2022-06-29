@@ -19,6 +19,8 @@ const Work: React.FC = () => {
                             <Parallax disabled={screenIsMobile()} speed={3}>
                                 <img data-src={photo}
                                     alt="Olexiy Chornenkyi"
+                                    width="320"
+                                    height="370"
                                     className="max-w-xs rounded-2xl shadow-hero min-h-[370px]"
                                 />
                             </Parallax>

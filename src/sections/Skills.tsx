@@ -16,6 +16,8 @@ const Skills: React.FC = () => {
                             return (
                                 <div key={img}>
                                     <img data-src={img}
+                                        width="284"
+                                        height="122"
                                         alt="technology"
                                         className="shadow-lg rounded-2xl"
                                     />

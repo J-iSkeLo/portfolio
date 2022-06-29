@@ -18,6 +18,8 @@ const Personal: React.FC = () => {
                                 <div className="min-h-[90px] px-5 pb-3 text-center" key={skill.title}>
                                     <img data-src={skill.img}
                                         alt={skill.title}
+                                        width="90"
+                                        height="90"
                                         className="mx-auto drop-shadow-lg"
                                         ref={skill.parallax.ref}
                                     />

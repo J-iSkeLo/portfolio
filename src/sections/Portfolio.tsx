@@ -54,6 +54,8 @@ const Portfolio: React.FC = () => {
                                 return (
                                     <div key={item} className={selectedProduct.id === product.id ? '' : 'hidden'}>
                                         <img data-src={item}
+                                            width="220"
+                                            height="468"
                                             alt={product.title}
                                             className="max-w-auto md:max-w-[220px] mx-auto"
                                             onClick={zoomImageInHandler}
