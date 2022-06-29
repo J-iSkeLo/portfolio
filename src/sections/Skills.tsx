@@ -1,10 +1,10 @@
 import React from 'react'
 import Section from '../components/Section/Section'
-import bgImage from '../assets/img/backgrounds/skill.jpeg'
+import bgImage from '../assets/img/backgrounds/skill.webp'
 
 const importAll = (r: any) => r.keys().map(r)
 // @ts-ignore
-const images = importAll(require.context('../assets/img/skills', false, /\.png$/))
+const images = importAll(require.context('../assets/img/skills', false, /\.webp$/))
 
 const Skills: React.FC = () => {
     return (

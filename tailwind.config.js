@@ -15,9 +15,6 @@ module.exports = {
             },
             backgroundImage: {
                 hero: "url('/src/assets/img/backgrounds/hero.jpg')",
-                reviews: "url('/src/assets/img/backgrounds/reviews.png')",
-                skill: "url('/src/assets/img/backgrounds/skill.jpeg')",
-                tech: "url('/src/assets/img/backgrounds/tech.jpeg')",
                 'main-btn': 'linear-gradient(-45deg, #ffa63d, #ff3d77, #7033ff, #3cf0c5)',
             },
             boxShadow: {
