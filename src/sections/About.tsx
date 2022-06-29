@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../components/Section/Section'
-import photo from '../assets/img/me.png'
+import photo from '../assets/img/me.webp'
 import calculateAge from '../modules/calculateAge'
 import { Parallax } from 'react-scroll-parallax'
 import screenIsMobile from '../modules/screenIsMobile'

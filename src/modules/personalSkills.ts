@@ -1,6 +1,6 @@
-import adaptability from '../assets/img/personal/adaptability.png'
-import communication from '../assets/img/personal/communication.png'
-import thinking from '../assets/img/personal/thinking.png'
+import adaptability from '../assets/img/personal/adaptability.webp'
+import communication from '../assets/img/personal/communication.webp'
+import thinking from '../assets/img/personal/thinking.webp'
 import { PersonalSkill } from '../types/types'
 
 const personalSkills: PersonalSkill[] = [
