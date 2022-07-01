@@ -25,7 +25,7 @@ const contacts = [
     {
         icon: location,
         title: 'Ukraine, Kharkiv',
-        href: '#',
+        href: 'https://goo.gl/maps/LcY7oE2SpdXF4xcHA',
     },
 ]
 
