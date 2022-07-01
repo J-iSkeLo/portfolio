@@ -16,7 +16,11 @@ const Social: React.FC = (props) => {
         <ul className="relative flex gap-x-7">
             {links.map(l => {
                 return <li key={l.title}>
-                    <a href={l.link} title={l.title} className="drop-shadow-font hover:drop-shadow-font-hover transition-all">
+                    <a
+                        href={l.link}
+                        title={l.title}
+                        className="drop-shadow-font hover:drop-shadow-font-hover transition-all"
+                    >
                         <img src={l.icon} alt={l.title} width="22" height="22" />
                     </a>
                 </li>
