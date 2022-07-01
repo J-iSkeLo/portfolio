@@ -8,11 +8,11 @@ const Author: React.FC = () => {
                 <a href="https://serhii.io"
                     target="_blank"
                     rel="noreferrer"
-                    className="text-center uppercase drop-shadow-[2px_8px_2px_rgb(0_0_0/50%)] hover:drop-shadow-[8px_16px_2px_rgb(0_0_0/50%)] inline-block transition-all hover:-translate-y-1 duration-500"
+                    className="text-center uppercase drop-shadow-[2px_8px_2px_rgb(0_0_0/50%)] hover:drop-shadow-[8px_16px_2px_rgb(0_0_0/50%)] inline-block transition-all hover:-translate-y-1 duration-500 relative"
                 >
-                    <span className="block text-gray-400 tracking-widest text-xs lg:text-sm">Разработка сайта</span>
+                    <span className="block text-gray-400 tracking-widest text-xs lg:text-sm">Made by</span>
 
-                    <div className="inline-flex font-bold tracking-widest text-sm lg:text-md relative">
+                    <div className="inline-flex font-bold tracking-widest text-sm lg:text-md relative translate-y-[-5px]">
                         <div className="absolute h-[1px] -left-12 top-1/2 w-10 bg-gray-500"></div>
                         <div className="absolute h-[1px] -right-12 top-1/2 w-10 bg-gray-500"></div>
 
