@@ -14,7 +14,7 @@ const reviews: Review[] = [
         img: aquaImage,
         name: 'Evgeniy',
         companyName: 'Aqua-M',
-        review: `Many thanks to Olexiy for developing the application. Thanks to its implementation, orders from customers come in the form of invoices, article numbers of goods are taken into account, there is a separation according to invoices from different warehouses`,
+        review: `We would like to thank Olexiy for the offer to make an app for our business. This allowed us to update and send information to our customers more quickly. Orders from customers began to arrive much more often, all of them immediately noted the convenience of using the app. In general, the application allowed us to increase sales volumes and effectively use the working time of the sales department. We were satisfied with the result, we can recommend Olexiy 👍`,
     },
     {
         img: zooImage,
