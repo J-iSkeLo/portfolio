@@ -35,8 +35,9 @@ const ToTop: React.FC = () => {
 
     return (
         <div>
-            <button type="button"
-                className="fixed bottom-6 right-6 z-20 bg-main p-2 rounded-full shadow-hero opacity-0 transition-opacity duration-500"
+            <button
+                type="button"
+                className="fixed bottom-6 right-6 z-20 bg-main p-2 rounded-full shadow-hero opacity-0 transition-all duration-500 hover:scale-110"
                 onClick={goToTopHandler}
                 id="to-top"
             >
