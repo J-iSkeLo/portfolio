@@ -29,8 +29,19 @@ import aqua2 from '../assets/img/portfolio/aqua/2.png'
 import aqua3 from '../assets/img/portfolio/aqua/3.png'
 import aqua4 from '../assets/img/portfolio/aqua/4.png'
 import aqua5 from '../assets/img/portfolio/aqua/5.png'
+import todoNotes1 from '../assets/img/portfolio/todo-notes/1.png'
+import todoNotes2 from '../assets/img/portfolio/todo-notes/2.png'
+import todoNotes3 from '../assets/img/portfolio/todo-notes/3.png'
+import todoNotes4 from '../assets/img/portfolio/todo-notes/4.png'
+import todoNotes5 from '../assets/img/portfolio/todo-notes/5.png'
 
 const products: Product[] = [
+    {
+        id: 'todo-notes',
+        title: 'To-Do Notes',
+        intro: 'To-Do Notes is a smart to-do list for everyday use.',
+        items: [todoNotes1, todoNotes2, todoNotes3, todoNotes4, todoNotes5],
+    },
     {
         id: 'zoo',
         title: 'Zoo Zoo Zoo',

@@ -25,7 +25,6 @@ const App = () => {
             return
         }
 
-        console.log('here');
         btn.classList.add(document.body.scrollTop > 600 ? 'opacity-70' : 'opacity-0')
     }
 
