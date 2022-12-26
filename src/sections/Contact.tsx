@@ -12,7 +12,8 @@ const Contact: React.FC = () => {
                     <div className="flex flex-col md:flex-row align-center justify-center gap-y-8 gap-x-14">
                         {contacts.map(contact => {
                             return (
-                                <a href={contact.href}
+                                <a
+                                    href={contact.href}
                                     key={contact.title}
                                     target="_blank"
                                     rel="noreferrer"

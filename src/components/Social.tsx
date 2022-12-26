@@ -20,6 +20,8 @@ const Social: React.FC = (props) => {
                         href={l.link}
                         title={l.title}
                         className="drop-shadow-font hover:drop-shadow-font-hover transition-all"
+                        target="_blank"
+                        rel="noreferrer"
                     >
                         <img src={l.icon} alt={l.title} width="22" height="22" />
                     </a>
