@@ -5,7 +5,6 @@ import skyImage from '@/assets/img/backgrounds/sky.webp'
 import photo from '@/assets/img/me-2.jpg'
 import { Parallax } from 'react-scroll-parallax'
 import screenIsMobile from '@/modules/screenIsMobile'
-import calculateExperience from '@/modules/calculateExperience'
 
 const Work: React.FC = () => {
     return (
