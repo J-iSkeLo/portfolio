@@ -52,12 +52,15 @@ const Portfolio: React.FC = () => {
                         {products.map(product => {
                             return product.items.map(item => {
                                 return (
-                                    <div key={item} className={selectedProduct.id === product.id ? '' : 'hidden'}>
+                                    <div
+                                        key={item}
+                                        className={`transition-transform hover:scale-110 duration-300 ${selectedProduct.id === product.id ? '' : 'hidden'}`}
+                                    >
                                         <img data-src={item}
                                             width="220"
                                             height="468"
                                             alt={product.title}
-                                            className="max-w-auto md:max-w-[220px] mx-auto"
+                                            className="max-w-auto md:max-w-[220px] mx-auto drop-shadow-md"
                                             onClick={zoomImageInHandler}
                                         />
                                     </div>
