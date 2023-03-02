@@ -2,9 +2,20 @@ import React from 'react'
 import Section from '@/components/Section/Section'
 import bgImage from '@/assets/img/backgrounds/skill.webp'
 
-const importAll = (r: any) => r.keys().map(r)
-// @ts-ignore
-const images = importAll(require.context('../assets/img/skills', false, /\.webp$/))
+const images = [
+    require('@/assets/img/skills/1.webp'),
+    require('@/assets/img/skills/2.webp'),
+    require('@/assets/img/skills/3.webp'),
+    require('@/assets/img/skills/4.webp'),
+    require('@/assets/img/skills/5.webp'),
+    require('@/assets/img/skills/6.webp'),
+    require('@/assets/img/skills/7.webp'),
+    require('@/assets/img/skills/8.webp'),
+    require('@/assets/img/skills/9.webp'),
+    require('@/assets/img/skills/10.webp'),
+    require('@/assets/img/skills/11.webp'),
+    require('@/assets/img/skills/12.webp'),
+]
 
 const Skills: React.FC = () => {
     return (
@@ -15,7 +26,8 @@ const Skills: React.FC = () => {
                         {images.map((img: string) => {
                             return (
                                 <div key={img}>
-                                    <img data-src={img}
+                                    <img
+                                        data-src={img}
                                         width="284"
                                         height="122"
                                         alt="technology"
