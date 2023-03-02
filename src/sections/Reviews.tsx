@@ -1,7 +1,7 @@
 import React from 'react'
-import Section from '../components/Section/Section'
-import reviews from '../modules/reviews'
-import bgImage from '../assets/img/backgrounds/reviews.webp'
+import Section from '@/components/Section/Section'
+import reviews from '@/modules/reviews'
+import bgImage from '@/assets/img/backgrounds/reviews.webp'
 
 const Reviews: React.FC = () => {
     return (

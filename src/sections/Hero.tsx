@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Social from '../components/Social'
+import Navbar from '@/components/Navbar'
+import Social from '@/components/Social'
 import { Parallax } from 'react-scroll-parallax'
 
 const Hero: React.FC = () => {

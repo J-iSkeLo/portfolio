@@ -1,7 +1,7 @@
-import { Review } from '../types/types'
-import arabicaImage from '../assets/img/reviews/arabica.webp'
-import zooImage from '../assets/img/reviews/zoo.webp'
-import aquaImage from '../assets/img/reviews/aqua.webp'
+import { Review } from '@/types/types'
+import arabicaImage from '@/assets/img/reviews/arabica.webp'
+import zooImage from '@/assets/img/reviews/zoo.webp'
+import aquaImage from '@/assets/img/reviews/aqua.webp'
 
 const reviews: Review[] = [
     {

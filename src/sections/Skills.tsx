@@ -1,6 +1,6 @@
 import React from 'react'
-import Section from '../components/Section/Section'
-import bgImage from '../assets/img/backgrounds/skill.webp'
+import Section from '@/components/Section/Section'
+import bgImage from '@/assets/img/backgrounds/skill.webp'
 
 const importAll = (r: any) => r.keys().map(r)
 // @ts-ignore

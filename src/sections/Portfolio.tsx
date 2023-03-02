@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Section from '../components/Section/Section'
-import products from '../modules/products'
-import { Product as ProductType } from '../types/types'
-import screenIsMobile from '../modules/screenIsMobile'
+import Section from '@/components/Section/Section'
+import products from '@/modules/products'
+import { Product as ProductType } from '@/types/types'
+import screenIsMobile from '@/modules/screenIsMobile'
 
 const Portfolio: React.FC = () => {
     const [selectedProduct, setSelectedProduct] = useState<ProductType>(products[0])

@@ -1,7 +1,7 @@
 import React from 'react'
-import Section from '../components/Section/Section'
+import Section from '@/components/Section/Section'
 import { useParallax } from 'react-scroll-parallax'
-import personalSkills from '../modules/personalSkills'
+import personalSkills from '@/modules/personalSkills'
 
 const Personal: React.FC = () => {
     personalSkills[0].parallax = useParallax<HTMLDivElement>({ rotateY: [0, 480] })

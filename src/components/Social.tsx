@@ -1,8 +1,8 @@
 import React from 'react'
-import telegramIcon from '../assets/img/icons/telegram.png'
-import whatsappIcon from '../assets/img/icons/whatsapp.png'
-import instagramIcon from '../assets/img/icons/instagram.png'
-import facebookIcon from '../assets/img/icons/facebook.png'
+import telegramIcon from '@/assets/img/icons/telegram.png'
+import whatsappIcon from '@/assets/img/icons/whatsapp.png'
+import instagramIcon from '@/assets/img/icons/instagram.png'
+import facebookIcon from '@/assets/img/icons/facebook.png'
 
 const Social: React.FC = (props) => {
     const links = [

@@ -1,11 +1,13 @@
 import React from 'react'
-import Section from '../components/Section/Section'
+import Section from '@/components/Section/Section'
 
 const Author: React.FC = () => {
     return (
         <Section cover="bg-gradient bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
             <div className="text-center">
-                <a href="https://serhii.io/about-me"
+                {/* eslint-disable-next-line */}
+                <a
+                    href="https://serhii.io/about-me"
                     target="_blank"
                     className="text-center uppercase drop-shadow-[2px_8px_2px_rgb(0_0_0/50%)] hover:drop-shadow-[8px_16px_2px_rgb(0_0_0/50%)] inline-block transition-all hover:-translate-y-1 duration-500 relative"
                 >

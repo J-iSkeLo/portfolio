@@ -1,10 +1,10 @@
 import React from 'react'
-import Section from '../components/Section/Section'
-import photo from '../assets/img/me.webp'
-import calculateAge from '../modules/calculateAge'
+import Section from '@/components/Section/Section'
+import photo from '@/assets/img/me.webp'
+import calculateAge from '@/modules/calculateAge'
 import { Parallax } from 'react-scroll-parallax'
-import screenIsMobile from '../modules/screenIsMobile'
-import calculateExperience from '../modules/calculateExperience'
+import screenIsMobile from '@/modules/screenIsMobile'
+import calculateExperience from '@/modules/calculateExperience'
 
 const About: React.FC = () => {
     const sectionItems = [

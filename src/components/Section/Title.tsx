@@ -1,6 +1,6 @@
 import React from 'react'
-import decor from '../../assets/img/decor.png'
-import decorWhite from '../../assets/img/decor-white.png'
+import decor from '@/assets/img/decor.png'
+import decorWhite from '@/assets/img/decor-white.png'
 
 interface Props {
     title: string
