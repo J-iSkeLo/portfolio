@@ -53,7 +53,7 @@ const Portfolio: React.FC = () => {
                                         className={
                                             (selectedProduct.id === product.id ? '' : 'hidden')
                                             + ' ' +
-                                            (zoomedImage === item ? zoomImageWrapClasses : 'relative cursor-zoom-in')
+                                            (zoomedImage === item ? zoomImageWrapClasses : 'cursor-zoom-in')
                                             + ' transition-all duration-300 hover:scale-105'
                                         }
                                         onClick={() => setZoomedImageHandler(item)}
