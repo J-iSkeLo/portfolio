@@ -2,25 +2,20 @@ import React, { useState } from 'react'
 import Section from '@/components/Section/Section'
 import products from '@/modules/products'
 import { Product as ProductType } from '@/types/types'
-import screenIsMobile from '@/modules/screenIsMobile'
 
 const Portfolio: React.FC = () => {
     const [selectedProduct, setSelectedProduct] = useState<ProductType>(products[0])
+    const [zoomedImage, setZoomedImage] = useState<string | null>(null)
+    const zoomImageWrapClasses = 'fixed cursor-zoom-out top-0 left-0 w-full h-full bg-black bg-opacity-75 z-50 flex items-center justify-center'
+    const zoomImageClasses = 'max-w-none h-[calc(100%-30px)] w-auto'
 
-    function zoomImageInHandler(e: React.MouseEvent<HTMLImageElement>): void {
-        if (!screenIsMobile()) {
+    function setZoomedImageHandler(item: string): void {
+        if (zoomedImage === item) {
+            setZoomedImage(null)
             return
         }
 
-        const elem = e.target as HTMLImageElement
-        const zoomClasses = ['fixed', 'left-[5%]', 'right-[5%]', 'w-auto', 'top-[50px]', 'h-[calc(100vh-100px)]', 'z-40']
-
-        if (elem.classList.contains('fixed')) {
-            zoomClasses.forEach(cl => elem.classList.remove(cl))
-            return
-        }
-
-        zoomClasses.forEach(cl => elem.classList.add(cl))
+        setZoomedImage(item)
     }
 
     return (
@@ -54,14 +49,24 @@ const Portfolio: React.FC = () => {
                                 return (
                                     <div
                                         key={item}
-                                        className={`transition-transform hover:scale-110 duration-300 ${selectedProduct.id === product.id ? '' : 'hidden'}`}
+                                        className={
+                                            (selectedProduct.id === product.id ? '' : 'hidden')
+                                            + ' ' +
+                                            (zoomedImage === item ? zoomImageWrapClasses : 'relative cursor-zoom-in')
+                                            + ' transition-all duration-300 hover:scale-105'
+                                        }
+                                        onClick={() => setZoomedImageHandler(item)}
                                     >
-                                        <img data-src={item}
+                                        <img
+                                            data-src={item}
                                             width="220"
                                             height="468"
                                             alt={product.title}
-                                            className="max-w-auto md:max-w-[220px] mx-auto drop-shadow-md"
-                                            onClick={zoomImageInHandler}
+                                            className={
+                                                'transition-all duration-300 mx-auto drop-shadow-md'
+                                                + ' ' +
+                                                (zoomedImage === item ? zoomImageClasses : 'max-w-auto md:max-w-[220px]')
+                                            }
                                         />
                                     </div>
                                 )
