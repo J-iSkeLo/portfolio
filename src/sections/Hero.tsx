@@ -31,12 +31,13 @@ const Hero: React.FC = () => {
 
                         {/* Main big button */}
                         <div>
-                            <a href="https://syject.com/#Contacts"
+                            <a
+                                href="mailto:jiskelo@gmail.com"
                                 rel="noreferrer"
                                 target="_blank"
                                 className="inline-block text-md lg:text-lg text-white mt-5 lg:mt-10 bg-main-btn animate-shine bg-600 shadow-hero hover:shadow-hero-hover uppercase py-3 lg:py-3 px-7 lg:px-7 rounded-full transition-shadow duration-500"
                             >
-                                Have a project? Let's talk
+                                Have a project? Email me
                             </a>
                         </div>
                     </div>
