@@ -7,7 +7,7 @@ const Portfolio: React.FC = () => {
     const [selectedProduct, setSelectedProduct] = useState<ProductType>(products[0])
     const [zoomedImage, setZoomedImage] = useState<string | null>(null)
     const zoomImageWrapClasses = 'fixed cursor-zoom-out top-0 left-0 w-full h-full bg-black bg-opacity-75 z-50 flex items-center justify-center'
-    const zoomImageClasses = 'max-w-none h-[calc(100%-30px)] w-auto'
+    const zoomImageClasses = 'max-w-none h-[calc(100%-100px)] w-auto'
 
     function setZoomedImageHandler(item: string): void {
         if (zoomedImage === item) {
