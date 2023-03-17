@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
 import Social from '@/components/Social'
+import LetterIcon from '@/assets/img/icons/letter.webp'
+import EmailIcon from '@/assets/img/icons/email.webp'
 import { Parallax } from 'react-scroll-parallax'
 
 const Hero: React.FC = () => {
@@ -31,14 +33,36 @@ const Hero: React.FC = () => {
 
                         {/* Main big button */}
                         <div>
-                            <a
-                                href="mailto:jiskelo@gmail.com"
-                                rel="noreferrer"
-                                target="_blank"
-                                className="inline-block text-md lg:text-lg text-white mt-5 lg:mt-10 bg-main-btn animate-shine bg-600 shadow-hero hover:shadow-hero-hover uppercase py-3 lg:py-3 px-7 lg:px-7 rounded-full transition-shadow duration-500"
-                            >
-                                Have a project? Email me
-                            </a>
+                            <div className="group inline-block relative mx-auto mt-5 lg:mt-10">
+                                <a
+                                    href="mailto:jiskelo@gmail.com"
+                                    rel="noreferrer"
+                                    target="_blank"
+                                    className="relative z-10 inline-block text-md lg:text-lg text-white bg-main-btn animate-shine bg-600 shadow-hero hover:shadow-hero-hover uppercase py-3 lg:py-3 px-7 lg:px-7 rounded-full transition-shadow duration-500"
+                                >
+                                    Have a project? Email me
+                                </a>
+
+                                <div className="absolute bottom-1 opacity-0 group-hover:opacity-100 group-hover:-bottom-5 left-4 group-hover:-left-7 transition-all duration-700">
+                                    <img
+                                        src={EmailIcon}
+                                        alt="Email icon"
+                                        width="40"
+                                        height="40"
+                                        className="drop-shadow-md"
+                                    />
+                                </div>
+
+                                <div className="absolute top-1 opacity-0 group-hover:opacity-100 group-hover:-top-3 right-4 group-hover:-right-7 transition-all duration-700 delay-200">
+                                    <img
+                                        src={LetterIcon}
+                                        alt="Letter icon"
+                                        width="40"
+                                        height="40"
+                                        className="drop-shadow-md"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </Parallax>
