@@ -28,7 +28,7 @@ const Contact: React.FC = () => {
 
                     <Parallax speed={-10} translateY={[-30, 100]}>
                         <div className="text-center">
-                            <div className="bg-gray-600 py-5 px-10 inline-block mx-auto rounded-full shadow-lg mt-10 lg:mt-14">
+                            <div className="bg-gray-600 py-3 px-4 inline-block mx-auto rounded-full shadow-lg mt-10 lg:mt-14">
                                 <Social />
                             </div>
                         </div>
