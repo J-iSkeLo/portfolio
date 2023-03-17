@@ -9,16 +9,21 @@ const Author: React.FC = () => {
                 <a
                     href="https://serhii.io/about-me"
                     target="_blank"
-                    className="text-center uppercase drop-shadow-[2px_8px_2px_rgb(0_0_0/50%)] hover:drop-shadow-[8px_16px_2px_rgb(0_0_0/50%)] inline-block transition-all hover:-translate-y-1 duration-500 relative"
+                    className="text-center inline-block transition-all hover:-translate-y-2 duration-500 relative group"
                 >
-                    <span className="block text-gray-400 tracking-widest text-xs lg:text-sm">Made by</span>
+                    <span className="block text-gray-400 tracking-widest text-xs lg:text-sm group-hover:-translate-y-2 transition-all duration-500 group-hover:scale-90 drop-shadow-[2px_8px_2px_rgb(0_0_0/50%)] group-hover:drop-shadow-[2px_5px_2px_rgb(0_0_0/50%)]">
+                        <span className="mr-1">MADE</span>
+                        <span className="group-hover:opacity-0 transition-all delay-1000 group-hover:-ml-5 duration-1000">BY</span>
+                        <span className="group-hover:opacity-100 transition-all delay-1000 duration-1000 opacity-0 inline-block -ml-16 group-hover:m-0">WITH ❤️</span>
+                    </span>
 
-                    <div className="inline-flex font-bold tracking-widest text-sm lg:text-md relative translate-y-[-5px]">
-                        <div className="absolute h-[1px] -left-12 top-1/2 w-10 bg-gray-500"></div>
-                        <div className="absolute h-[1px] -right-12 top-1/2 w-10 bg-gray-500"></div>
+                    <div className="inline-flex font-bold tracking-widest text-sm lg:text-md relative">
+                        <div className="absolute h-[1px] -left-12 top-1/2 w-8 delay-200 group-hover:w-24 bg-white group-hover:opacity-30 group-hover:translate-x-[-4px] group-hover:-translate-y-2.5 transition-all duration-1000"></div>
+                        <div className="absolute h-[1px] -right-12 top-1/2 w-8 delay-200 group-hover:w-24 bg-white group-hover:opacity-30 group-hover:translate-x-[5px] group-hover:-translate-y-2.5 transition-all duration-1000"></div>
 
-                        <h3 className="text-white relative">Serhii</h3>
-                        <h3 className="text-[#3298dc] relative">Cho</h3>
+                        <h3 className="text-white relative font-sans group-hover:translate-y-2 transition-all duration-700 group-hover:scale-150 drop-shadow-[2px_8px_2px_rgb(0_0_0/50%)] group-hover:drop-shadow-[8px_10px_2px_rgb(0_0_0/50%)]">
+                            &#123;S&#125; SERHII
+                        </h3>
                     </div>
                 </a>
             </div>
