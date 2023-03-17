@@ -19,7 +19,7 @@ const Social: React.FC = (props) => {
                     <a
                         href={l.link}
                         title={l.title}
-                        className="w-16 flex items-center justify-center aspect-square transition-all hover:bg-gray-700 rounded-full duration-500"
+                        className="w-16 flex group items-center justify-center aspect-square transition-colors hover:bg-gray-700 rounded-full duration-500"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -28,6 +28,7 @@ const Social: React.FC = (props) => {
                             alt={l.title}
                             width="22"
                             height="22"
+                            className="group-hover:scale-125 transition-transform duration-300 delay-200 drop-shadow-sm"
                         />
                     </a>
                 </li>
