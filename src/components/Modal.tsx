@@ -21,7 +21,7 @@ const Modal: React.FC<Props> = (props) => {
                 onClick={props.onClose}
             ></div>
 
-            <div className="bg-white rounded-lg shadow-lg sm:max-w-lg sm:w-full p-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="rounded-lg shadow-lg absolute inset-4 lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">
                 {props.children}
             </div>
         </div>

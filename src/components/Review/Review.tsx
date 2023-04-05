@@ -12,9 +12,9 @@ const Review: React.FC<Props> = ({ review, setFullReview, showFull }) => {
         <button
             type="button"
             onClick={toggleShowMore}
-            className="text-gray-400 hover:text-gray-500"
+            className="text-gray-500 hover:text-gray-600"
         >
-            Show more
+            Show full review
         </button>
     )
 

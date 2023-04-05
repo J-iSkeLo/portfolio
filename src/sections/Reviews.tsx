@@ -42,16 +42,16 @@ const Reviews: React.FC = () => {
 
             <Section title="Reviews" layers={[{ image: bgImage, speed: -20 }]}>
                 <div className="container">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-                        <ul className="space-y-3">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7">
+                        <div className="space-y-4 lg:space-y-7">
                             {printReviews(reviews1)}
-                        </ul>
-                        <ul className="space-y-3">
+                        </div>
+                        <div className="space-y-4 lg:space-y-7">
                             {printReviews(reviews2)}
-                        </ul>
-                        <ul className="space-y-3">
+                        </div>
+                        <div className="space-y-4 lg:space-y-7">
                             {printReviews(reviews3)}
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </Section>
