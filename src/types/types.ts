@@ -1,3 +1,5 @@
+import type React from 'react'
+
 export interface Product {
     id: string
     title: string
@@ -9,7 +11,7 @@ export interface Review {
     img: string
     name: string
     companyName: string
-    review: string
+    review: React.ReactElement,
 }
 
 export interface PersonalSkill {
