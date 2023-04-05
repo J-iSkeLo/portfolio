@@ -1,13 +1,29 @@
 import type { Review as ReviewType } from '@/types/types'
-import React from 'react'
+import type React from 'react'
 
 interface Props {
     review: ReviewType
+    setFullReview: (review: ReviewType) => void
+    showFull: boolean
 }
 
-const Review: React.FC<Props> = ({ review }) => {
+const Review: React.FC<Props> = ({ review, setFullReview, showFull }) => {
+    const showMoreButton = (
+        <button
+            type="button"
+            onClick={toggleShowMore}
+            className="text-gray-400 hover:text-gray-500"
+        >
+            Show more
+        </button>
+    )
+
+    function toggleShowMore(): void {
+        setFullReview(review)
+    }
+
     return (
-        <li>
+        <div>
             <figure className="relative flex flex-col rounded-lg p-6 shadow-lg border border-gray-50 bg-gradient bg-gradient-to-br from-gray-100 via-white to-gray-200">
                 <figcaption className="flex items-center space-x-4">
                     <img
@@ -23,10 +39,11 @@ const Review: React.FC<Props> = ({ review }) => {
                 </figcaption>
 
                 <blockquote className="mt-5 text-gray-500 leading-6 [&>p]:mb-5 [&>p:last-child]:mb-0">
-                    {review.review}
+                    {!showFull && review.short ? review.short : review.review}
+                    {(showFull || !review.short) ? null : showMoreButton}
                 </blockquote>
             </figure>
-        </li>
+        </div>
     )
 }
 

@@ -38,6 +38,7 @@ const reviews: Review[] = [
             <p>We worked together on multiple, projects where I was providing the server-side APIs and WEB applications, while Olexiy was responsible for the Android app development and project management, as he dealt with the client directly.</p>
             <p>I will continue to work with Olexiy in the future, and make sure I always have his back. If you are looking for a skilled and reliable software developer, look no further than Olexiy. I am proud to recommend Olexiy as a software developer, who possesses not only technical skills but also project management and communication skills.</p>
         </>,
+        short: <p>I've helped Olexiy to get started with Android development with Java back in 2020 when he was transitioning from a different field into software development. It's an honor for me to be the first who was not only helping him to learn Java, but also being the first person he worked with.</p>,
     },
     {
         img: issaImage,
@@ -54,7 +55,8 @@ const reviews: Review[] = [
             <p>Alexey is a highly skilled Kotlin front-end developer with a deep understanding of front-end technologies. He is a quick learner, and he always stays up-to-date with the latest developments in his field. He is also a great team player who is always willing to collaborate and share his expertise with his colleagues.</p>
             <p>In addition to his technical skills, Alexey has excellent communication and problem-solving skills. He is always willing to take on new challenges and tackle difficult problems, and he approaches each task with a positive attitude and a strong work ethic. He is a true asset to any team and is highly respected by his colleagues.</p>
             <p>I highly recommend Alexey for any Kotlin front-end development positions. He is an outstanding developer who would be a valuable asset to any team.</p>
-        </>
+        </>,
+        short: <p>I am writing to highly recommend my colleague Alexey Chernenkiy for any Kotlin front-end development positions. I have had the pleasure of working alongside Alexey for the past 1.5 year, and I have consistently been impressed with his technical skills, work ethic, and professionalism.</p>,
     },
 ]
 

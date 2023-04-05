@@ -12,6 +12,7 @@ export interface Review {
     name: string
     companyName: string
     review: React.ReactElement,
+    short?: React.ReactElement
 }
 
 export interface PersonalSkill {
