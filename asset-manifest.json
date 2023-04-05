@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe819df5.css",
-    "main.js": "/static/js/main.90a29559.js",
+    "main.css": "/static/css/main.e8fa83cd.css",
+    "main.js": "/static/js/main.537ee8ea.js",
     "static/media/sky.webp": "/static/media/sky.d881dea64c692fa3547b.webp",
     "static/media/reviews.webp": "/static/media/reviews.65f848e1c1c6aa3fad8e.webp",
     "static/media/me-2.jpg": "/static/media/me-2.b1684c7197abfd2cb7f0.jpg",
@@ -26,15 +26,18 @@
     "static/media/zoo.webp": "/static/media/zoo.4c7932cec9a51f6a2520.webp",
     "static/media/aqua.webp": "/static/media/aqua.8a0ea33bd6029aa9c023.webp",
     "static/media/adaptability.webp": "/static/media/adaptability.05b5ec8a97b6fbd39270.webp",
+    "static/media/koba.webp": "/static/media/koba.5e98616faa3bf2fee141.webp",
     "static/media/arabica.webp": "/static/media/arabica.ab9900f54292c04b1c49.webp",
+    "static/media/serhii.webp": "/static/media/serhii.b2a164d83b14c5cbd16b.webp",
     "static/media/letter.webp": "/static/media/letter.c92b7afd217beea4d0da.webp",
+    "static/media/issa.webp": "/static/media/issa.534ecf18f8e747112351.webp",
     "static/media/email.webp": "/static/media/email.2718908f5eb1a4b68dfa.webp",
     "index.html": "/index.html",
-    "main.fe819df5.css.map": "/static/css/main.fe819df5.css.map",
-    "main.90a29559.js.map": "/static/js/main.90a29559.js.map"
+    "main.e8fa83cd.css.map": "/static/css/main.e8fa83cd.css.map",
+    "main.537ee8ea.js.map": "/static/js/main.537ee8ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe819df5.css",
-    "static/js/main.90a29559.js"
+    "static/css/main.e8fa83cd.css",
+    "static/js/main.537ee8ea.js"
   ]
 }
