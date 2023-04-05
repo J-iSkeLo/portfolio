@@ -30,7 +30,7 @@ const reviews: Review[] = [
     },
     {
         img: serhiiImage,
-        name: 'Serhii',
+        name: 'Serhii Cho',
         companyName: 'IT Specialist',
         review: <>
             <p>I've helped Olexiy to get started with Android development with Java back in 2020 when he was transitioning from a different field into software development. It's an honor for me to be the first who was not only helping him to learn Java, but also being the first person he worked with.</p>
