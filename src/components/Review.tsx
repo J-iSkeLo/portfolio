@@ -12,7 +12,7 @@ const Review: React.FC<Props> = ({ review }) => {
                 <figcaption className="flex items-center space-x-4">
                     <img
                         src={review.img}
-                        alt={review.companyName}
+                        alt={review.name}
                         className="h-14 w-14 rounded-full shadow-md"
                     />
 
