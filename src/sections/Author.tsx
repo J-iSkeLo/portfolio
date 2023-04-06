@@ -1,9 +1,14 @@
-import React from 'react'
+import type React from 'react'
+import { useState } from 'react'
 import Section from '@/components/Section/Section'
 
 const Author: React.FC = () => {
+    const [enabled, setEnabled] = useState<boolean>(false)
+
+    window.setInterval(() => setEnabled(!enabled), 2000)
+
     return (
-        <Section cover="bg-gradient bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
+        <Section cover="bg-gradient bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800">
             <div className="text-center">
                 {/* eslint-disable-next-line */}
                 <a
@@ -13,8 +18,8 @@ const Author: React.FC = () => {
                 >
                     <span className="block text-gray-400 tracking-widest text-xs lg:text-sm group-hover:-translate-y-2 transition-all duration-500 group-hover:scale-90 drop-shadow-[2px_8px_2px_rgb(0_0_0/50%)] group-hover:drop-shadow-[2px_5px_2px_rgb(0_0_0/50%)]">
                         <span className="mr-1">MADE</span>
-                        <span className="group-hover:opacity-0 transition-all delay-1000 group-hover:-ml-5 duration-1000">BY</span>
-                        <span className="group-hover:opacity-100 transition-all delay-1000 duration-1000 opacity-0 inline-block -ml-16 group-hover:m-0">WITH ❤️</span>
+                        <span className={ `${enabled ? 'opacity-0 -ml-5' : ''} transition-all duration-1000` }>BY</span>
+                        <span className={ `${enabled ? 'opacity-100 m-0' : 'opacity-0 -ml-16'} transition-all duration-1000 inline-block` }>WITH ❤️</span>
                     </span>
 
                     <div className="inline-flex font-bold tracking-widest text-sm lg:text-md relative">
