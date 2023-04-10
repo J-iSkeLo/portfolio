@@ -7,11 +7,11 @@ export interface Product {
     items: string[]
 }
 
-export interface Review {
+export interface Testimonial {
     img: string
     name: string
     companyName: string
-    review: React.ReactElement,
+    content: React.ReactElement,
     short?: React.ReactElement
 }
 

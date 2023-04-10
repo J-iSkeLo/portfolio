@@ -7,7 +7,7 @@ import Skills from './sections/Skills'
 import Personal from './sections/Personal'
 import Work from './sections/Work'
 import Portfolio from './sections/Portfolio'
-import Reviews from './sections/Reviews'
+import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
 import Author from './sections/Author'
 import ToTop from './components/ToTop'
@@ -37,7 +37,7 @@ const App = () => {
                 <Personal />
                 <Work />
                 <Portfolio />
-                <Reviews />
+                <Testimonials />
                 <Contact />
                 <Author />
                 <ToTop />
