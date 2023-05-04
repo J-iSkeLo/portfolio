@@ -5,6 +5,8 @@ import aquaImage from '@/assets/img/testimonials/aqua.webp'
 import serhiiImage from '@/assets/img/testimonials/serhii.webp'
 import issaImage from '@/assets/img/testimonials/issa.webp'
 import kobaImage from '@/assets/img/testimonials/koba.webp'
+import dimaImage from '@/assets/img/testimonials/dima.webp'
+import nataliiaImage from '@/assets/img/testimonials/nataliia.webp'
 
 const reviews: Testimonial[] = [
     {
@@ -57,6 +59,39 @@ const reviews: Testimonial[] = [
             <p>I highly recommend Alexey for any Kotlin front-end development positions. He is an outstanding developer who would be a valuable asset to any team.</p>
         </>,
         short: <p>I am writing to highly recommend my colleague Alexey Chernenkiy for any Kotlin front-end development positions. I have had the pleasure of working alongside Alexey for the past 1.5 year, and I have consistently been impressed with his technical skills, work ethic, and professionalism.</p>,
+    },
+    {
+        img: dimaImage,
+        name: 'Dmitriy Mironiuk',
+        companyName: 'CEO & Founder of Syject',
+        content: <>
+            <p>Dear Olexiy,</p>
+            <p>I am writing to express my sincere gratitude for the outstanding work you did as an Android developer at our company. Your contributions were instrumental in the success of several projects, and we are grateful for your hard work and dedication.</p>
+            <p>Your technical skills and attention to detail were exemplary, and your ability to find creative solutions to complex problems was truly impressive. You consistently demonstrated a high level of professionalism and efficiency, and your work always exceeded our expectations.</p>
+            <p>Moreover, your positive attitude and team spirit made you a pleasure to work with. You were always willing to lend a hand to your colleagues and were an invaluable member of the team. Your ability to collaborate and communicate effectively ensured that our projects were delivered on time and to the highest standards.</p>
+            <p>You have left a lasting impact on our organization, and we wish you all the best in your future endeavors.</p>
+            <p>Once again, thank you for your hard work and dedication. You have been an asset to our company, and we will miss you.</p>
+            <p>Sincerely,</p>
+            <p>Dmitriy Myroniuk</p>
+            <p>CEO & Founder of Syject.</p>
+        </>,
+        short: <p>I am writing to express my sincere gratitude for the outstanding work you did as an Android developer at our company. Your contributions were instrumental in the success of several projects, and we are grateful for your hard work and dedication.</p>,
+    },
+    {
+        img: nataliiaImage,
+        name: 'Nataliia Kholodnykh',
+        companyName: 'Talent acquisition specialist',
+        content: <>
+            <p>Шановний Олексій,</p>
+            <p>Я хотіла би висловити свою повну підтримку Вам у якості Android розробника. Під час Вашої роботи в нашій компанії Syject, Ви продемонстрували високий рівень знань та вмінь у сфері IT та успішно справлялися зі своїми обов'язками.</p>
+            <p>Ви виявили себе як досвідчений та ефективний розробник, завжди працюючи на високому рівні і дотримуючись строків. Ваші навички програмування та розуміння андроїд-розробки дозволили нам забезпечувати наші продукти високоякісними та конкурентоспроможними на ринку.</p>
+            <p>Крім того, Ваша здатність до співпраці та комунікації з іншими членами нашої команди була вельми цінною та визнаною. Ви завжди готові були допомогти іншим, коли це було потрібно, Ваші радісність та енергія завжди були приємними для всіх.</p>
+            <p>Тому, я би хотіла рекомендувати Вас як талановитого та досвідченого андроїд-розробника, який забезпечить високий рівень роботи і буде цінним спеціалістом до будь-якої команди в сфері айті. Я бажаю Вам успіхів у майбутніх проектах та розвитку кар'єри.</p>
+            <p>З повагою,</p>
+            <p>HR компанії Syject</p>
+            <p>Наталі Холодних</p>
+        </>,
+        short: <p>Я хотіла би висловити свою повну підтримку Вам у якості Android розробника. Під час Вашої роботи в нашій компанії Syject, Ви продемонстрували високий рівень знань та вмінь у сфері IT та успішно справлялися зі своїми обов'язками.</p>,
     },
 ]
 
