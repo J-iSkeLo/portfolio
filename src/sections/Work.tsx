@@ -3,8 +3,8 @@ import Section from '@/components/Section/Section'
 import bgImage from '@/assets/img/backgrounds/tetris.webp'
 import skyImage from '@/assets/img/backgrounds/sky.webp'
 import photo from '@/assets/img/me-2.jpg'
-import { Parallax } from 'react-scroll-parallax'
 import screenIsMobile from '@/modules/screenIsMobile'
+import { Parallax } from 'react-scroll-parallax'
 
 const Work: React.FC = () => {
     return (
