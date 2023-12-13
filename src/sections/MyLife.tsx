@@ -4,8 +4,6 @@ import MyLifeTitle from '@/components/MyLifeTitle'
 import bgImage from '@/assets/img/backgrounds/tetris.webp'
 import skyImage from '@/assets/img/backgrounds/sky.webp'
 import photo from '@/assets/img/me-2.jpg'
-import screenIsMobile from '@/modules/screenIsMobile'
-import { Parallax } from 'react-scroll-parallax'
 
 const MyLife: React.FC = () => {
     return (
@@ -16,15 +14,13 @@ const MyLife: React.FC = () => {
                 <div className="container">
                     <div className="flex flex-col lg:flex-row items-center gap-7">
                         <div>
-                            <Parallax disabled={screenIsMobile()} speed={3}>
-                                <img
-                                    data-src={photo}
-                                    alt="Olexiy Chornenkyi"
-                                    width="320"
-                                    height="370"
-                                    className="rounded-2xl shadow-hero w-auto max-w-[400px]"
-                                />
-                            </Parallax>
+                            <img
+                                data-src={photo}
+                                alt="Olexiy Chornenkyi"
+                                width="320"
+                                height="370"
+                                className="rounded-2xl shadow-hero w-full max-w-[400px]"
+                            />
                         </div>
                         <div className="text-white text-md md:text-lg leading-7 md:!leading-8 drop-shadow-lg bg-black/40 p-6 rounded-2xl w-full space-y-3">
                             <MyLifeTitle header="1. Beginning of programming">
