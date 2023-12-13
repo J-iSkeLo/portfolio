@@ -35,7 +35,7 @@ const MyLife: React.FC = () => {
                                 Smartphones occupy a huge time of our lives, now without it is very difficult. And so I decided that I need to write applications on Android, you need to try to learn! According to the video lessons I wrote a few applications something like notes, where I worked with the database and basic features of Android Jetpack, as well as with AsyncTask.
                             </MyLifeTitle>
 
-                            <MyLifeTitle header="2. First Android application (JAVA).">
+                            <MyLifeTitle header="2. First Android application (JAVA)">
                                 It's been a year since I started learning programming (it's fall 2020) and finally decided to write a full-fledged project, but I needed an idea: "What kind of app should I write?".
                                 <br /><br />
                                 At this time I worked for a company for the production and sale of aquarium fish and equipment, where I was directly involved in the breeding of fish. I offered the managers my idea of writing an application in which users can conveniently in a couple of clicks to fill the cart and place an order.
@@ -45,19 +45,19 @@ const MyLife: React.FC = () => {
                                 It was a great experience, for the first application that serves Aqua-M until now.
                             </MyLifeTitle>
 
-                            <MyLifeTitle header="3. Kotlin and Architecture (MVVM) / Project Manager.">
+                            <MyLifeTitle header="3. Kotlin and Architecture (MVVM) / Project Manager">
                                 After this experience I realized that I should try myself only as a developer and started working on Freelancehunt. I said goodbye to Aqua-M and just starting to learn Kotlin, which I had already heard about on YouTube, I got a call from my future client with a proposal to write him an application for a pet store ZooZooZoo. As it turned out ZooZooZoo cooperated with Aqua-M. Having asked them who wrote such an application for Aqua-M, they gave my contacts.
                                 <br /><br />
                                 And so I started to deal with the second application, which also lives in the PlayStore. Backend and web was Sergey. I was dealing with Android application and project management. Since it is easier for the client to communicate with one and the one who understood more than him in the development. Since the beginning of 2021 and until May this year, I was actively engaged in the project until the release.
                             </MyLifeTitle>
 
-                            <MyLifeTitle header="4. The search for self.">
+                            <MyLifeTitle header="4. The search for self">
                                 Having released the app ZooZooZoo on PlayStore, I wanted to get experience working in a team and try myself in other apps, not only in sales. I started looking for a job in an office where I could come and communicate with like-minded people. And of course development in such walls happens with greater speed. I tried myself at interviews in Nix, Impulse and a couple of other companies, but less famous and in most cases I was cut off after checking my English.
                                 <br /><br />
                                 His level needed to be conversational, with which I had a problem (now much better, but of course not free). And one of these days I got a call from Dmitry, the head of Syject, with a proposal to come to their office and have an interview. I realized that I don't want to set anyone up and waste my time, I told him about my weak English, and Dmitry replied, "It's not a problem, the main thing is that you should be able to read and write in English" and of course it's not a problem to help translators. I was happy and of course I agreed to the interview in the office. We agreed on the date and time.
                             </MyLifeTitle>
 
-                            <MyLifeTitle header="5. My first company – Syject.">
+                            <MyLifeTitle header="5. My first company – Syject">
                                 Coming to the office, I saw a small room in which there were 4 people and was very surprised that the team is very small, it is not what I expected, but starting to communicate with Dmitry I learned that this is just a small part of the team with the designer and managers, and the main team on another floor (and the truth team was as I wanted, not big but full-fledged where each took its role but were one team). The interview did not last long, the questions were simple, I coped without problems. Dmitry checked my English level. After that we said goodbye and I had to wait for the result, of course I was not the only candidate. At the end of the week I got a call from Dimitri with a proposal to start working with Syject.
                                 <br /><br />
                                 Syject became a second home for me, I always came to work in a good mood and enjoyed spending time with the team. Warm welcome, conversations under hookah, video game competitions always made me happy and left only good emotions.
