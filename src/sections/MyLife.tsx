@@ -9,7 +9,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 const MyLife: React.FC = () => {
     return (
-        <div id="work">
+        <div id="life">
             <Section title="My Life"
                 layers={[{ image: skyImage, speed: -20 }, { image: bgImage, speed: -5 }]}
             >
