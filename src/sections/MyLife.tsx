@@ -14,7 +14,7 @@ const MyLife: React.FC = () => {
                 layers={[{ image: skyImage, speed: -20 }, { image: bgImage, speed: -5 }]}
             >
                 <div className="container">
-                    <div className="flex flex-col md:flex-row items-center gap-7">
+                    <div className="flex flex-col lg:flex-row items-center gap-7">
                         <div>
                             <Parallax disabled={screenIsMobile()} speed={3}>
                                 <img

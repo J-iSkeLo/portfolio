@@ -14,14 +14,16 @@ const MyLifeTitle: React.FC<Props> = (props) => {
     return <>
         <div
             onClick={() => setShowContent(!showContent)}
-            className="flex items-center justify-between gap-3 text-xl border border-white/20 px-4 py-2 rounded-lg cursor-pointer hover:bg-black/10 transition-colors"
+            className="flex items-center justify-between gap-3 leading-6 text-md xl:text-xl border border-white/20 px-4 py-2 rounded-lg cursor-pointer hover:bg-black/10 transition-colors"
         >
             <h2>{props.header}</h2>
             <span>{showContent ? <MinusICon /> : <PlusIcon />}</span>
         </div>
 
         <div className={`mt-4 ${showContent ? 'block' : 'hidden'}`}>
-            {props.children}
+            <div className="px-3 py-1">
+                {props.children}
+            </div>
         </div>
     </>
 }
