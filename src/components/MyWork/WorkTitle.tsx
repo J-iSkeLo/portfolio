@@ -14,7 +14,7 @@ const WorkTitle: React.FC<Props> = (props) => {
     return <>
         <div
             onClick={() => setShowContent(!showContent)}
-            className="flex items-center justify-between gap-3 text-xl border px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-black/30 transition-colors"
+            className="flex items-center justify-between gap-3 text-xl border border-white/20 px-4 py-2 rounded-lg cursor-pointer hover:bg-black/10 transition-colors"
         >
             <h2>{props.header}</h2>
             <span>{showContent ? <MinusICon /> : <PlusIcon />}</span>
