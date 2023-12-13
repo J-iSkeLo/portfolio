@@ -8,7 +8,7 @@ interface Props {
     header: string
 }
 
-const WorkTitle: React.FC<Props> = (props) => {
+const MyLifeTitle: React.FC<Props> = (props) => {
     const [showContent, setShowContent] = useState(false)
 
     return <>
@@ -26,4 +26,4 @@ const WorkTitle: React.FC<Props> = (props) => {
     </>
 }
 
-export default WorkTitle
+export default MyLifeTitle
