@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
         { title: 'About me', target: '#about' },
         { title: 'Skills', target: '#skills' },
         { title: 'Personal skills', target: '#personal' },
-        { title: 'My work', target: '#work' },
+        { title: 'My Life', target: '#life' },
         { title: 'Portfolio', target: '#portfolio' },
         { title: 'testimonials', target: '#testimonials' },
         { title: 'Contact', target: '#contact' },

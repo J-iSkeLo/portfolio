@@ -5,7 +5,7 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Skills from './sections/Skills'
 import Personal from './sections/Personal'
-import Work from './sections/Work'
+import MyLife from './sections/MyLife'
 import Portfolio from './sections/Portfolio'
 import Testimonials from './sections/Testimonials'
 import Contact from './sections/Contact'
@@ -35,7 +35,7 @@ const App = () => {
                 <About />
                 <Skills />
                 <Personal />
-                <Work />
+                <MyLife />
                 <Portfolio />
                 <Testimonials />
                 <Contact />

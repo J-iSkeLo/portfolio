@@ -1,0 +1,31 @@
+import type React from 'react'
+import { useState } from 'react'
+import PlusIcon from '@/components/Icons/PlusIcon'
+import MinusICon from '@/components/Icons/MinusIcon'
+
+interface Props {
+    children: React.ReactNode
+    header: string
+}
+
+const MyLifeTitle: React.FC<Props> = (props) => {
+    const [showContent, setShowContent] = useState(false)
+
+    return <>
+        <div
+            onClick={() => setShowContent(!showContent)}
+            className="flex items-center justify-between gap-3 leading-6 text-sm md:text-md xl:text-xl border border-white/20 px-4 py-2 rounded-lg cursor-pointer hover:bg-black/10 transition-colors"
+        >
+            <h2>{props.header}</h2>
+            <span>{showContent ? <MinusICon /> : <PlusIcon />}</span>
+        </div>
+
+        <div className={`mt-4 ${showContent ? 'block' : 'hidden'}`}>
+            <div className="px-3 py-1 text-[.95em] lg:text-md">
+                {props.children}
+            </div>
+        </div>
+    </>
+}
+
+export default MyLifeTitle
