@@ -1,3 +1,3 @@
 export const events = {
-    myLifeTitleIsClosed: 'mylifetitleisclosed',
+    myLifeTitleOpened: 'mylifetitleisclosed',
 }
