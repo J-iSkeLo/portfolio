@@ -16,10 +16,10 @@ const MyLife: React.FC = () => {
                         <div>
                             <img
                                 data-src={photo}
-                                alt="Olexiy Chornenkyi"
+                                alt="Olexiy Chornenkyi sitting on a chair behind a table with a two monitors and a cup of coffee"
                                 width="320"
                                 height="370"
-                                className="rounded-2xl shadow-hero w-full max-w-[400px]"
+                                className="rounded-2xl shadow-hero w-full sm:w-[500px]"
                             />
                         </div>
                         <div className="text-white text-md md:text-lg leading-7 md:!leading-8 drop-shadow-lg bg-black/40 p-6 rounded-2xl w-full space-y-3">
