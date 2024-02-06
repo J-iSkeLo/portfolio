@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.a3d91c14.css",
-    "main.js": "/static/js/main.d7c15a65.js",
+    "main.js": "/static/js/main.dfbd625a.js",
     "static/media/sky.webp": "/static/media/sky.d881dea64c692fa3547b.webp",
     "static/media/testimonials.webp": "/static/media/testimonials.65f848e1c1c6aa3fad8e.webp",
     "static/media/me-2.jpg": "/static/media/me-2.b1684c7197abfd2cb7f0.jpg",
     "static/media/skill.webp": "/static/media/skill.664aede74090a5cd1a28.webp",
     "static/media/10.webp": "/static/media/10.6155186bc1f6b360e903.webp",
+    "static/media/1.webp": "/static/media/1.23cb34945277f678e75c.webp",
     "static/media/3.webp": "/static/media/3.c3c9c8d9a5cae6d00cda.webp",
     "static/media/4.webp": "/static/media/4.d32d4c5c769bba3c3580.webp",
-    "static/media/tetris.webp": "/static/media/tetris.4dad503b0d077c42205d.webp",
-    "static/media/1.webp": "/static/media/1.23cb34945277f678e75c.webp",
-    "static/media/5.webp": "/static/media/5.11678c50e7af96f8c449.webp",
     "static/media/2.webp": "/static/media/2.c6afee145726ebe9ed80.webp",
+    "static/media/tetris.webp": "/static/media/tetris.4dad503b0d077c42205d.webp",
+    "static/media/5.webp": "/static/media/5.11678c50e7af96f8c449.webp",
     "static/media/9.webp": "/static/media/9.aa31d20722b609d16951.webp",
     "static/media/11.webp": "/static/media/11.c3156fca7e69a91c7001.webp",
     "static/media/me.webp": "/static/media/me.b63962292ede01845c44.webp",
@@ -36,10 +36,10 @@
     "static/media/nataliia.webp": "/static/media/nataliia.34812b24bacc7e461be6.webp",
     "index.html": "/index.html",
     "main.a3d91c14.css.map": "/static/css/main.a3d91c14.css.map",
-    "main.d7c15a65.js.map": "/static/js/main.d7c15a65.js.map"
+    "main.dfbd625a.js.map": "/static/js/main.dfbd625a.js.map"
   },
   "entrypoints": [
     "static/css/main.a3d91c14.css",
-    "static/js/main.d7c15a65.js"
+    "static/js/main.dfbd625a.js"
   ]
 }
