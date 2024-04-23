@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Section from '@/components/Section/Section'
 import products from '@/modules/products'
 import { Product as ProductType } from '@/types/types'
-import ProductItem from '@/components/ProductItem'
+import ProductImage from '@/components/ProductImage'
 
 const Portfolio: React.FC = () => {
     const [selectedProduct, setSelectedProduct] = useState<ProductType>(products[0])
@@ -37,7 +37,7 @@ const Portfolio: React.FC = () => {
                         {products.map(product => {
                             return product.items.map(img => {
                                 return (
-                                    <ProductItem
+                                    <ProductImage
                                         product={product}
                                         isSelected={selectedProduct.id === product.id}
                                         img={img}

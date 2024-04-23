@@ -7,7 +7,7 @@ type Props = {
     img: string
 }
 
-const ProductItem: React.FC<Props> = ({ product, isSelected, img }) => {
+const ProductImage: React.FC<Props> = ({ product, isSelected, img }) => {
     const zoomImageWrapClasses = 'fixed cursor-zoom-out top-0 left-0 w-full h-full bg-black bg-opacity-75 z-50 flex items-center justify-center'
     const zoomImageClasses = 'max-w-none h-[calc(100%-100px)] w-auto'
 
@@ -48,4 +48,4 @@ const ProductItem: React.FC<Props> = ({ product, isSelected, img }) => {
     )
 }
 
-export default ProductItem
+export default ProductImage
