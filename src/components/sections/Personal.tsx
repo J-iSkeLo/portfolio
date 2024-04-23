@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from '@/components/Section/Section'
 import personalSkills from '@/modules/personalSkills'
-import PersonalSkill from '@/components/sections/PersonalSkill'
+import PersonalSkill from '@/components/PersonalSkill'
 
 const Personal: React.FC = () => {
     return (
