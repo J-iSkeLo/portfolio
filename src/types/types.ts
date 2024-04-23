@@ -5,6 +5,7 @@ export interface Product {
     title: string
     intro: string
     items: string[]
+    link?: string
 }
 
 export interface Testimonial {

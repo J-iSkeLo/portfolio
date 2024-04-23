@@ -56,12 +56,14 @@ const products: Product[] = [
         title: 'Higher Bond',
         intro: `Higher Bond is a 100% Christian dating program created for unmarried Christians who are tired of the current options for Christian dating and want a safe, faith-based, Christ-centered place to meet other unmarried Christians.`,
         items: [higherBond1, higherBond2, higherBond3, higherBond4, higherBond5],
+        link: 'https://play.google.com/store/apps/details?id=com.higherbond.android',
     },
     {
         id: 'hockey-insight',
         title: 'Hockey Insight',
         intro: `Hockey Insight is an application for convenient monitoring of your favorite team and its statistics. The application provides live match results, various types of statistics for the world's best hockey league.`,
         items: [hockeyInsight1, hockeyInsight2, hockeyInsight3, hockeyInsight4, hockeyInsight5],
+        link: 'https://play.google.com/store/apps/details?id=dev.jiskelo.hockeyinsight',
     },
     {
         id: 'light-cleaner',
@@ -74,12 +76,14 @@ const products: Product[] = [
         title: 'To-Do Notes',
         intro: 'To-Do Notes is a smart to-do list for everyday use.',
         items: [todoNotes1, todoNotes2, todoNotes3, todoNotes4, todoNotes5],
+        link: 'https://play.google.com/store/apps/details?id=com.syject.todo_notes',
     },
     {
         id: 'zoo',
         title: 'Zoo Zoo Zoo',
         intro: 'The ZooZooZoo mobile app is an online pet store on your smartphone. Food, treats care products, veterinary drugs, accessories, and more for dogs and cats. It has become much more convenient to choose your favorite products for your pets and make purchases.',
         items: [zoo1, zoo2, zoo3, zoo4, zoo5],
+        link: 'https://play.google.com/store/apps/details?id=l.chernenkiy.zoozoozoo',
     },
     {
         id: 'safereturn',
@@ -92,6 +96,7 @@ const products: Product[] = [
         title: 'Arabica',
         intro: 'This app allows ARABICA customers to pre-order their favorite cup of coffee and collect loyalty points. It will serve walk-in customers and curbside car pickup.',
         items: [arabica1, arabica2, arabica3, arabica4, arabica5],
+        link: 'https://play.google.com/store/apps/details?id=com.emiratesdigitals.arabica',
     },
     {
         id: 'flycket',
@@ -110,6 +115,7 @@ const products: Product[] = [
         title: 'Aqua-M',
         intro: "Aqua-M is an android application where you can buy aquarium fish and aquarium equipment using your smartphone.",
         items: [aqua1, aqua2, aqua3, aqua4, aqua5],
+        link: 'https://play.google.com/store/apps/details?id=l.chernenkiy.aqua',
     },
 ]
 
