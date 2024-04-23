@@ -24,7 +24,6 @@ const ProductImage: React.FC<Props> = ({ product, isSelected, img }) => {
 
     return (
         <div
-            key={img}
             className={
                 (isSelected ? '' : 'hidden')
                 + ' ' +

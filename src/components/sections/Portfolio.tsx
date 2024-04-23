@@ -37,6 +37,8 @@ const Portfolio: React.FC = () => {
                                 <a
                                     href={selectedProduct.link}
                                     className="hover:scale-105 transition-transform duration-300 mx-auto inline-block"
+                                    target="_blank"
+                                    rel="noreferrer"
                                 >
                                     <img
                                         src={playButtonImage}
@@ -54,6 +56,7 @@ const Portfolio: React.FC = () => {
                             return product.items.map(img => {
                                 return (
                                     <ProductImage
+                                        key={img}
                                         product={product}
                                         isSelected={selectedProduct.id === product.id}
                                         img={img}
