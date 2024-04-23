@@ -20,7 +20,7 @@ const MyLifeTitle: React.FC<Props> = (props) => {
                 setShowContent(false)
             }
         })
-    }, [])
+    }, [props.header])
 
     function handleTitleClick() {
         if (showContent === false) {
