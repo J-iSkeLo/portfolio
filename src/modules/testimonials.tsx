@@ -7,6 +7,7 @@ import issaImage from '@/assets/img/testimonials/issa.webp'
 import kobaImage from '@/assets/img/testimonials/koba.webp'
 import dimaImage from '@/assets/img/testimonials/dima.webp'
 import nataliiaImage from '@/assets/img/testimonials/nataliia.webp'
+import antonImage from '@/assets/img/testimonials/anton.webp'
 
 const reviews: Testimonial[] = [
     {
@@ -92,6 +93,18 @@ const reviews: Testimonial[] = [
             <p>Наталі Холодних</p>
         </>,
         short: <p>Я хотіла би висловити свою повну підтримку Вам у якості Android розробника. Під час Вашої роботи в нашій компанії Syject, Ви продемонстрували високий рівень знань та вмінь у сфері IT та успішно справлялися зі своїми обов'язками.</p>,
+    },
+    {
+        img: antonImage,
+        name: 'Anton Patenko',
+        companyName: 'iOS Developer',
+        content: <>
+            <p>We have been working with Alexey since 2021 in different companies and on numerous projects. Since the beginning of my journey in iOS development, Alexey has been very helpful in helping me adapt to the team and quickly understand the project.</p>
+            <p>He is a very talented Android developer and a great partner in projects. Alexey is very diligent and capable of always figuring out any difficult moments in development. He has a well-developed critical thinking which helps bring to life any customer ideas. During our collaboration, we worked on many different projects and created a lot of features.</p>
+            <p>I am very grateful to Alexey for being able to help and teach his skills to any developer at any time. I am proud to have had the opportunity to work with Alexey in the same team for such a long period of time!</p>
+            <p>Highly recommend!</p>
+        </>,
+        short: <p>We have been working with Alexey since 2021 in different companies and on numerous projects. Since the beginning of my journey in iOS development, Alexey has been very helpful in helping me adapt to the team and quickly understand the project.</p>,
     },
 ]
 
