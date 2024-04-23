@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '@/components/Section/Section'
-import photo from '@/assets/img/me.webp'
+import profilePhoto from '@/assets/img/me.webp'
 import calculateAge from '@/modules/calculateAge'
 import { Parallax } from 'react-scroll-parallax'
 import screenIsMobile from '@/modules/screenIsMobile'
@@ -24,7 +24,8 @@ const About: React.FC = () => {
                 <div className="grid gap-12 grid-cols-1 md:grid-cols-[auto_1fr] relative">
                     <div>
                         <Parallax disabled={screenIsMobile()} speed={-10} translateY={[-5, 10]}>
-                            <img data-src={photo}
+                            <img
+                                data-src={profilePhoto}
                                 alt="Olexiy Chornenkyi"
                                 width="332"
                                 height="450"
