@@ -3,6 +3,7 @@ import Section from '@/components/Section/Section'
 import products from '@/modules/products'
 import { Product as ProductType } from '@/types/types'
 import ProductImage from '@/components/ProductImage'
+import playButtonImage from '@/assets/img/google-play-button.webp'
 
 const Portfolio: React.FC = () => {
     const [selectedProduct, setSelectedProduct] = useState<ProductType>(products[0])
@@ -28,9 +29,24 @@ const Portfolio: React.FC = () => {
                     </div>
 
                     {/* Intro */}
-                    <p className="py-14 text-lg lg:text-xl max-w-5xl mx-auto text-center leading-8 text-gray-600">
+                    <div className="pt-14 pb-8 text-lg lg:text-xl max-w-5xl mx-auto text-center leading-8 text-gray-600">
                         {selectedProduct.intro}
-                    </p>
+
+                        {selectedProduct.link ?
+                            <div className="text-center mt-6">
+                                <a
+                                    href={selectedProduct.link}
+                                    className="hover:scale-105 transition-transform duration-300 mx-auto inline-block"
+                                >
+                                    <img
+                                        src={playButtonImage}
+                                        alt="Google Play Button"
+                                        className="w-56 drop-shadow-md"
+                                    />
+                                </a>
+                            </div>
+                        : null}
+                    </div>
 
                     {/* Items */}
                     <div className="min-h-[450px] grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 lg:gap-6">
