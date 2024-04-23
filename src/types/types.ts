@@ -19,5 +19,4 @@ export interface PersonalSkill {
     img: string
     title: string
     intro: string
-    parallax: any
 }
