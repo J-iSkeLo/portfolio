@@ -39,8 +39,30 @@ import lightCleaner2 from '@/assets/img/portfolio/light-cleaner/2.webp'
 import lightCleaner3 from '@/assets/img/portfolio/light-cleaner/3.webp'
 import lightCleaner4 from '@/assets/img/portfolio/light-cleaner/4.webp'
 import lightCleaner5 from '@/assets/img/portfolio/light-cleaner/5.webp'
+import hockeyInsight1 from '@/assets/img/portfolio/hockey-insight/1.webp'
+import hockeyInsight2 from '@/assets/img/portfolio/hockey-insight/2.webp'
+import hockeyInsight3 from '@/assets/img/portfolio/hockey-insight/3.webp'
+import hockeyInsight4 from '@/assets/img/portfolio/hockey-insight/4.webp'
+import hockeyInsight5 from '@/assets/img/portfolio/hockey-insight/5.webp'
+import higherBond1 from '@/assets/img/portfolio/higher-bond/1.webp'
+import higherBond2 from '@/assets/img/portfolio/higher-bond/2.webp'
+import higherBond3 from '@/assets/img/portfolio/higher-bond/3.webp'
+import higherBond4 from '@/assets/img/portfolio/higher-bond/4.webp'
+import higherBond5 from '@/assets/img/portfolio/higher-bond/5.webp'
 
 const products: Product[] = [
+    {
+        id: 'higher-bond',
+        title: 'Higher Bond',
+        intro: `Higher Bond is a 100% Christian dating program created for unmarried Christians who are tired of the current options for Christian dating and want a safe, faith-based, Christ-centered place to meet other unmarried Christians.`,
+        items: [higherBond1, higherBond2, higherBond3, higherBond4, higherBond5],
+    },
+    {
+        id: 'hockey-insight',
+        title: 'Hockey Insight',
+        intro: `Hockey Insight is an application for convenient monitoring of your favorite team and its statistics. The application provides live match results, various types of statistics for the world's best hockey league.`,
+        items: [hockeyInsight1, hockeyInsight2, hockeyInsight3, hockeyInsight4, hockeyInsight5],
+    },
     {
         id: 'light-cleaner',
         title: 'Light Cleaner',
