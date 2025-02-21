@@ -59,8 +59,8 @@ const MyLife: React.FC = () => {
                                 Syject became a second home for me, I always came to work in a good mood and enjoyed spending time with the team. Warm welcome, conversations under hookah, video game competitions always made me happy and left only good emotions.
                             </MyLifeTitle>
 
-                            <MyLifeTitle header="6. War — Russia's invasion of Ukraine">
-                                On February 24, 2022 a full-scale war against Russia began, we woke up to explosions and the sound of fighter jets overhead. No one could think of work, we hid in the basement and waited for good news until we got the idea to get out to a safer place outside the city. We found someone who was able to get us out early in the morning when the activity of fighting and shelling was least.
+                            <MyLifeTitle header="6. War in Ukraine">
+                                On February 24, 2022 the war began, we woke up to explosions and the sound of fighter jets overhead. No one could think of work, we hid in the basement and waited for good news until we got the idea to get out to a safer place outside the city. We found someone who was able to get us out early in the morning when the activity of fighting and shelling was least.
                                 <br /><br />
                                 Once we were in a safe place and most of the team (coworkers) were also able to leave within 10-14 days, we contacted management to find out what we needed and could work further. Dmitry provided those who needed, equipment for remote work. And we continued our cooperation. At the beginning of 2023, in February, it so happened that there were no more Android projects at Syject. By mutual agreement we decided to part ways, I needed development, and Syject didn't need an Android developer yet.
                             </MyLifeTitle>
