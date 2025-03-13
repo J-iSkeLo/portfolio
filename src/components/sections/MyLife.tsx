@@ -73,8 +73,26 @@ const MyLife: React.FC = () => {
                                 After 3 months, Dmitry approached me again with a request to help me with a project they started writing a month ago. Within two days I fixed the problems, after which I was offered to replace the developer on new terms and continue writing the project on Jetpack Compose, which I could not refuse. After working for a month, the client and the company had problems with the arrangements and the contracts were broken. These are internal company matters, where I do not interfere and do not advise anyone. Once again our paths with Syject diverged.
                             </MyLifeTitle>
 
-                            <MyLifeTitle header="9. Conclusion">
-                                I kept looking for a company, and not a week later I got an offer to work in a company from the USA, which had a project "Higher Bond" on Jetpack Compose. The deadline was tight, but I realized my strengths and accepted the offer. From July 2023 until now I have been working for this company and together with the team we maintain and develop the project.
+                            <MyLifeTitle header="9. “Higher Bond” – A Christ-centered dating app">
+                                I continued to search for a suitable company and, within a week, I received an offer of employment from a US-based company working on a "Higher Bond" project on Jetpack Compose. The deadline was ambitious, but I recognised the benefits I could offer and accepted the offer. "Higher Bond" is a Christ-centred dating app based on biblical values.
+                                <br /><br />
+                                From July 2023 to March 2024, I was responsible for the creation of a functional native Android app, which was successfully released on Google Play. This project provided a welcome opportunity to gain experience with Jetpack Compose and related technologies such as Coil, Koin Compose, Navigation Compose, Paging Compose and Lottie Compose. Additionally, I gained valuable experience with SignalR from Microsoft, as the application utilised the hub connection for almost all events. Prior to this, I had worked with SignalR in the Arabica project, which facilitated the seamless integration of customised hub connections.
+                                <br /><br />
+                                In March 2024, the primary development phase of the application concluded, and I completed my assigned tasks.
+                            </MyLifeTitle>
+
+                            <MyLifeTitle header="10. “Hockey Insight” – a collaborative project with Anton Patenko">
+                                I resumed my search for new employment opportunities while concurrently embarking on a joint project entitled "Hockey Insight" with my colleague Anton Patenko. Anton is an iOS developer and a keen NHL fan who proposed the idea of creating a useful app for tracking the results and schedules of users' favourite team's matches.
+                                <br /><br />
+                                Following extensive discussions and meetings, we initiated the search for the necessary API and began designing the application in Figma. Following the creation of all necessary resources and the identification of a suitable API, the development phase was initiated. For the "Hockey Insight" project, I decided to use Jetpack Compose along with its "ecosystem". The chosen architecture is MVVM + MVI.
+                                <br /><br />
+                                For network requests, I used OkHttp4 and Retrofit2; for dependency injection, Koin; for annotation processors, KSP; and for working with image , Coil is currently the best option for use with Jetpack Compose. Navigation is written with Compose Navigation. For writing asynchronous tasks, I used Coroutines along with all the features of this asynchronous wonder. The project was completed within a 2-month timeframe and has been successfully published on both the Google Play and App Store platforms.
+                            </MyLifeTitle>
+
+                            <MyLifeTitle header="11. One of Ukraine’s largest">
+                                After the release of "Hockey Insight" in app stores, I actively began going through interviews. On May 28, 2024, I had an interview with a large company, "GC Foxtrot." The interview left a good impression, and I was confident that I would be a good fit for them. The retail chain Foxtrot is one of the largest in Ukraine in terms of the number of stores and the volume of electronics and household appliances sales. And already on May 30, I received an offer, after which I was registered as an employee over the course of 10 days and started working.
+                                <br /><br />
+                                The project is very large, the architecture is mainly MVVM, but the team started implementing Jetpack Compose to replace XML, and with it, the MVI architecture came along. The project has a huge number of third-party libraries, from which I have gradually started to get rid of and use native solutions. For dependency injection, Dagger2 was used. Over time, I moved from Groovy to Kotlin DSL and from Dagger2 to Koin, as Dagger2 is poorly supported and there is and no support KSP on which I switched with Kapt. I also removed the remnants of Rx from the project, leaving only coroutines, and the project has taken on a new look that is pleasant to work with and maintain. At the moment, I am working on the "Foxtrot" project and I want to grow together with them. Next will be...
                             </MyLifeTitle>
                         </div>
                     </div>
