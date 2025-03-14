@@ -30,6 +30,9 @@ const MyLifeTitle: React.FC<Props> = (props) => {
         setShowContent(!showContent)
     }
 
+    const active = 'opacity-1 translate-y-0 h-auto'
+    const inactive = 'opacity-0 -translate-y-8 h-0 pointer-events-none'
+
     return <>
         <div
             onClick={handleTitleClick}
@@ -39,7 +42,7 @@ const MyLifeTitle: React.FC<Props> = (props) => {
             <span>{showContent ? <MinusICon /> : <PlusIcon />}</span>
         </div>
 
-        <div className={`mt-4 ${showContent ? 'block' : 'hidden'}`}>
+        <div className={`transition-all duration-500 mt-4 ${showContent ? active : inactive}`}>
             <div className="p-4 text-[.95em] lg:text-md bg-black/20 rounded-xl">
                 {props.children}
             </div>
