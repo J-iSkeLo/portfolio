@@ -12,17 +12,23 @@ const Portfolio: React.FC = () => {
         <div className="lg:px-7" id="portfolio">
             <Section title="Portfolio">
                 <div className="container">
-
                     {/* Buttons */}
                     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                         {products.map(product => {
                             return (
                                 <button
                                     key={product.id}
-                                    className={(product.id === selectedProduct.id ? '!border-main from-secondary to-main text-white' : 'from-gray-100 via-gray-50 to-white') +  ` w-full bg-gradient bg-gradient-to-br py-2 px-3 lg:py-3 lg:px-5 rounded-full border border-gray-100 shadow-lg transition-shadow hover:shadow-xl duration-500 !outline-none focus:outline-none focus:ring-transparent`}
+                                    className={
+                                        (product.id === selectedProduct.id
+                                            ? '!border-main from-secondary to-main text-white'
+                                            : 'from-gray-100 via-gray-50 to-white') +
+                                        ` w-full bg-gradient bg-gradient-to-br py-2 px-3 lg:py-3 lg:px-5 rounded-full border border-gray-100 shadow-lg transition-shadow hover:shadow-xl duration-500 !outline-none focus:outline-none focus:ring-transparent`
+                                    }
                                     onClick={() => setSelectedProduct(product)}
                                 >
-                                    <span className="drop-shadow-md">{product.title}</span>
+                                    <span className="drop-shadow-md">
+                                        {product.title}
+                                    </span>
                                 </button>
                             )
                         })}
@@ -32,7 +38,7 @@ const Portfolio: React.FC = () => {
                     <div className="pt-14 pb-8 text-lg lg:text-xl max-w-5xl mx-auto text-center leading-8 text-gray-600">
                         {selectedProduct.intro}
 
-                        {selectedProduct.link ?
+                        {selectedProduct.link ? (
                             <div className="text-center mt-6">
                                 <a
                                     href={selectedProduct.link}
@@ -47,7 +53,7 @@ const Portfolio: React.FC = () => {
                                     />
                                 </a>
                             </div>
-                        : null}
+                        ) : null}
                     </div>
 
                     {/* Items */}
@@ -58,7 +64,9 @@ const Portfolio: React.FC = () => {
                                     <ProductImage
                                         key={img}
                                         product={product}
-                                        isSelected={selectedProduct.id === product.id}
+                                        isSelected={
+                                            selectedProduct.id === product.id
+                                        }
                                         img={img}
                                     />
                                 )

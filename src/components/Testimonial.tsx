@@ -33,14 +33,18 @@ const Testimonial: React.FC<Props> = ({ testimonial, setFullContent, showFull })
                     />
 
                     <div>
-                        <h3 className="font-bold text-xl text-gray-600">{testimonial.name}</h3>
+                        <h3 className="font-bold text-xl text-gray-600">
+                            {testimonial.name}
+                        </h3>
                         <h3 className="text-gray-400">{testimonial.companyName}</h3>
                     </div>
                 </figcaption>
 
                 <blockquote className="mt-5 text-gray-500 leading-6 [&>p]:mb-5 [&>p:last-child]:mb-0">
-                    {!showFull && testimonial.short ? testimonial.short : testimonial.content}
-                    {(showFull || !testimonial.short) ? null : showMoreButton}
+                    {!showFull && testimonial.short
+                        ? testimonial.short
+                        : testimonial.content}
+                    {showFull || !testimonial.short ? null : showMoreButton}
                 </blockquote>
             </figure>
         </div>

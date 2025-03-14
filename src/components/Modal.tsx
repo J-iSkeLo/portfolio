@@ -6,8 +6,7 @@ interface Props {
     onClose: () => void
 }
 
-const Modal: React.FC<Props> = (props) => {
-
+const Modal: React.FC<Props> = props => {
     window.addEventListener('keydown', e => {
         if (e.key === 'Escape') {
             props.onClose()

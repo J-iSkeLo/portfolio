@@ -33,7 +33,9 @@ const Hero: React.FC = () => {
 
                         {/* Main big button */}
                         <div className="mt-4 lg:mt-8">
-                            <h3 className="text-lg mb-2 drop-shadow-hero tracking-wide">HAVE A PROJECT?</h3>
+                            <h3 className="text-lg mb-2 drop-shadow-hero tracking-wide">
+                                HAVE A PROJECT?
+                            </h3>
 
                             <div className="group inline-block relative mx-auto">
                                 <a
@@ -42,7 +44,9 @@ const Hero: React.FC = () => {
                                     target="_blank"
                                     className="relative min-w-[300px] z-10 inline-block text-md lg:text-lg text-white bg-main-btn animate-shine bg-600 shadow-hero hover:shadow-hero-hover uppercase py-3 lg:py-3 px-7 lg:px-7 rounded-full transition-shadow duration-500 tracking-wider"
                                 >
-                                    <span className="drop-shadow-[0_0_6px_black]">Email me</span>
+                                    <span className="drop-shadow-[0_0_6px_black]">
+                                        Email me
+                                    </span>
                                 </a>
 
                                 <div className="absolute bottom-1 opacity-0 group-hover:opacity-100 group-hover:-bottom-5 left-4 group-hover:-left-7 transition-all duration-700">

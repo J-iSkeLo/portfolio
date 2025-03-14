@@ -14,7 +14,7 @@ function getDateDiff(beginningDate: string): DateDiff {
     const years = Math.floor(months / 12)
 
     return {
-        months: months - (years * 12),
+        months: months - years * 12,
         years,
     }
 }

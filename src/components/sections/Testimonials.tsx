@@ -11,8 +11,14 @@ const total = testimonials.length
 const testimonialsPerRow = Math.round(total / 3)
 
 const testimonials1: TestimonialType[] = testimonials.slice(0, testimonialsPerRow)
-const testimonials2: TestimonialType[] = testimonials.slice(testimonialsPerRow, testimonialsPerRow * 2)
-const testimonials3: TestimonialType[] = testimonials.slice(testimonialsPerRow * 2, total)
+const testimonials2: TestimonialType[] = testimonials.slice(
+    testimonialsPerRow,
+    testimonialsPerRow * 2,
+)
+const testimonials3: TestimonialType[] = testimonials.slice(
+    testimonialsPerRow * 2,
+    total,
+)
 
 const Testimonials: React.FC = () => {
     const [fullContent, setFullContent] = useState<TestimonialType | null>(null)
@@ -31,7 +37,10 @@ const Testimonials: React.FC = () => {
     return (
         <div id="testimonials">
             {fullContent ? (
-                <Modal show={fullContent !== null} onClose={() => setFullContent(null)}>
+                <Modal
+                    show={fullContent !== null}
+                    onClose={() => setFullContent(null)}
+                >
                     <Testimonial
                         testimonial={fullContent}
                         setFullContent={setFullContent}

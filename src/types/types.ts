@@ -12,7 +12,7 @@ export interface Testimonial {
     img: string
     name: string
     companyName: string
-    content: React.ReactElement,
+    content: React.ReactElement
     short?: React.ReactElement
 }
 
