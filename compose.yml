@@ -1,0 +1,14 @@
+name: jiskelo
+
+services:
+    app:
+        image: jiskelo
+        container_name: jiskelo
+        build:
+            context: .
+            dockerfile: Containerfile
+        ports:
+            - 3000:3000
+        volume:
+            - .:/app:z
+            - /app/node_modules
