@@ -9,5 +9,5 @@ services:
             dockerfile: Containerfile
         ports:
             - 3000:3000
-        volume:
+        volumes:
             - .:/app:z

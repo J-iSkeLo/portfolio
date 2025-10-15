@@ -32,13 +32,16 @@ To build an image, navigate to the root of the project and run this command:
 podman-compose build
 ```
 
-#### Create node_modules locally
+#### Create `node_modules`
+Run this command to install npm packages and generate a `node_modules` directory on your local machine:
+
 ```bash
-docker compose run --rm app npm i
+podman-compose run --rm app npm i
 ```
 
 #### Run the Container
 To run a container, navigate to the root of the project and run this command:
+
 ```bash
 podman-compose up -d
 ```
@@ -47,13 +50,14 @@ You can visit `http://localhost:3000` to see your documentation. Your files will
 
 #### Enter the Container
 To enter inside of the container, run this command:
+
 ```bash
 podman-compose exec app sh
 ```
 
 You'll be able to run NPM commands inside of the container.
 
-> [!WARNING]
+> [!TIP]
 > You don't need to run `npm run start` because it's already running after you created a container.
 
 #### Delete the Container
