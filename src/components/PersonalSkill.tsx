@@ -7,7 +7,7 @@ type Props = {
 }
 
 const PersonalSkill: React.FC<Props> = ({ skill }) => {
-    const { ref } = useParallax<HTMLImageElement>({ rotateY: [0, 480] })
+    const parallax = useParallax<HTMLImageElement>({ rotateY: [0, 480] })
 
     return (
         <div className="min-h-[90px] px-5 pb-3 text-center" key={skill.title}>
@@ -17,7 +17,7 @@ const PersonalSkill: React.FC<Props> = ({ skill }) => {
                 width="90"
                 height="90"
                 className="mx-auto drop-shadow-lg"
-                ref={ref}
+                ref={parallax.ref as React.RefObject<HTMLImageElement>}
             />
 
             <h3 className="my-6 text-xl font-bold text-center uppercase drop-shadow-md">
