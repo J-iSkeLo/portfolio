@@ -1,7 +1,6 @@
 import React from 'react'
 import Title from '@/components/Section/Title'
-import { ParallaxBanner } from 'react-scroll-parallax'
-import { BannerLayer } from 'react-scroll-parallax/dist/components/ParallaxBanner/types'
+import { BannerLayer, ParallaxBanner } from 'react-scroll-parallax'
 
 interface Props {
     title?: string
