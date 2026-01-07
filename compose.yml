@@ -4,9 +4,7 @@ services:
     app:
         image: jiskelo
         container_name: jiskelo
-        build:
-            context: .
-            dockerfile: Containerfile
+        build: .
         ports:
             - 3000:3000
         volumes:
