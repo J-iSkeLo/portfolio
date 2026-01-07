@@ -39,7 +39,7 @@ const App = () => {
                 <Portfolio />
                 <Testimonials />
                 <Contact />
-                <Author />
+                {/* <Author /> */}
                 <ToTop />
             </div>
         </ParallaxProvider>
