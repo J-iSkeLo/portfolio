@@ -17,7 +17,7 @@ const Modal: React.FC<Props> = props => {
         window.addEventListener('keydown', handleKeyDown)
 
         return () => window.removeEventListener('keydown', handleKeyDown)
-    }, [])
+    }, [props])
 
     const modalElement = (
         <div className="fixed inset-0 z-50 overflow-y-auto">
