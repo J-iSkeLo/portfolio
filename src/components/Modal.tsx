@@ -1,4 +1,4 @@
-import type React from 'react'
+import React, { useEffect } from 'react'
 
 interface Props {
     children: React.ReactNode
@@ -7,11 +7,17 @@ interface Props {
 }
 
 const Modal: React.FC<Props> = props => {
-    window.addEventListener('keydown', e => {
-        if (e.key === 'Escape') {
-            props.onClose()
+    useEffect(() => {
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') {
+                props.onClose()
+            }
         }
-    })
+
+        window.addEventListener('keydown', handleKeyDown)
+
+        return () => window.removeEventListener('keydown', handleKeyDown)
+    }, [])
 
     const modalElement = (
         <div className="fixed inset-0 z-50 overflow-y-auto">

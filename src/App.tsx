@@ -17,20 +17,9 @@ const App = () => {
         setTimeout(() => smoothLoader('[data-src]'), 300)
     }, [])
 
-    function listenForScrollEvent(): void {
-        const btn = document.getElementById('to-top')
-
-        if (!btn) {
-            console.error(`Cannot find selector #to-top for Go to top button`)
-            return
-        }
-
-        btn.classList.add(document.body.scrollTop > 600 ? 'opacity-70' : 'opacity-0')
-    }
-
     return (
         <ParallaxProvider>
-            <div className="text-gray-700" onScroll={listenForScrollEvent}>
+            <div className="text-gray-700">
                 <Hero />
                 <About />
                 <Skills />

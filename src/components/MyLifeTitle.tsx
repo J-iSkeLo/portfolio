@@ -15,11 +15,13 @@ const MyLifeTitle: React.FC<Props> = props => {
     const [showContent, setShowContent] = useState(false)
 
     useEffect(() => {
-        listenEvent<string>(events.myLifeTitleOpened, header => {
+        const cleanup = listenEvent<string>(events.myLifeTitleOpened, header => {
             if (header !== props.header) {
                 setShowContent(false)
             }
         })
+
+        return cleanup
     }, [props.header])
 
     function handleTitleClick() {

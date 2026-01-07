@@ -1,5 +1,7 @@
 const listenEvent = <T>(name: string, callback: (data: T) => void) => {
-    window.addEventListener(name, (e: any) => callback(e.detail))
+    const handler = (e: any) => callback(e.detail)
+    window.addEventListener(name, handler)
+    return () => window.removeEventListener(name, handler)
 }
 
 export default listenEvent

@@ -11,7 +11,7 @@ const ToTop: React.FC = () => {
 
         showHideButton(btn)
 
-        window.addEventListener('scroll', e => showHideButton(btn))
+        window.addEventListener('scroll', () => showHideButton(btn))
     }, [])
 
     function showHideButton(btn: HTMLButtonElement): void {
