@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react'
 import Section from '@/components/Section/Section'
 
 const Author: React.FC = () => {
