@@ -9,7 +9,7 @@ import MyLife from '@/components/sections/MyLife'
 import Portfolio from '@/components/sections/Portfolio'
 import Testimonials from '@/components/sections/Testimonials'
 import Contact from '@/components/sections/Contact'
-// import Author from '@/components/sections/Author'
+import Author from '@/components/sections/Author'
 import ToTop from '@/components/ToTop'
 
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
                 <Portfolio />
                 <Testimonials />
                 <Contact />
-                {/* <Author /> */}
+                <Author />
                 <ToTop />
             </div>
         </ParallaxProvider>
