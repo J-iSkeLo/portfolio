@@ -1,4 +1,4 @@
-import type { Product } from '@/types/types'
+import type { Product } from '@/types'
 import zoo1 from '@/assets/img/portfolio/zoo/1.webp'
 import zoo2 from '@/assets/img/portfolio/zoo/2.webp'
 import zoo3 from '@/assets/img/portfolio/zoo/3.webp'

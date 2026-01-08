@@ -1,4 +1,4 @@
-import type { PersonalSkill } from '@/types/types'
+import type { PersonalSkill } from '@/types'
 import adaptability from '@/assets/img/personal/adaptability.webp'
 import communication from '@/assets/img/personal/communication.webp'
 import thinking from '@/assets/img/personal/thinking.webp'
