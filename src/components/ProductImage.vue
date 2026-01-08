@@ -25,9 +25,9 @@ const setZoomedImageHandler = (item: string): void => {
         v-if="isSelected"
         :class="[
             'transition-all duration-300 hover:scale-105 cursor-zoom-in',
-            zoomedImage === img 
+            zoomedImage === img
                 ? 'fixed cursor-zoom-out top-0 left-0 w-full h-full bg-black bg-opacity-75 z-50 flex items-center justify-center'
-                : ''
+                : '',
         ]"
         @click="setZoomedImageHandler(img)"
     >
@@ -40,7 +40,7 @@ const setZoomedImageHandler = (item: string): void => {
                 'transition-all duration-300 mx-auto drop-shadow-md',
                 zoomedImage === img
                     ? 'max-w-none h-[calc(100%-100px)] w-auto'
-                    : 'max-w-auto md:max-w-55'
+                    : 'max-w-auto md:max-w-55',
             ]"
         />
     </div>

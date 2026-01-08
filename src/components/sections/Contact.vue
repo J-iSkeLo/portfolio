@@ -8,7 +8,9 @@ import { contacts } from '@/modules/contactMe'
     <div class="px-7" id="contact">
         <Section title="Contact me">
             <div class="container">
-                <div class="flex flex-col md:flex-row align-center justify-center gap-y-8 gap-x-14">
+                <div
+                    class="flex flex-col md:flex-row align-center justify-center gap-y-8 gap-x-14"
+                >
                     <a
                         v-for="contact in contacts"
                         :key="contact.title"
@@ -28,7 +30,9 @@ import { contacts } from '@/modules/contactMe'
                 </div>
 
                 <div class="text-center">
-                    <div class="bg-gray-600 py-3 px-4 inline-block mx-auto rounded-full shadow-lg mt-10 lg:mt-14">
+                    <div
+                        class="bg-gray-600 py-3 px-4 inline-block mx-auto rounded-full shadow-lg mt-10 lg:mt-14"
+                    >
                         <Social />
                     </div>
                 </div>

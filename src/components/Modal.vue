@@ -28,7 +28,9 @@ onUnmounted(() => {
                 @click="$emit('close')"
             ></div>
 
-            <div class="rounded-lg shadow-lg absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2">
+            <div
+                class="rounded-lg shadow-lg absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2"
+            >
                 <button
                     class="text-gray-500 hover:text-gray-700 text-3xl font-bold absolute right-1 top-0 z-10 p-2"
                     @click="$emit('close')"

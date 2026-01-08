@@ -9,10 +9,12 @@ defineProps<{
 </script>
 
 <template>
-    <h3 :class="[
-        'text-center text-3xl md:text-4xl uppercase font-bold drop-shadow-md',
-        isLight ? 'text-white' : ''
-    ]">
+    <h3
+        :class="[
+            'text-center text-3xl md:text-4xl uppercase font-bold drop-shadow-md',
+            isLight ? 'text-white' : '',
+        ]"
+    >
         {{ title }}
     </h3>
 

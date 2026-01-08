@@ -6,23 +6,35 @@ import EmailIcon from '@/assets/img/icons/email.webp'
 </script>
 
 <template>
-    <header class="bg-hero bg-cover relative z-10 shadow-hero text-white overflow-hidden">
-        <div class="bg-gradient bg-gradient-to-r from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-70"></div>
+    <header
+        class="bg-hero bg-cover relative z-10 shadow-hero text-white overflow-hidden"
+    >
+        <div
+            class="bg-gradient bg-gradient-to-r from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-70"
+        ></div>
 
         <div class="container">
             <Navbar />
 
             <div class="py-52 md:py-[220px] relative z-20 text-center">
-                <h1 class="text-3xl md:text-3xl lg:text-5xl font-bold drop-shadow-hero">
+                <h1
+                    class="text-3xl md:text-3xl lg:text-5xl font-bold drop-shadow-hero"
+                >
                     OLEXIY CHORNENKYI
                 </h1>
 
-                <h2 class="space-x-2 uppercase text-sm md:text-lg lg:text-xl drop-shadow-hero relative inline-block">
+                <h2
+                    class="space-x-2 uppercase text-sm md:text-lg lg:text-xl drop-shadow-hero relative inline-block"
+                >
                     <!-- Line before title -->
-                    <div class="h-[2px] absolute w-10 lg:w-24 bg-white shadow-lines top-1/2 rounded-full -transform-y-1/2 right-[calc(100%+5px)]"></div>
+                    <div
+                        class="h-[2px] absolute w-10 lg:w-24 bg-white shadow-lines top-1/2 rounded-full -transform-y-1/2 right-[calc(100%+5px)]"
+                    ></div>
 
                     <!-- Line after title -->
-                    <div class="h-[2px] absolute w-10 lg:w-24 bg-white shadow-lines top-1/2 -transform-y-1/2 rounded-full left-[calc(100%+5px)]"></div>
+                    <div
+                        class="h-[2px] absolute w-10 lg:w-24 bg-white shadow-lines top-1/2 -transform-y-1/2 rounded-full left-[calc(100%+5px)]"
+                    ></div>
 
                     <span>Native</span>
                     <span class="text-[1.2em]">Android</span>
@@ -47,7 +59,9 @@ import EmailIcon from '@/assets/img/icons/email.webp'
                             </span>
                         </a>
 
-                        <div class="absolute bottom-1 opacity-0 group-hover:opacity-100 group-hover:-bottom-5 left-4 group-hover:-left-7 transition-all duration-700">
+                        <div
+                            class="absolute bottom-1 opacity-0 group-hover:opacity-100 group-hover:-bottom-5 left-4 group-hover:-left-7 transition-all duration-700"
+                        >
                             <img
                                 :src="EmailIcon"
                                 alt="Email icon"
@@ -57,7 +71,9 @@ import EmailIcon from '@/assets/img/icons/email.webp'
                             />
                         </div>
 
-                        <div class="absolute top-1 opacity-0 group-hover:opacity-100 group-hover:-top-3 right-4 group-hover:-right-7 transition-all duration-700 delay-200">
+                        <div
+                            class="absolute top-1 opacity-0 group-hover:opacity-100 group-hover:-top-3 right-4 group-hover:-right-7 transition-all duration-700 delay-200"
+                        >
                             <img
                                 :src="LetterIcon"
                                 alt="Letter icon"

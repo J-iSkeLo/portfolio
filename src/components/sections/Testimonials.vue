@@ -32,20 +32,22 @@ const fullContent = ref<TestimonialType | null>(null)
         >
             <Testimonial
                 :testimonial="fullContent"
-                :set-full-content="(t) => fullContent = t"
+                :set-full-content="t => (fullContent = t)"
                 :show-full="true"
             />
         </Modal>
 
         <Section title="Testimonials" :bg-image="bgImage">
             <div class="container">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7">
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7"
+                >
                     <div class="space-y-4 lg:space-y-7">
                         <Testimonial
                             v-for="r in testimonials1"
                             :key="r.name"
                             :testimonial="r"
-                            :set-full-content="(t) => fullContent = t"
+                            :set-full-content="t => (fullContent = t)"
                             :show-full="false"
                         />
                     </div>
@@ -54,7 +56,7 @@ const fullContent = ref<TestimonialType | null>(null)
                             v-for="r in testimonials2"
                             :key="r.name"
                             :testimonial="r"
-                            :set-full-content="(t) => fullContent = t"
+                            :set-full-content="t => (fullContent = t)"
                             :show-full="false"
                         />
                     </div>
@@ -63,7 +65,7 @@ const fullContent = ref<TestimonialType | null>(null)
                             v-for="r in testimonials3"
                             :key="r.name"
                             :testimonial="r"
-                            :set-full-content="(t) => fullContent = t"
+                            :set-full-content="t => (fullContent = t)"
                             :show-full="false"
                         />
                     </div>

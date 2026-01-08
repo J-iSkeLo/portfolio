@@ -2,7 +2,8 @@
 import { ref } from 'vue'
 
 const isOpened = ref<boolean>(false)
-const commonHamburgerStyles = 'bg-white h-[3px] w-6 rounded-full transition-transform duration-500'
+const commonHamburgerStyles =
+    'bg-white h-[3px] w-6 rounded-full transition-transform duration-500'
 
 const links = [
     { title: 'About me', target: '#about' },
@@ -42,13 +43,13 @@ function anchorHandler(targetSelector: string): void {
                 <div
                     :class="[
                         commonHamburgerStyles,
-                        isOpened ? '-rotate-45 translate-y-[4px]' : ''
+                        isOpened ? '-rotate-45 translate-y-[4px]' : '',
                     ]"
                 ></div>
                 <div
                     :class="[
                         commonHamburgerStyles,
-                        isOpened ? 'rotate-45 translate-y-[-5px]' : ''
+                        isOpened ? 'rotate-45 translate-y-[-5px]' : '',
                     ]"
                 ></div>
             </button>
@@ -57,10 +58,12 @@ function anchorHandler(targetSelector: string): void {
         <div
             :class="[
                 'md:static md:h-full overflow-hidden lg:overflow-visible border-white/20 transition-all duration-500',
-                isOpened ? 'mt-6 h-[270px] border-t pt-6' : 'h-0'
+                isOpened ? 'mt-6 h-[270px] border-t pt-6' : 'h-0',
             ]"
         >
-            <ul class="flex flex-col md:flex-row justify-end space-y-3 md:space-y-0 md:space-x-6 uppercase text-md lg:text-sm">
+            <ul
+                class="flex flex-col md:flex-row justify-end space-y-3 md:space-y-0 md:space-x-6 uppercase text-md lg:text-sm"
+            >
                 <li v-for="link in links" :key="link.title">
                     <button
                         type="button"
