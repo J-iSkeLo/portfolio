@@ -14,7 +14,7 @@ defineProps<{
             <figcaption class="flex items-center space-x-4">
                 <div>
                     <img
-                        :src="testimonial.img"
+                        :data-src="testimonial.img"
                         :alt="testimonial.name"
                         class="w-14 h-14 rounded-full shadow-md"
                     />

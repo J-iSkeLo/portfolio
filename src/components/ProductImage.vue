@@ -40,7 +40,7 @@ const setZoomedImageHandler = (item: string): void => {
                 'transition-all duration-300 mx-auto drop-shadow-md',
                 zoomedImage === img
                     ? 'max-w-none h-[calc(100%-100px)] w-auto'
-                    : 'max-w-auto md:max-w-[220px]'
+                    : 'max-w-auto md:max-w-55'
             ]"
         />
     </div>

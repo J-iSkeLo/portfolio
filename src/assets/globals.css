@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+}
+
+@theme {
+    --color-main: #0090d0;
+    --color-secondary: #7a6ed1;
+
+    --background-image-hero: url('/src/assets/img/backgrounds/hero.jpg');
+    --background-image-main-btn: linear-gradient(-45deg, #ffa63d, #ff3d77, #7033ff, #3cf0c5);
+
+    --shadow-hero: 0 1px 1px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 10%), 0 4px 4px rgb(0 0 0 / 10%), 0 8px 8px rgb(0 0 0 / 10%);
+    --shadow-hero-hover: 12px 12px 16px rgb(0 0 0 / 20%);
+    --shadow-lines: 2px 2px 10px rgb(0 0 0 / 80%);
+
+    --animate-shine: shine 16s linear infinite;
+
+    --drop-shadow-hero: 5px 5px 4px rgb(26 69 104);
+    --drop-shadow-font: 2px 2px 4px rgb(0 0 0 / 50%);
+    --drop-shadow-font-hover: 0 0 20px rgba(255, 255, 255, 1);
+
+    @keyframes shine {
+        0%, 100% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+    }
+}
+
+button:focus {
+    outline: none !important;
+}
+
+button:active {
+    outline: none !important;
+}

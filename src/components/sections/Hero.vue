@@ -40,7 +40,7 @@ import EmailIcon from '@/assets/img/icons/email.webp'
                             href="mailto:jiskelo@gmail.com"
                             rel="noreferrer"
                             target="_blank"
-                            class="relative min-w-[300px] z-10 inline-block text-md lg:text-lg text-white bg-main-btn animate-shine bg-600 shadow-hero hover:shadow-hero-hover uppercase py-3 lg:py-3 px-7 lg:px-7 rounded-full transition-shadow duration-500 tracking-wider"
+                            class="relative min-w-[300px] z-10 inline-block text-md lg:text-lg text-white bg-main-btn animate-shine bg-size-[600%] shadow-hero hover:shadow-hero-hover uppercase py-3 lg:py-3 px-7 lg:px-7 rounded-full transition-shadow duration-500 tracking-wider"
                         >
                             <span class="drop-shadow-[0_0_6px_black]">
                                 Email me

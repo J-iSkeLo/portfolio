@@ -22,13 +22,13 @@ const images = [
 </script>
 
 <template>
-    <div id="skills" class="min-h-[800px]">
+    <div id="skills" class="min-h-200">
         <Section title="Skills" :bg-image="bgImage">
             <div class="container">
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     <div v-for="(img, index) in images" :key="index">
                         <img
-                            :src="img"
+                            :data-src="img"
                             width="284"
                             height="122"
                             alt="technology"

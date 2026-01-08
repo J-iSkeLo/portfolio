@@ -22,14 +22,14 @@ const sectionItems = [
             <div class="grid gap-12 grid-cols-1 md:grid-cols-[auto_1fr] relative">
                 <div>
                     <img
-                        :src="profilePhoto"
+                        :data-src="profilePhoto"
                         alt="Olexiy Chornenkyi"
                         width="332"
                         height="450"
                         class="shadow-hero rounded-3xl max-w-full mx-auto"
                     />
                 </div>
-                <div class="text-lg md:text-xl lg:!leading-9 text-gray-600">
+                <div class="text-lg md:text-xl lg:leading-9! text-gray-600">
                     Analytical and detail oriented Android app developer,
                     professional with stellar communication skills. Adapted at
                     bringing all team members together to reach a common goal on
@@ -48,11 +48,11 @@ const sectionItems = [
                     functional apps to make each client satisfied with the end
                     product. I am constantly working on myself as a developer and
                     a team member to stay knowledgeable and professional.
-                    <div class="flex flex-col md:flex-row w-full pl-[20px] pr-[20px] rounded-md border border-dashed border-gray-300 mt-8">
+                    <div class="flex flex-col md:flex-row w-full pl-5 pr-5 rounded-md border border-dashed border-gray-300 mt-8">
                         <section
                             v-for="(sect, index) in sectionItems"
                             :key="index"
-                            class="md:mr-[30px] md:pr-[30px] md:border-r border-r-dashed border-gray-300 last:border-none py-[20px] flex-1"
+                            class="md:mr-7.5 md:pr-7.5 md:border-r border-r-dashed border-gray-300 last:border-none py-5 flex-1"
                         >
                             <div
                                 v-for="(item, i) in sect"

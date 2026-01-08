@@ -14,12 +14,12 @@ import photo from '@/assets/img/me-2.jpg'
                         <img
                             :data-src="photo"
                             alt="Olexiy Chornenkyi sitting on a chair behind a table with a two monitors and a cup of coffee"
-                            class="rounded-2xl shadow-hero w-full sm:w-[500px]"
+                            class="rounded-2xl shadow-hero w-full sm:w-125"
                             width="320"
                             height="370"
                         />
                     </div>
-                    <div class="text-white text-md md:text-lg leading-7 md:!leading-8 drop-shadow-lg bg-black/40 p-6 rounded-2xl w-full space-y-3">
+                    <div class="text-white text-md md:text-lg leading-7 md:leading-8! drop-shadow-lg bg-black/40 p-6 rounded-2xl w-full space-y-3">
                         <MyLifeTitle header="1. Beginning of programming">
                             The beginning of my programming started at the end of
                             2019. Since I was working at a hard job (where you

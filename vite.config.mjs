@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-// TODO: here
-// import tailwindcss from "@tailwindcss/vite"
+import tailwindcss from "@tailwindcss/vite"
 
 export default defineConfig({
     logLevel: 'silent',
@@ -15,7 +14,7 @@ export default defineConfig({
                 },
             },
         }),
-        // tailwindcss(),
+        tailwindcss(),
     ],
 
     build: {
