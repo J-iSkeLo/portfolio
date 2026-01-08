@@ -17,6 +17,7 @@ jobs:
 
             - name: Install and Build 🔧
               run: |
+                  npm run all
                   npm install
                   npm run build
 
