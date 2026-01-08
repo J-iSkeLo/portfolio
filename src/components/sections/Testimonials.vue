@@ -2,7 +2,6 @@
 import type { Testimonial as TestimonialType } from '@/types'
 import { ref } from 'vue'
 import { testimonials } from '@/modules/testimonials'
-import bgImage from '@/assets/img/backgrounds/testimonials.webp'
 import Testimonial from '@/components/Testimonial.vue'
 import Section from '@/components/Section/Section.vue'
 import Modal from '@/components/Modal.vue'
@@ -37,7 +36,7 @@ const fullContent = ref<TestimonialType | null>(null)
             />
         </Modal>
 
-        <Section title="Testimonials" :bg-image="bgImage">
+        <Section title="Testimonials" :is-light="false">
             <div class="container">
                 <div
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7"

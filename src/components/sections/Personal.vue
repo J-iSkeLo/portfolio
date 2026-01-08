@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Section from '@/components/Section/Section.vue'
 import PersonalSkill from '@/components/PersonalSkill.vue'
-import personalSkills from '@/modules/personalSkills'
+import { personalSkills } from '@/modules/personalSkills'
 </script>
 
 <template>

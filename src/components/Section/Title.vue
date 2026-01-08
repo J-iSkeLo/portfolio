@@ -12,14 +12,14 @@ defineProps<{
     <h3
         :class="[
             'text-center text-3xl md:text-4xl uppercase font-bold drop-shadow-md',
-            isLight ? 'text-white' : '',
+            isLight ? '' : 'text-white',
         ]"
     >
         {{ title }}
     </h3>
 
     <img
-        :src="isLight ? decorWhite : decor"
+        :src="isLight ? decor : decorWhite"
         alt="Decoration"
         width="70"
         height="9"

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Section from '@/components/Section/Section.vue'
-import bgImage from '@/assets/img/backgrounds/skill.webp'
 import skill1 from '@/assets/img/skills/1.webp'
 import skill2 from '@/assets/img/skills/2.webp'
 import skill3 from '@/assets/img/skills/3.webp'
@@ -13,6 +11,7 @@ import skill9 from '@/assets/img/skills/9.webp'
 import skill10 from '@/assets/img/skills/10.webp'
 import skill11 from '@/assets/img/skills/11.webp'
 import skill12 from '@/assets/img/skills/12.webp'
+import Section from '@/components/Section/Section.vue'
 
 const images = [
     skill1,
@@ -32,7 +31,7 @@ const images = [
 
 <template>
     <div id="skills" class="min-h-200">
-        <Section title="Skills" :bg-image="bgImage">
+        <Section title="Skills" :is-light="false">
             <div class="container">
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     <div v-for="(img, index) in images" :key="index">

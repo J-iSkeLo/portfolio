@@ -1,13 +1,12 @@
 <script setup lang="ts">
 import Section from '@/components/Section/Section.vue'
 import MyLifeTitle from '@/components/MyLifeTitle.vue'
-import skyImage from '@/assets/img/backgrounds/sky.webp'
 import photo from '@/assets/img/me-2.jpg'
 </script>
 
 <template>
     <div id="life">
-        <Section title="My Life" :bg-image="skyImage">
+        <Section title="My Life" :is-light="false">
             <div class="container">
                 <div class="flex flex-col lg:flex-row items-center gap-7">
                     <div>

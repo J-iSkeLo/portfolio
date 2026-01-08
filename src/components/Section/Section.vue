@@ -1,18 +1,22 @@
 <script setup lang="ts">
 import Title from '@/components/Section/Title.vue'
 
-defineProps<{
+type Props = {
     title?: string
-    bgImage?: string
     cover?: string
-}>()
+    isLight?: boolean
+}
+
+withDefaults(defineProps<Props>(), {
+    isLight: true,
+})
 </script>
 
 <template>
     <div class="relative">
         <div
-            v-if="bgImage"
-            class="bg-gradient bg-gradient-to-r from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-80"
+            v-if="!isLight"
+            class="bg-gradient bg-linear-to-r from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-80"
         ></div>
 
         <div
@@ -21,7 +25,7 @@ defineProps<{
         ></div>
 
         <div class="py-16 md:py-20">
-            <Title v-if="title" :title="title" :is-light="!!bgImage" />
+            <Title v-if="title" :title :is-light="isLight" />
 
             <div class="relative">
                 <slot />

@@ -50,7 +50,7 @@ import higherBond3 from '@/assets/img/portfolio/higher-bond/3.webp'
 import higherBond4 from '@/assets/img/portfolio/higher-bond/4.webp'
 import higherBond5 from '@/assets/img/portfolio/higher-bond/5.webp'
 
-const products: Product[] = [
+export const products: Product[] = [
     {
         id: 'higher-bond',
         title: 'Higher Bond',
@@ -130,5 +130,3 @@ const products: Product[] = [
         link: 'https://play.google.com/store/apps/details?id=l.chernenkiy.aqua',
     },
 ]
-
-export default products

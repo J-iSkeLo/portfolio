@@ -1,4 +1,4 @@
-const calculateAge = (): string => {
+export const calculateAge = (): string => {
     const today = new Date()
     const birthDate = new Date('06/25/1991')
     const m = today.getMonth() - birthDate.getMonth()
@@ -10,5 +10,3 @@ const calculateAge = (): string => {
 
     return age.toString()
 }
-
-export default calculateAge

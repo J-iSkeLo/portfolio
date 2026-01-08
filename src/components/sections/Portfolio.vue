@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Product as ProductType } from '@/types'
 import { ref } from 'vue'
-import products from '@/modules/products'
+import { products } from '@/modules/products'
 import playButtonImage from '@/assets/img/google-play-button.webp'
 import Section from '@/components/Section/Section.vue'
 import ProductImage from '@/components/ProductImage.vue'

@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import Section from '@/components/Section/Section.vue'
 import profilePhoto from '@/assets/img/me.webp'
-import calculateAge from '@/modules/calculateAge'
-import calculateExperience from '@/modules/calculateExperience'
+import { calculateAge } from '@/modules/calculateAge'
+import { calculateExperience } from '@/modules/calculateExperience'
+import Section from '@/components/Section/Section.vue'
+import ScrollParallax from 'vue3-parallax/src/components/ScrollParallax.vue'
 
 const sectionItems = [
     [
@@ -21,13 +22,15 @@ const sectionItems = [
         <Section title="About me">
             <div class="grid gap-12 grid-cols-1 md:grid-cols-[auto_1fr] relative">
                 <div>
-                    <img
-                        :data-src="profilePhoto"
-                        alt="Olexiy Chornenkyi"
-                        width="332"
-                        height="450"
-                        class="shadow-hero rounded-3xl max-w-full mx-auto"
-                    />
+                    <ScrollParallax :down="true" :speed="0.05">
+                        <img
+                            :data-src="profilePhoto"
+                            alt="Olexiy Chornenkyi"
+                            width="332"
+                            height="450"
+                            class="shadow-hero rounded-3xl max-w-full mx-auto mt-12"
+                        />
+                    </ScrollParallax>
                 </div>
                 <div class="text-lg md:text-xl lg:leading-9! text-gray-600">
                     Analytical and detail oriented Android app developer,

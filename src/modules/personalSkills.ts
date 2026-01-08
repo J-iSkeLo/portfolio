@@ -3,7 +3,7 @@ import adaptability from '@/assets/img/personal/adaptability.webp'
 import communication from '@/assets/img/personal/communication.webp'
 import thinking from '@/assets/img/personal/thinking.webp'
 
-const personalSkills: PersonalSkill[] = [
+export const personalSkills: PersonalSkill[] = [
     {
         img: communication,
         title: 'Communication',
@@ -20,5 +20,3 @@ const personalSkills: PersonalSkill[] = [
         intro: 'When I work with others, I may need to adapt my plans to their vision or changing circumstances. For example, if a team member falls ill, I may need to delegate tasks to them or take on more personal responsibility. By compromising, changing priorities, and staying positive as plans change, I try to maintain harmony in the workplace.',
     },
 ]
-
-export default personalSkills

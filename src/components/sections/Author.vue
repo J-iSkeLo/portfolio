@@ -27,10 +27,10 @@ import Section from '@/components/Section/Section.vue'
                     class="inline-flex font-bold tracking-widest text-sm lg:text-md relative"
                 >
                     <div
-                        class="absolute h-[1px] -left-12 top-1/2 w-8 delay-200 group-hover:w-24 bg-white group-hover:opacity-30 group-hover:translate-x-[-4px] group-hover:-translate-y-2.5 transition-all duration-1000"
+                        class="absolute h-px -left-12 top-1/2 w-8 delay-200 group-hover:w-24 bg-white group-hover:opacity-30 group-hover:translate-x-[-4px] group-hover:-translate-y-2.5 transition-all duration-1000"
                     ></div>
                     <div
-                        class="absolute h-[1px] -right-12 top-1/2 w-8 delay-200 group-hover:w-24 bg-white group-hover:opacity-30 group-hover:translate-x-[5px] group-hover:-translate-y-2.5 transition-all duration-1000"
+                        class="absolute h-px -right-12 top-1/2 w-8 delay-200 group-hover:w-24 bg-white group-hover:opacity-30 group-hover:translate-x-[5px] group-hover:-translate-y-2.5 transition-all duration-1000"
                     ></div>
 
                     <h3

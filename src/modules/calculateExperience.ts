@@ -19,7 +19,7 @@ function getDateDiff(beginningDate: string): DateDiff {
     }
 }
 
-const calculateExperience = (beginningDate: string): string => {
+export const calculateExperience = (beginningDate: string): string => {
     let { years, months } = getDateDiff(beginningDate)
     let result = years
 
@@ -43,5 +43,3 @@ const calculateExperience = (beginningDate: string): string => {
 
     return result.toString()
 }
-
-export default calculateExperience
