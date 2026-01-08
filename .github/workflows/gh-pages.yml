@@ -25,4 +25,3 @@ jobs:
               with:
                   # The folder the action should deploy.
                   folder: build
-
