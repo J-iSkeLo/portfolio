@@ -21,7 +21,7 @@ const { isOpened, toggleNavbar } = useNavbar()
 </script>
 
 <template>
-    <nav class="text-w">
+    <nav>
         <div class="flex lg:hidden justify-end">
             <button
                 type="button"

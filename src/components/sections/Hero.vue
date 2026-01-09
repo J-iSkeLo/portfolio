@@ -14,7 +14,10 @@ const isHomePage = computed<boolean>(() => route.name === 'main')
 <template>
     <header class="bg-hero bg-cover relative z-10 shadow-hero text-white overflow-hidden">
         <div
-            class="bg-gradient bg-linear-to-r from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-70"
+            :class="[
+                'bg-gradient bg-linear-to-r from-secondary via-main to-secondary',
+                'absolute left-0 right-0 top-0 bottom-0 opacity-70',
+            ]"
         ></div>
 
         <div class="container py-5">
@@ -26,16 +29,26 @@ const isHomePage = computed<boolean>(() => route.name === 'main')
                 </h1>
 
                 <h2
-                    class="space-x-2 uppercase text-sm md:text-lg lg:text-xl drop-shadow-hero relative inline-block"
+                    :class="[
+                        'space-x-2 uppercase text-sm md:text-lg lg:text-xl',
+                        'drop-shadow-hero relative inline-block',
+                    ]"
                 >
                     <!-- Line before title -->
                     <div
-                        class="h-0.5 absolute w-10 lg:w-24 bg-white shadow-lines top-1/2 rounded-full -transform-y-1/2 right-[calc(100%+5px)]"
+                        :class="[
+                            'h-0.5 absolute w-10 lg:w-24 bg-white shadow-lines',
+                            'top-1/2 rounded-full -transform-y-1/2',
+                            'right-[calc(100%+5px)]',
+                        ]"
                     ></div>
 
                     <!-- Line after title -->
                     <div
-                        class="h-0.5 absolute w-10 lg:w-24 bg-white shadow-lines top-1/2 -transform-y-1/2 rounded-full left-[calc(100%+5px)]"
+                        :class="[
+                            'h-0.5 absolute w-10 lg:w-24 bg-white shadow-lines',
+                            'top-1/2 -transform-y-1/2 rounded-full left-[calc(100%+5px)]',
+                        ]"
                     ></div>
 
                     <span>Native</span>
@@ -52,13 +65,23 @@ const isHomePage = computed<boolean>(() => route.name === 'main')
                             href="mailto:jiskelo@gmail.com"
                             rel="noreferrer"
                             target="_blank"
-                            class="relative min-w-75 z-10 inline-block text-md lg:text-lg text-white bg-main-btn animate-shine bg-size-[600%] shadow-hero hover:shadow-hero-hover uppercase py-3 lg:py-3 px-7 lg:px-7 rounded-full transition-shadow duration-500 tracking-wider"
+                            :class="[
+                                'relative min-w-75 z-10 inline-block text-md',
+                                'lg:text-lg text-white bg-main-btn animate-shine',
+                                'bg-size-[600%] shadow-hero hover:shadow-hero-hover',
+                                'uppercase py-3 lg:py-3 px-7 lg:px-7 rounded-full',
+                                'transition-shadow duration-500 tracking-wider',
+                            ]"
                         >
                             <span class="drop-shadow-[0_0_6px_black]"> Email me </span>
                         </a>
 
                         <div
-                            class="absolute bottom-1 opacity-0 group-hover:opacity-100 group-hover:-bottom-5 left-4 group-hover:-left-7 transition-all duration-700"
+                            :class="[
+                                'absolute bottom-1 opacity-0 group-hover:opacity-100',
+                                'group-hover:-bottom-5 left-4 group-hover:-left-7',
+                                'transition-all duration-700',
+                            ]"
                         >
                             <img
                                 :src="EmailIcon"
@@ -70,7 +93,11 @@ const isHomePage = computed<boolean>(() => route.name === 'main')
                         </div>
 
                         <div
-                            class="absolute top-1 opacity-0 group-hover:opacity-100 group-hover:-top-3 right-4 group-hover:-right-7 transition-all duration-700 delay-200"
+                            :class="[
+                                'absolute top-1 opacity-0 group-hover:opacity-100',
+                                'group-hover:-top-3 right-4 group-hover:-right-7',
+                                'transition-all duration-700 delay-200',
+                            ]"
                         >
                             <img
                                 :src="LetterIcon"
