@@ -40,17 +40,25 @@ const { isOpened, toggleNavbar } = useNavbar()
 
         <div
             :class="[
-                'lg:static lg:h-full overflow-hidden lg:overflow-visible border-white/20 transition-all duration-500',
+                'lg:static lg:h-full overflow-hidden lg:overflow-visible',
+                'border-white/20 transition-all duration-500',
                 isOpened ? 'mt-6 h-[270px] border-t pt-6' : 'h-0',
             ]"
         >
-            <ul
-                class="flex flex-col lg:flex-row justify-end space-y-3 lg:space-y-0 lg:space-x-6 uppercase text-md lg:text-sm"
-            >
+            <ul :class="[
+                'flex flex-col lg:flex-row justify-end space-y-3 lg:space-y-0',
+                'lg:space-x-6 uppercase text-md lg:text-sm',
+            ]">
                 <li v-for="link in links" :key="link.title">
                     <RouterLink
+                        exact-active-class="border-white"
                         :to="link.to"
-                        class="drop-shadow-font hover:drop-shadow-font-hover transition uppercase cursor-pointer"
+                        :class="[
+                            'drop-shadow-font hover:drop-shadow-font-hover',
+                            'transition uppercase cursor-pointer border-b-2',
+                            'pb-0.5 border-transparent',
+                            ['Home', 'Life'].includes(link.title) ? '' : 'border-none',
+                        ]"
                     >
                         {{ link.title }}
                     </RouterLink>

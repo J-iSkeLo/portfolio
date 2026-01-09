@@ -6,7 +6,7 @@ import photo from '@/assets/img/me-2.jpg'
 <template>
     <div class="container max-w-250">
         <BlogSection title="1. Beginning of programming">
-            <div class="flex flex-col sm:flex-row gap-8">
+            <div class="flex flex-col sm:flex-row gap-10">
                 <div>
                     <img
                         :src="photo"
