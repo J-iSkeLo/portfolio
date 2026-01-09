@@ -46,7 +46,7 @@ const selectedProduct = ref<ProductType>(products[0])
                             rel="noreferrer"
                         >
                             <img
-                                :data-src="playButtonImage"
+                                :src="playButtonImage"
                                 alt="Google Play Button"
                                 class="w-56 drop-shadow-md"
                             />

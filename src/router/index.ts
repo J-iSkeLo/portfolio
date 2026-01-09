@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { routes } from '@/router/routes'
+import { useNavbar } from '@/composables/useNavbar'
+
+const { isOpened, toggleNavbar } = useNavbar()
 
 const router = createRouter({
     history: createWebHistory(),
@@ -11,6 +14,10 @@ router.afterEach(guard => {
 
     if (typeof section === 'string') {
         setTimeout(() => anchorHandler(section), 100)
+    }
+
+    if (isOpened.value) {
+        toggleNavbar()
     }
 })
 

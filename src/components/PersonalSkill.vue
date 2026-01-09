@@ -7,7 +7,7 @@ defineProps<{ skill: PersonalSkill }>()
 <template>
     <div class="min-h-[90px] px-5 pb-3 text-center">
         <img
-            :data-src="skill.img"
+            :src="skill.img"
             :alt="skill.title"
             width="90"
             height="90"

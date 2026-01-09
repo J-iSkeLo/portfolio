@@ -36,7 +36,7 @@ const images = [
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     <div v-for="(img, index) in images" :key="index">
                         <img
-                            :data-src="img"
+                            :src="img"
                             width="284"
                             height="122"
                             alt="technology"

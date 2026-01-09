@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import type { RouteLocationRaw } from 'vue-router'
-import { ref } from 'vue'
+import { useNavbar } from '@/composables/useNavbar'
 
-const isOpened = ref<boolean>(false)
 const commonHamburgerStyles = 'bg-white h-[3px] w-6 rounded-full transition-transform duration-500'
 
 type Link = { title: string; to: RouteLocationRaw }
 
 const links: Link[] = [
+    { title: 'Home', to: { name: 'main' }},
     { title: 'About me', to: { name: 'main', query: { section: 'about' } } },
     { title: 'Skills', to: { name: 'main', query: { section: 'skills' } } },
     { title: 'Personal skills', to: { name: 'main', query: { section: 'personal' } } },
@@ -17,19 +17,17 @@ const links: Link[] = [
     { title: 'Contact', to: { name: 'main', query: { section: 'contact' } } },
 ]
 
-function showNavbarHandler(): void {
-    isOpened.value = !isOpened.value
-}
+const { isOpened, toggleNavbar } = useNavbar()
 </script>
 
 <template>
-    <nav class="pt-7 lg:pt-12 text-w">
+    <nav class="text-w">
         <div class="flex md:hidden justify-end">
             <button
                 type="button"
                 data-toggle="collapse"
                 class="flex flex-col gap-y-1.5 py-2 px-4 drop-shadow-font"
-                @click="showNavbarHandler"
+                @click="toggleNavbar"
             >
                 <div
                     :class="[commonHamburgerStyles, isOpened ? '-rotate-45 translate-y-1' : '']"

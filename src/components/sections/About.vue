@@ -22,7 +22,7 @@ const sectionItems = [
             <div class="grid gap-12 grid-cols-1 md:grid-cols-[auto_1fr] relative">
                 <div>
                     <img
-                        :data-src="profilePhoto"
+                        :src="profilePhoto"
                         alt="Olexiy Chornenkyi"
                         width="332"
                         height="450"

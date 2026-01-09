@@ -1,8 +1,14 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
 import Navbar from '@/components/Navbar.vue'
 import Social from '@/components/Social.vue'
 import LetterIcon from '@/assets/img/icons/letter.webp'
 import EmailIcon from '@/assets/img/icons/email.webp'
+
+const route = useRoute()
+
+const isHomePage = computed<boolean>(() => route.name === 'main')
 </script>
 
 <template>
@@ -11,10 +17,10 @@ import EmailIcon from '@/assets/img/icons/email.webp'
             class="bg-gradient bg-linear-to-r from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-70"
         ></div>
 
-        <div class="container">
+        <div class="container py-5">
             <Navbar />
 
-            <div class="py-52 md:py-55 relative z-20 text-center">
+            <div v-if="isHomePage" class="py-52 md:py-55 relative z-20 text-center">
                 <h1 class="text-3xl md:text-3xl lg:text-5xl font-bold drop-shadow-hero">
                     OLEXIY CHORNENKYI
                 </h1>
@@ -78,7 +84,7 @@ import EmailIcon from '@/assets/img/icons/email.webp'
                 </div>
             </div>
 
-            <div class="flex justify-end mb-14">
+            <div v-if="isHomePage" class="flex justify-end mb-14">
                 <Social />
             </div>
         </div>
