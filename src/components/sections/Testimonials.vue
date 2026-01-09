@@ -14,21 +14,14 @@ const testimonials2: TestimonialType[] = testimonials.slice(
     testimonialsPerRow,
     testimonialsPerRow * 2,
 )
-const testimonials3: TestimonialType[] = testimonials.slice(
-    testimonialsPerRow * 2,
-    total,
-)
+const testimonials3: TestimonialType[] = testimonials.slice(testimonialsPerRow * 2, total)
 
 const fullContent = ref<TestimonialType | null>(null)
 </script>
 
 <template>
     <div id="testimonials">
-        <Modal
-            v-if="fullContent"
-            :show="fullContent !== null"
-            @close="fullContent = null"
-        >
+        <Modal v-if="fullContent" :show="fullContent !== null" @close="fullContent = null">
             <Testimonial
                 :testimonial="fullContent"
                 :set-full-content="t => (fullContent = t)"
@@ -38,9 +31,7 @@ const fullContent = ref<TestimonialType | null>(null)
 
         <Section title="Testimonials" :is-light="false">
             <div class="container">
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7"
-                >
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-7">
                     <div class="space-y-4 lg:space-y-7">
                         <Testimonial
                             v-for="r in testimonials1"

@@ -3,7 +3,6 @@ import profilePhoto from '@/assets/img/me.webp'
 import { calculateAge } from '@/modules/calculateAge'
 import { calculateExperience } from '@/modules/calculateExperience'
 import Section from '@/components/Section/Section.vue'
-import ScrollParallax from 'vue3-parallax/src/components/ScrollParallax.vue'
 
 const sectionItems = [
     [
@@ -22,35 +21,30 @@ const sectionItems = [
         <Section title="About me">
             <div class="grid gap-12 grid-cols-1 md:grid-cols-[auto_1fr] relative">
                 <div>
-                    <ScrollParallax :down="true" :speed="0.05">
-                        <img
-                            :data-src="profilePhoto"
-                            alt="Olexiy Chornenkyi"
-                            width="332"
-                            height="450"
-                            class="shadow-hero rounded-3xl max-w-full mx-auto mt-12"
-                        />
-                    </ScrollParallax>
+                    <img
+                        :data-src="profilePhoto"
+                        alt="Olexiy Chornenkyi"
+                        width="332"
+                        height="450"
+                        class="shadow-hero rounded-3xl max-w-full mx-auto mt-12"
+                    />
                 </div>
                 <div class="text-lg md:text-xl lg:leading-9! text-gray-600">
-                    Analytical and detail oriented Android app developer,
-                    professional with stellar communication skills. Adapted at
-                    bringing all team members together to reach a common goal on time
-                    and under budget.
+                    Analytical and detail oriented Android app developer, professional with stellar
+                    communication skills. Adapted at bringing all team members together to reach a
+                    common goal on time and under budget.
                     <br />
                     <br />
                     Android developer with
-                    <b>{{ calculateExperience('2020-09-01') }} years</b> of
-                    experience in Android Environment. I have an experience of
-                    building android application utilizing different Architecture
-                    approaches. Conceptualizing app solutions with the latest
+                    <b>{{ calculateExperience('2020-09-01') }} years</b> of experience in Android
+                    Environment. I have an experience of building android application utilizing
+                    different Architecture approaches. Conceptualizing app solutions with the latest
                     technology, design theory, and a large dose of creativity.
                     <br />
                     <br />
-                    I'm fully committed to work on fast, optimized and easily
-                    functional apps to make each client satisfied with the end
-                    product. I am constantly working on myself as a developer and a
-                    team member to stay knowledgeable and professional.
+                    I'm fully committed to work on fast, optimized and easily functional apps to
+                    make each client satisfied with the end product. I am constantly working on
+                    myself as a developer and a team member to stay knowledgeable and professional.
                     <div
                         class="flex flex-col md:flex-row w-full pl-5 pr-5 rounded-md border border-dashed border-gray-300 mt-8"
                     >

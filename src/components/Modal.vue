@@ -23,10 +23,7 @@ onUnmounted(() => {
 <template>
     <Teleport to="body">
         <div v-if="show" class="fixed inset-0 z-50 overflow-y-auto">
-            <div
-                class="absolute inset-0 bg-gray-500 opacity-75"
-                @click="$emit('close')"
-            ></div>
+            <div class="absolute inset-0 bg-gray-500 opacity-75" @click="$emit('close')"></div>
 
             <div
                 class="rounded-lg shadow-lg absolute lg:top-1/2 lg:left-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2"

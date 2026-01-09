@@ -9,11 +9,7 @@ import { personalSkills } from '@/modules/personalSkills'
         <Section title="Personal skills">
             <div class="container">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <PersonalSkill
-                        v-for="skill in personalSkills"
-                        :key="skill.title"
-                        :skill
-                    />
+                    <PersonalSkill v-for="skill in personalSkills" :key="skill.title" :skill />
                 </div>
             </div>
         </Section>

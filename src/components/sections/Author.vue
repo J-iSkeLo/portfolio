@@ -3,9 +3,7 @@ import Section from '@/components/Section/Section.vue'
 </script>
 
 <template>
-    <Section
-        cover="bg-gradient bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800"
-    >
+    <Section cover="bg-gradient bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800">
         <div class="text-center">
             <a
                 href="https://serhii.io/about-me"
@@ -16,16 +14,12 @@ import Section from '@/components/Section/Section.vue'
                     class="block text-gray-400 tracking-widest text-xs lg:text-sm group-hover:-translate-y-2 transition-all duration-500 group-hover:scale-90 drop-shadow-[2px_8px_2px_rgb(0_0_0/50%)] group-hover:drop-shadow-[2px_5px_2px_rgb(0_0_0/50%)]"
                 >
                     <span class="mr-1">MADE</span>
-                    <span
-                        class="opacity-100 m-0 transition-all duration-1000 inline-block"
-                    >
+                    <span class="opacity-100 m-0 transition-all duration-1000 inline-block">
                         WITH ❤️
                     </span>
                 </span>
 
-                <div
-                    class="inline-flex font-bold tracking-widest text-sm lg:text-md relative"
-                >
+                <div class="inline-flex font-bold tracking-widest text-sm lg:text-md relative">
                     <div
                         class="absolute h-px -left-12 top-1/2 w-8 delay-200 group-hover:w-24 bg-white group-hover:opacity-30 group-hover:translate-x-[-4px] group-hover:-translate-y-2.5 transition-all duration-1000"
                     ></div>

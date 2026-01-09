@@ -62,26 +62,14 @@ export const products: Product[] = [
         id: 'hockey-insight',
         title: 'Hockey Insight',
         intro: `Hockey Insight is an application for convenient monitoring of your favorite team and its statistics. The application provides live match results, various types of statistics for the world's best hockey league.`,
-        items: [
-            hockeyInsight1,
-            hockeyInsight2,
-            hockeyInsight3,
-            hockeyInsight4,
-            hockeyInsight5,
-        ],
+        items: [hockeyInsight1, hockeyInsight2, hockeyInsight3, hockeyInsight4, hockeyInsight5],
         link: 'https://play.google.com/store/apps/details?id=dev.jiskelo.hockeyinsight',
     },
     {
         id: 'light-cleaner',
         title: 'Light Cleaner',
         intro: 'Light Cleaner is an all-in-one Android device optimization app that combines phone cleaning, RAM optimization, battery saving, and more. for optimal performance and safety.',
-        items: [
-            lightCleaner1,
-            lightCleaner2,
-            lightCleaner3,
-            lightCleaner4,
-            lightCleaner5,
-        ],
+        items: [lightCleaner1, lightCleaner2, lightCleaner3, lightCleaner4, lightCleaner5],
     },
     {
         id: 'todo-notes',

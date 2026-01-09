@@ -6,20 +6,16 @@ import EmailIcon from '@/assets/img/icons/email.webp'
 </script>
 
 <template>
-    <header
-        class="bg-hero bg-cover relative z-10 shadow-hero text-white overflow-hidden"
-    >
+    <header class="bg-hero bg-cover relative z-10 shadow-hero text-white overflow-hidden">
         <div
-            class="bg-gradient bg-gradient-to-r from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-70"
+            class="bg-gradient bg-linear-to-r from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-70"
         ></div>
 
         <div class="container">
             <Navbar />
 
-            <div class="py-52 md:py-[220px] relative z-20 text-center">
-                <h1
-                    class="text-3xl md:text-3xl lg:text-5xl font-bold drop-shadow-hero"
-                >
+            <div class="py-52 md:py-55 relative z-20 text-center">
+                <h1 class="text-3xl md:text-3xl lg:text-5xl font-bold drop-shadow-hero">
                     OLEXIY CHORNENKYI
                 </h1>
 
@@ -28,12 +24,12 @@ import EmailIcon from '@/assets/img/icons/email.webp'
                 >
                     <!-- Line before title -->
                     <div
-                        class="h-[2px] absolute w-10 lg:w-24 bg-white shadow-lines top-1/2 rounded-full -transform-y-1/2 right-[calc(100%+5px)]"
+                        class="h-0.5 absolute w-10 lg:w-24 bg-white shadow-lines top-1/2 rounded-full -transform-y-1/2 right-[calc(100%+5px)]"
                     ></div>
 
                     <!-- Line after title -->
                     <div
-                        class="h-[2px] absolute w-10 lg:w-24 bg-white shadow-lines top-1/2 -transform-y-1/2 rounded-full left-[calc(100%+5px)]"
+                        class="h-0.5 absolute w-10 lg:w-24 bg-white shadow-lines top-1/2 -transform-y-1/2 rounded-full left-[calc(100%+5px)]"
                     ></div>
 
                     <span>Native</span>
@@ -43,20 +39,16 @@ import EmailIcon from '@/assets/img/icons/email.webp'
 
                 <!-- Main big button -->
                 <div class="mt-4 lg:mt-8">
-                    <h3 class="text-lg mb-2 drop-shadow-hero tracking-wide">
-                        HAVE A PROJECT?
-                    </h3>
+                    <h3 class="text-lg mb-2 drop-shadow-hero tracking-wide">HAVE A PROJECT?</h3>
 
                     <div class="group inline-block relative mx-auto">
                         <a
                             href="mailto:jiskelo@gmail.com"
                             rel="noreferrer"
                             target="_blank"
-                            class="relative min-w-[300px] z-10 inline-block text-md lg:text-lg text-white bg-main-btn animate-shine bg-size-[600%] shadow-hero hover:shadow-hero-hover uppercase py-3 lg:py-3 px-7 lg:px-7 rounded-full transition-shadow duration-500 tracking-wider"
+                            class="relative min-w-75 z-10 inline-block text-md lg:text-lg text-white bg-main-btn animate-shine bg-size-[600%] shadow-hero hover:shadow-hero-hover uppercase py-3 lg:py-3 px-7 lg:px-7 rounded-full transition-shadow duration-500 tracking-wider"
                         >
-                            <span class="drop-shadow-[0_0_6px_black]">
-                                Email me
-                            </span>
+                            <span class="drop-shadow-[0_0_6px_black]"> Email me </span>
                         </a>
 
                         <div
