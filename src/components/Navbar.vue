@@ -22,7 +22,7 @@ const { isOpened, toggleNavbar } = useNavbar()
 
 <template>
     <nav class="text-w">
-        <div class="flex md:hidden justify-end">
+        <div class="flex lg:hidden justify-end">
             <button
                 type="button"
                 data-toggle="collapse"
@@ -40,12 +40,12 @@ const { isOpened, toggleNavbar } = useNavbar()
 
         <div
             :class="[
-                'md:static md:h-full overflow-hidden lg:overflow-visible border-white/20 transition-all duration-500',
+                'lg:static lg:h-full overflow-hidden lg:overflow-visible border-white/20 transition-all duration-500',
                 isOpened ? 'mt-6 h-[270px] border-t pt-6' : 'h-0',
             ]"
         >
             <ul
-                class="flex flex-col md:flex-row justify-end space-y-3 md:space-y-0 md:space-x-6 uppercase text-md lg:text-sm"
+                class="flex flex-col lg:flex-row justify-end space-y-3 lg:space-y-0 lg:space-x-6 uppercase text-md lg:text-sm"
             >
                 <li v-for="link in links" :key="link.title">
                     <RouterLink

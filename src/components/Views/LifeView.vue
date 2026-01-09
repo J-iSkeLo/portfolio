@@ -5,34 +5,40 @@ import photo from '@/assets/img/me-2.jpg'
 
 <template>
     <div class="container max-w-250">
-                <!-- <img -->
-                <!--     :src="photo" -->
-                <!--     alt="Olexiy Chornenkyi sitting on a chair behind a table with a two monitors and a cup of coffee" -->
-                <!--     class="rounded-2xl shadow-hero w-full sm:w-125" -->
-                <!--     width="320" -->
-                <!--     height="370" -->
-                <!-- /> -->
-
         <BlogSection title="1. Beginning of programming">
-            <p>The beginning of my programming started at the end of 2019. Since I was
-            working at a hard job (where you have to work physically) and in poor
-            conditions, it encouraged me to change my line of work. At that time, my
-            brother Sergey was a fullstack developer and he suggested me to try my hand
-                at development.</p>
+            <div class="flex flex-col sm:flex-row gap-8">
+                <div>
+                    <img
+                        :src="photo"
+                        alt="Olexiy Chornenkyi sitting on a chair behind a table with a two monitors and a cup of coffee"
+                        class="rounded-2xl shadow-hero w-full min-w-75"
+                        width="320"
+                        height="370"
+                    />
+                </div>
 
-            <p>Among all the programming languages, I settled on Java. Why Java? Most
-            likely, because it was one of the most popular programming languages and
-            after learning Java many other OOP languages become clear. Having started
-            learning the language by watching tutorial videos, I started trying to write
-            desktop applications like calculator, Saper game and similar. During this
-            study, I learned that Java can be used to write mobile applications for
-                Android devices, which I was very interested in.</p>
+                <div>
+                    <p>The beginning of my programming started at the end of 2019. Since I was
+                    working at a hard job (where you have to work physically) and in poor
+                    conditions, it encouraged me to change my line of work. At that time, my
+                    brother Sergey was a fullstack developer and he suggested me to try my hand
+                        at development.</p>
 
-            <p>Smartphones occupy a huge time of our lives, now without it is very
-            difficult. And so I decided that I need to write applications on Android,
-            you need to try to learn! According to the video lessons I wrote a few
-            applications something like notes, where I worked with the database and
-                basic features of Android Jetpack, as well as with AsyncTask.</p>
+                    <p>Among all the programming languages, I settled on Java. Why Java? Most
+                    likely, because it was one of the most popular programming languages and
+                    after learning Java many other OOP languages become clear. Having started
+                    learning the language by watching tutorial videos, I started trying to write
+                    desktop applications like calculator, Saper game and similar. During this
+                    study, I learned that Java can be used to write mobile applications for
+                        Android devices, which I was very interested in.</p>
+
+                    <p>Smartphones occupy a huge time of our lives, now without it is very
+                    difficult. And so I decided that I need to write applications on Android,
+                    you need to try to learn! According to the video lessons I wrote a few
+                    applications something like notes, where I worked with the database and
+                        basic features of Android Jetpack, as well as with AsyncTask.</p>
+                </div>
+            </div>
         </BlogSection>
 
         <BlogSection title="2. First Android application (JAVA)">

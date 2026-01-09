@@ -14,8 +14,8 @@ import ToTop from '@/components/ToTop.vue'
         <About />
         <Skills />
         <Personal />
-        <Portfolio />
         <Testimonials />
+        <Portfolio />
         <Contact />
         <Author />
     </div>

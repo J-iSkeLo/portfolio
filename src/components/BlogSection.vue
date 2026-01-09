@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-    <section class="[&>p]:text-lg [&>p]:mb-10 [&>p:last-child]:mb-0">
+    <section class="[&_p]:text-lg [&_p]:mb-10 [&_p:last-child]:mb-0">
         <Title :title :is-light="true" />
         <slot />
     </section>
