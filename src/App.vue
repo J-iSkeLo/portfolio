@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import Hero from '@/components/sections/Hero.vue'
+import Author from '@/components/Sections/Author.vue'
+import ToTop from '@/components/ToTop.vue'
 </script>
 
 <template>
-    <Hero />
     <RouterView />
+    <Author />
+    <ToTop />
 </template>

@@ -17,7 +17,7 @@ const sectionItems = [
 </script>
 
 <template>
-    <div class="container" id="about">
+    <div class="container">
         <Section title="About me">
             <div class="grid gap-12 grid-cols-1 md:grid-cols-[auto_1fr] relative">
                 <div>

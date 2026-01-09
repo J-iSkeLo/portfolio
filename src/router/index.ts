@@ -9,8 +9,8 @@ const router = createRouter({
     routes,
 })
 
-router.afterEach(guard => {
-    const section = guard.query.section
+router.afterEach((to, from) => {
+    const section = to.query.section
 
     if (typeof section === 'string') {
         setTimeout(() => anchorHandler(section), 100)
@@ -18,6 +18,13 @@ router.afterEach(guard => {
 
     if (isOpened.value) {
         toggleNavbar()
+    }
+
+    if (from.name !== to.name) {
+        document.querySelector('body')!.scrollIntoView({
+            behavior: 'instant',
+            block: 'start',
+        })
     }
 })
 

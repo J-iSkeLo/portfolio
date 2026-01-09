@@ -3,7 +3,7 @@ import { onMounted, onUnmounted, ref } from 'vue'
 
 const toTopBtn = ref<HTMLButtonElement | null>(null)
 
-const showHideButton = () => {
+function showHideButton(): void {
     if (!toTopBtn.value) {
         return
     }
