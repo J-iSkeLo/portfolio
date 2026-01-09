@@ -31,13 +31,13 @@ onUnmounted(() => {
 
 <template>
     <header
-        class="bg-hero bg-cover relative z-10 shadow-hero text-white overflow-hidden transition-opacity duration-300"
+        class="bg-hero bg-cover relative z-10 shadow-hero text-white overflow-hidden transition-opacity duration-500"
         :class="showHeader ? 'opacity-100': 'opacity-0'"
     >
         <div class="main-gradient absolute left-0 right-0 top-0 bottom-0 opacity-70"></div>
 
         <Navbar
-            class="fixed inset-x-0 z-20"
+            class="fixed inset-x-0 z-20 transition-colors duration-500"
             :class="!isHomePage || minimize ? 'main-gradient shadow-lg' : ''"
         />
 
