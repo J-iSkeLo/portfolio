@@ -4,7 +4,7 @@ import Section from '@/components/Section/Section.vue'
 
 <template>
     <Section
-        cover="bg-gradient bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800"
+        cover="bg-linear-to-r from-gray-800 via-gray-900 to-gray-800"
         class="pt-16 md:pt-20"
     >
         <div class="text-center">

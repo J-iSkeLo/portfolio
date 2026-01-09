@@ -16,7 +16,7 @@ withDefaults(defineProps<Props>(), {
     <div class="relative">
         <div
             v-if="!isLight"
-            class="bg-gradient bg-linear-to-r from-secondary via-main to-secondary absolute left-0 right-0 top-0 bottom-0 opacity-80"
+            class="main-gradient absolute left-0 right-0 top-0 bottom-0 opacity-80"
         ></div>
 
         <div

@@ -34,18 +34,11 @@ onUnmounted(() => {
         class="bg-hero bg-cover relative z-10 shadow-hero text-white overflow-hidden transition-opacity duration-300"
         :class="showHeader ? 'opacity-100': 'opacity-0'"
     >
-        <div
-            :class="[
-                'bg-gradient bg-linear-to-r from-secondary via-main to-secondary',
-                'absolute left-0 right-0 top-0 bottom-0 opacity-70',
-            ]"
-        ></div>
+        <div class="main-gradient absolute left-0 right-0 top-0 bottom-0 opacity-70"></div>
 
         <Navbar
             class="fixed inset-x-0 z-20"
-            :class="{
-                'bg-gradient bg-linear-to-r from-secondary via-main to-secondary shadow-lg': !isHomePage || minimize,
-            }"
+            :class="!isHomePage || minimize ? 'main-gradient shadow-lg' : ''"
         />
 
         <div v-if="!minimize" class="py-52 md:py-55 relative z-10 text-center">

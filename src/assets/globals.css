@@ -35,6 +35,10 @@
     }
 }
 
+.main-gradient {
+    @apply bg-linear-to-r from-secondary via-main to-secondary;
+}
+
 button:focus {
     outline: none !important;
 }

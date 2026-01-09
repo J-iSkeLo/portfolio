@@ -11,7 +11,7 @@ defineProps<{
 <template>
     <div>
         <figure
-            class="relative flex flex-col rounded-lg p-6 shadow-lg border border-gray-50 bg-gradient bg-gradient-to-br from-gray-100 via-white to-gray-200"
+            class="relative flex flex-col rounded-lg p-6 shadow-lg border border-gray-50 bg-linear-to-br from-gray-100 via-white to-gray-200"
         >
             <figcaption class="flex items-center space-x-4">
                 <div>

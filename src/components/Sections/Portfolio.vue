@@ -19,7 +19,10 @@ const selectedProduct = ref<ProductType>(products[0])
                         v-for="product in products"
                         :key="product.id"
                         :class="[
-                            'w-full bg-gradient bg-linear-to-br py-2 px-3 lg:py-3 lg:px-5 rounded-full border border-gray-100 shadow-lg transition-shadow hover:shadow-xl duration-500 outline-none! focus:outline-none focus:ring-transparent',
+                            'w-full bg-linear-to-br py-2 px-3 lg:py-3 lg:px-5',
+                            'rounded-full border border-gray-100 shadow-lg',
+                            'transition-shadow hover:shadow-xl duration-500',
+                            'outline-none! focus:outline-none focus:ring-transparent',
                             product.id === selectedProduct.id
                                 ? 'border-main! from-secondary to-main text-white'
                                 : 'from-gray-100 via-gray-50 to-white',
