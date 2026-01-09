@@ -11,7 +11,7 @@ defineProps<{
 <template>
     <h3
         :class="[
-            'text-center text-3xl md:text-4xl uppercase font-bold drop-shadow-md',
+            'text-center text-2xl md:text-4xl uppercase font-bold drop-shadow-md pt-16 md:pt-20',
             isLight ? '' : 'text-white',
         ]"
     >
