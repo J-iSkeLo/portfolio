@@ -1,11 +1,11 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { routes } from '@/router/routes'
 import { useNavbar } from '@/composables/useNavbar'
 
 const { isOpen, toggleNavbar } = useNavbar()
 
 const router = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes,
 })
 
