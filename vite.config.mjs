@@ -6,14 +6,7 @@ export default defineConfig({
     logLevel: 'silent',
 
     plugins: [
-        vue({
-            template: {
-                transformAssetUrls: {
-                    base: null,
-                    includeAbsolute: false,
-                },
-            },
-        }),
+        vue(),
         tailwindcss(),
     ],
 
