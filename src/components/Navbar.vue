@@ -52,7 +52,10 @@ watchEffect(() => {
                         :class="[commonHamburgerStyles, isOpen ? '-rotate-45 translate-y-1' : '']"
                     ></div>
                     <div
-                        :class="[commonHamburgerStyles, isOpen ? 'rotate-45 translate-y-[-5px]' : '']"
+                        :class="[
+                            commonHamburgerStyles,
+                            isOpen ? 'rotate-45 translate-y-[-5px]' : '',
+                        ]"
                     ></div>
                 </button>
             </div>
@@ -64,10 +67,12 @@ watchEffect(() => {
                     isOpen ? 'mt-6 h-[270px] border-t pt-6' : 'h-0',
                 ]"
             >
-                <ul :class="[
-                    'flex flex-col lg:flex-row justify-end space-y-3 lg:space-y-0',
-                    'lg:space-x-6 uppercase text-md lg:text-sm',
-                ]">
+                <ul
+                    :class="[
+                        'flex flex-col lg:flex-row justify-end space-y-3 lg:space-y-0',
+                        'lg:space-x-6 uppercase text-md lg:text-sm',
+                    ]"
+                >
                     <li v-for="link in navbarLinks" :key="link.title">
                         <RouterLink
                             exact-active-class="border-white"

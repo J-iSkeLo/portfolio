@@ -9,13 +9,13 @@ const props = defineProps<{ isHome: boolean }>()
 
 const showHeader = ref<boolean>(false)
 
-onMounted(() => setTimeout(() => showHeader.value = true, 100))
+onMounted(() => setTimeout(() => (showHeader.value = true), 100))
 </script>
 
 <template>
     <header
         class="bg-hero bg-cover relative z-10 shadow-hero text-white overflow-hidden transition-opacity duration-500"
-        :class="showHeader ? 'opacity-100': 'opacity-0'"
+        :class="showHeader ? 'opacity-100' : 'opacity-0'"
     >
         <div class="main-gradient absolute left-0 right-0 top-0 bottom-0 opacity-70"></div>
 
