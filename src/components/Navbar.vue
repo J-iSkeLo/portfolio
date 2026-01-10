@@ -7,7 +7,7 @@ const commonHamburgerStyles = 'bg-white h-[3px] w-6 rounded-full transition-tran
 type Link = { title: string; to: RouteLocationRaw }
 
 const links: Link[] = [
-    { title: 'About me', to: { name: 'home' } },
+    { title: 'About', to: { name: 'home' } },
     { title: 'Skills', to: { name: 'home', query: { section: 'skills' } } },
     { title: 'Personal skills', to: { name: 'home', query: { section: 'personal' } } },
     { title: 'Life', to: { name: 'life' } },
@@ -16,7 +16,7 @@ const links: Link[] = [
     { title: 'Contact', to: { name: 'home', query: { section: 'contact' } } },
 ]
 
-const { isOpened, toggleNavbar } = useNavbar()
+const { isOpen, toggleNavbar } = useNavbar()
 </script>
 
 <template>
@@ -30,10 +30,10 @@ const { isOpened, toggleNavbar } = useNavbar()
                     @click="toggleNavbar"
                 >
                     <div
-                        :class="[commonHamburgerStyles, isOpened ? '-rotate-45 translate-y-1' : '']"
+                        :class="[commonHamburgerStyles, isOpen ? '-rotate-45 translate-y-1' : '']"
                     ></div>
                     <div
-                        :class="[commonHamburgerStyles, isOpened ? 'rotate-45 translate-y-[-5px]' : '']"
+                        :class="[commonHamburgerStyles, isOpen ? 'rotate-45 translate-y-[-5px]' : '']"
                     ></div>
                 </button>
             </div>
@@ -42,7 +42,7 @@ const { isOpened, toggleNavbar } = useNavbar()
                 :class="[
                     'lg:static lg:h-full overflow-hidden lg:overflow-visible',
                     'border-white/20 transition-all duration-500',
-                    isOpened ? 'mt-6 h-[270px] border-t pt-6' : 'h-0',
+                    isOpen ? 'mt-6 h-[270px] border-t pt-6' : 'h-0',
                 ]"
             >
                 <ul :class="[
@@ -57,7 +57,7 @@ const { isOpened, toggleNavbar } = useNavbar()
                                 'drop-shadow-font hover:drop-shadow-font-hover',
                                 'transition uppercase cursor-pointer border-b-2',
                                 'pb-0.5 border-transparent',
-                                ['About me', 'Life'].includes(link.title) ? '' : 'border-none',
+                                ['About', 'Life'].includes(link.title) ? '' : 'border-none',
                             ]"
                         >
                             {{ link.title }}

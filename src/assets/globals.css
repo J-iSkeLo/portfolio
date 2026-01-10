@@ -6,8 +6,8 @@
 }
 
 @theme {
-    --color-main: #0090d0;
-    --color-secondary: #7a6ed1;
+    --color-main: #145F80;
+    --color-secondary: #736BB5;
 
     --background-image-hero: url('/src/assets/img/backgrounds/hero.jpg');
     --background-image-main-btn: linear-gradient(-45deg, #ffa63d, #ff3d77, #7033ff, #3cf0c5);
@@ -36,7 +36,7 @@
 }
 
 .main-gradient {
-    @apply bg-linear-to-r from-secondary via-main to-secondary;
+    @apply bg-linear-to-r from-secondary to-main;
 }
 
 button:focus {

@@ -20,7 +20,7 @@ const selectedProduct = ref<ProductType>(products[0])
                         :key="product.id"
                         :class="[
                             'w-full bg-linear-to-br py-2 px-3 lg:py-3 lg:px-5',
-                            'rounded-full border border-gray-100 shadow-lg',
+                            'rounded-full border border-gray-100 shadow-lg cursor-pointer',
                             'transition-shadow hover:shadow-xl duration-500',
                             'outline-none! focus:outline-none focus:ring-transparent',
                             product.id === selectedProduct.id

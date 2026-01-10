@@ -11,7 +11,11 @@ defineProps<{
 <template>
     <div>
         <figure
-            class="relative flex flex-col rounded-lg p-6 shadow-lg border border-gray-50 bg-linear-to-br from-gray-100 via-white to-gray-200"
+            :class="[
+                'relative flex flex-col rounded-xl p-6 shadow-lg border',
+                'border-gray-50 bg-linear-to-br from-gray-100 via-white',
+                'to-gray-200',
+            ]"
         >
             <figcaption class="flex items-center space-x-4">
                 <div>
@@ -30,14 +34,18 @@ defineProps<{
                 </div>
             </figcaption>
 
-            <blockquote class="mt-5 text-gray-500 leading-6 [&>p]:mb-5 [&>p:last-child]:mb-0">
+            <blockquote class="mt-5 text-gray-600 leading-6 [&>p]:mb-5 [&>p:last-child]:mb-0">
                 <div v-if="!showFull && testimonial.short" v-html="testimonial.short"></div>
                 <div v-else v-html="testimonial.content"></div>
+
                 <button
                     v-if="!showFull && testimonial.short"
                     type="button"
                     @click="setFullContent(testimonial)"
-                    class="text-gray-500 hover:text-gray-600"
+                    :class="[
+                        'bg-gray-500 hover:bg-gray-600 text-white px-4 py-1',
+                        'rounded-lg mt-3 cursor-pointer transition-colors',
+                    ]"
                 >
                     Show full
                 </button>

@@ -11,7 +11,7 @@ const sectionItems = [
     ],
     [
         { label: 'Job title', value: 'Android developer' },
-        { label: 'Location', value: '🇺🇦 Ukraine, Kharkiv' },
+        { label: 'Location', value: 'Ukraine, Kharkiv' },
     ],
 ]
 </script>

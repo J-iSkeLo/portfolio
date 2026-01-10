@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from 'vue'
+import { useNavbar } from '@/composables/useNavbar'
 import Navbar from '@/components/Navbar.vue'
 import Social from '@/components/Social.vue'
 import LetterIcon from '@/assets/img/icons/letter.webp'
@@ -10,6 +11,7 @@ type Props = {
 }
 
 const props = defineProps<Props>()
+const { isOpen } = useNavbar()
 
 const isHomePage = ref<boolean>(!props.minimize)
 const showHeader = ref<boolean>(false)
@@ -38,7 +40,7 @@ onUnmounted(() => {
 
         <Navbar
             class="fixed inset-x-0 z-20 transition-colors duration-500"
-            :class="!isHomePage || minimize ? 'main-gradient shadow-lg' : ''"
+            :class="!isHomePage || minimize || isOpen ? 'main-gradient shadow-lg' : ''"
         />
 
         <div v-if="!minimize" class="py-52 md:py-55 relative z-10 text-center">
@@ -57,7 +59,7 @@ onUnmounted(() => {
                     :class="[
                         'h-0.5 absolute w-10 lg:w-24 bg-white shadow-lines',
                         'top-1/2 rounded-full -transform-y-1/2',
-                        'right-[calc(100%+5px)]',
+                        'right-[calc(100%+10px)]',
                     ]"
                 ></div>
 
@@ -65,13 +67,15 @@ onUnmounted(() => {
                 <div
                     :class="[
                         'h-0.5 absolute w-10 lg:w-24 bg-white shadow-lines',
-                        'top-1/2 -transform-y-1/2 rounded-full left-[calc(100%+5px)]',
+                        'top-1/2 -transform-y-1/2 rounded-full left-[calc(100%+15px)]',
                     ]"
                 ></div>
 
-                <span>Native</span>
-                <span class="text-[1.2em]">Android</span>
-                <span>Developer</span>
+                <div class="drop-shadow-font flex gap-2 items-center">
+                    <span class="text-sm">Native</span>
+                    <span class="text-md">Android</span>
+                    <span class="text-sm">Developer</span>
+                </div>
             </h2>
 
             <!-- Main big button -->
