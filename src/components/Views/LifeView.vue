@@ -5,7 +5,7 @@ import Hero from '@/components/Sections/Hero.vue'
 </script>
 
 <template>
-    <Hero :minimize="true" />
+    <Hero :is-home="false" />
 
     <div class="container max-w-250">
         <BlogSection title="1. Beginning of programming">

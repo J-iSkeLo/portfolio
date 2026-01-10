@@ -1,27 +1,46 @@
 <script setup lang="ts">
-import type { RouteLocationRaw } from 'vue-router'
+import { ref, onMounted, onUnmounted, watchEffect } from 'vue'
+import { navbarLinks } from '@/modules/navbarLinks'
 import { useNavbar } from '@/composables/useNavbar'
 
 const commonHamburgerStyles = 'bg-white h-[3px] w-6 rounded-full transition-transform duration-500'
 
-type Link = { title: string; to: RouteLocationRaw }
-
-const links: Link[] = [
-    { title: 'About', to: { name: 'home' } },
-    { title: 'Skills', to: { name: 'home', query: { section: 'skills' } } },
-    { title: 'Personal skills', to: { name: 'home', query: { section: 'personal' } } },
-    { title: 'Life', to: { name: 'life' } },
-    { title: 'Portfolio', to: { name: 'home', query: { section: 'portfolio' } } },
-    { title: 'testimonials', to: { name: 'home', query: { section: 'testimonials' } } },
-    { title: 'Contact', to: { name: 'home', query: { section: 'contact' } } },
-]
+const props = defineProps<{ isHome: boolean }>()
 
 const { isOpen, toggleNavbar } = useNavbar()
+
+const minimize = ref<boolean>(false)
+const showBackground = ref<boolean>(false)
+
+function updateNavbar(): void {
+    minimize.value = window.scrollY > 400
+    showBackground.value = window.scrollY > 300 || isOpen.value || !props.isHome
+}
+
+onMounted(() => {
+    updateNavbar()
+    window.addEventListener('scroll', updateNavbar)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', updateNavbar)
+})
+
+watchEffect(() => {
+    showBackground.value = isOpen.value
+})
 </script>
 
 <template>
-    <nav>
-        <div class="container py-6">
+    <nav
+        class="fixed inset-x-0 z-20 transition-all! duration-500"
+        :class="{
+            'py-3': minimize,
+            'py-6': !minimize,
+            'bg-main': showBackground,
+        }"
+    >
+        <div class="container">
             <div class="flex lg:hidden justify-end">
                 <button
                     type="button"
@@ -49,7 +68,7 @@ const { isOpen, toggleNavbar } = useNavbar()
                     'flex flex-col lg:flex-row justify-end space-y-3 lg:space-y-0',
                     'lg:space-x-6 uppercase text-md lg:text-sm',
                 ]">
-                    <li v-for="link in links" :key="link.title">
+                    <li v-for="link in navbarLinks" :key="link.title">
                         <RouterLink
                             exact-active-class="border-white"
                             :to="link.to"

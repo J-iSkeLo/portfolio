@@ -1,34 +1,15 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
-import { useNavbar } from '@/composables/useNavbar'
+import { ref, onMounted } from 'vue'
 import Navbar from '@/components/Navbar.vue'
 import Social from '@/components/Social.vue'
 import LetterIcon from '@/assets/img/icons/letter.webp'
 import EmailIcon from '@/assets/img/icons/email.webp'
 
-type Props = {
-    minimize: boolean
-}
+const props = defineProps<{ isHome: boolean }>()
 
-const props = defineProps<Props>()
-const { isOpen } = useNavbar()
-
-const isHomePage = ref<boolean>(!props.minimize)
 const showHeader = ref<boolean>(false)
 
-function minimizeHero(): void {
-    isHomePage.value = window.scrollY < 400
-}
-
-onMounted(() => {
-    minimizeHero()
-    window.addEventListener('scroll', minimizeHero)
-    setTimeout(() => showHeader.value = true, 100)
-})
-
-onUnmounted(() => {
-    window.removeEventListener('scroll', minimizeHero)
-})
+onMounted(() => setTimeout(() => showHeader.value = true, 100))
 </script>
 
 <template>
@@ -38,12 +19,9 @@ onUnmounted(() => {
     >
         <div class="main-gradient absolute left-0 right-0 top-0 bottom-0 opacity-70"></div>
 
-        <Navbar
-            class="fixed inset-x-0 z-20 transition-colors duration-500"
-            :class="!isHomePage || minimize || isOpen ? 'main-gradient shadow-lg' : ''"
-        />
+        <Navbar :is-home="isHome" />
 
-        <div v-if="!minimize" class="py-52 md:py-55 relative z-10 text-center">
+        <div v-if="isHome" class="py-52 md:py-55 relative z-10 text-center">
             <h1 class="text-3xl md:text-3xl lg:text-5xl font-bold drop-shadow-hero">
                 OLEXIY CHORNENKYI
             </h1>
@@ -133,7 +111,7 @@ onUnmounted(() => {
             </div>
         </div>
 
-        <div v-if="!minimize" class="flex justify-end mb-14">
+        <div v-if="isHome" class="flex justify-end mb-14">
             <Social />
         </div>
     </header>

@@ -9,7 +9,7 @@ import Hero from '@/components/Sections/Hero.vue'
 </script>
 
 <template>
-    <Hero :minimize="false" />
+    <Hero :is-home="true" />
     <About />
     <Skills />
     <Personal />
