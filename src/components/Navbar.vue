@@ -7,7 +7,7 @@ const commonHamburgerStyles = 'bg-white h-[3px] w-6 rounded-full transition-tran
 
 const props = defineProps<{ isHome: boolean }>()
 
-const { isOpen, toggleNavbar } = useNavbar()
+const { isOpen, activeLink, toggleNavbar } = useNavbar()
 
 const minimize = ref<boolean>(false)
 const showBackground = ref<boolean>(false)
@@ -75,13 +75,12 @@ watchEffect(() => {
                 >
                     <li v-for="link in navbarLinks" :key="link.title">
                         <RouterLink
-                            exact-active-class="border-white"
                             :to="link.to"
                             :class="[
                                 'drop-shadow-font hover:drop-shadow-font-hover',
                                 'transition uppercase cursor-pointer border-b-2',
                                 'pb-0.5 border-transparent',
-                                ['About', 'Life'].includes(link.title) ? '' : 'border-none',
+                                link.to === activeLink ? 'border-white' : '',
                             ]"
                         >
                             {{ link.title }}
