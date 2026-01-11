@@ -73,7 +73,7 @@ watchEffect(() => {
                             :class="[
                                 'drop-shadow-font hover:drop-shadow-font-hover',
                                 'transition uppercase cursor-pointer border-b-2',
-                                'pb-0.5 border-transparent',
+                                'pb-0.5 border-transparent select-none',
                                 link.to === activeLink ? 'border-white' : '',
                             ]"
                         >
