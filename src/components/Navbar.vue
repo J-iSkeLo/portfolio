@@ -9,11 +9,9 @@ const props = defineProps<{ isHome: boolean }>()
 
 const { isOpen, activeLink, toggleNavbar } = useNavbar()
 
-const minimize = ref<boolean>(false)
 const showBackground = ref<boolean>(false)
 
 function updateNavbar(): void {
-    minimize.value = window.scrollY > 400
     showBackground.value = window.scrollY > 300 || isOpen.value || !props.isHome
 }
 
@@ -33,12 +31,8 @@ watchEffect(() => {
 
 <template>
     <nav
-        class="fixed inset-x-0 z-20 transition-all! duration-500"
-        :class="{
-            'py-3': minimize,
-            'py-6': !minimize,
-            'bg-main': showBackground,
-        }"
+        class="fixed inset-x-0 z-20 py-3"
+        :class="{ 'bg-main': showBackground }"
     >
         <div class="container">
             <div class="flex lg:hidden justify-end">

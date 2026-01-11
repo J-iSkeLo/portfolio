@@ -6,17 +6,10 @@ import LetterIcon from '@/assets/img/icons/letter.webp'
 import EmailIcon from '@/assets/img/icons/email.webp'
 
 const props = defineProps<{ isHome: boolean }>()
-
-const showHeader = ref<boolean>(false)
-
-onMounted(() => setTimeout(() => (showHeader.value = true), 100))
 </script>
 
 <template>
-    <header
-        class="bg-hero bg-cover relative z-10 shadow-hero text-white overflow-hidden transition-opacity duration-500"
-        :class="showHeader ? 'opacity-100' : 'opacity-0'"
-    >
+    <header class="bg-hero bg-cover relative z-10 shadow-hero text-white overflow-hidden">
         <div class="main-gradient absolute left-0 right-0 top-0 bottom-0 opacity-70"></div>
 
         <Navbar :is-home="isHome" />

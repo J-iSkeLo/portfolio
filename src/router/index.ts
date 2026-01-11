@@ -10,9 +10,9 @@ const router = createRouter({
 })
 
 router.afterEach((to, from) => {
-    const section = to.query.section
+    activeLink.value = to.fullPath
 
-    setActiveLink(to.fullPath)
+    const section = to.query.section
 
     if (typeof section === 'string') {
         setTimeout(() => anchorHandler(section), 100)
@@ -22,18 +22,13 @@ router.afterEach((to, from) => {
         toggleNavbar()
     }
 
-    if (from.name !== to.name) {
+    if (to.fullPath === '/' || from.name !== to.name) {
         document.querySelector('body')!.scrollIntoView({
             behavior: 'instant',
             block: 'start',
         })
     }
 })
-
-function setActiveLink(fullPath: string): void {
-    console.log({ fullPath })
-    activeLink.value = fullPath
-}
 
 function anchorHandler(selector: string): void {
     const targetElem = document.getElementById(selector)
