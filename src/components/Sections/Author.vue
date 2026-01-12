@@ -6,7 +6,7 @@ import Section from '@/components/Section/Section.vue'
     <Section cover="bg-linear-to-r from-gray-800 via-gray-900 to-gray-800" class="pt-16 md:pt-20">
         <div class="text-center">
             <a
-                href="https://serhii.io/about-me"
+                href="https://serhiicho.com/about-me"
                 target="_blank"
                 class="text-center inline-block transition-all hover:-translate-y-2 duration-500 relative group"
             >
