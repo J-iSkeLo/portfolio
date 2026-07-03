@@ -8,4 +8,4 @@ services:
         ports:
             - 3000:5173
         volumes:
-            - .:/app:z
+            - .:/var/www/html:z
